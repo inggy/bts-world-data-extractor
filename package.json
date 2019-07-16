@@ -1,0 +1,21 @@
+{
+  "name": "bts-world-data-extractor",
+  "version": "1.0.0",
+  "description": "Extracts game data from BTS World game files",
+  "main": "index.js",
+  "dependencies": {
+    "csv-parse": "^4.4.3",
+    "csv-stringify": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.3",
+    "typescript": "^3.5.3"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "npm run-script build && node lib/index.js",
+    "cards": "npm run-script build && node lib/cards.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
