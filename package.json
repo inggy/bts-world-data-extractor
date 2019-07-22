@@ -16,6 +16,6 @@
     "start": "npm run-script build && node lib/index.js",
     "cards": "npm run-script build && node lib/cards.js"
   },
-  "author": "",
+  "author": "Ingrid Ho",
   "license": "ISC"
 }

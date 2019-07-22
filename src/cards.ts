@@ -79,6 +79,7 @@ writeDataToCSV("consumable_cards.csv", Object.values(cardDatabase)
     .map((card) => {
     return [
         card.id,
+        card.member,
         card.stars,
         findCardTitleFromCorpus(card),
         card.primaryStat,
