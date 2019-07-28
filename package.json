@@ -13,8 +13,7 @@
   },
   "scripts": {
     "build": "tsc -p .",
-    "start": "npm run-script build && node lib/index.js",
-    "cards": "npm run-script build && node lib/cards.js"
+    "start": "npm run-script build && node lib/index.js"
   },
   "author": "Ingrid Ho",
   "license": "ISC"
