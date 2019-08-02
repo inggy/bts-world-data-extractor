@@ -46,18 +46,6 @@ const fileConfigs: GameFileConversionConfig[] = [
         firstColumnName: "index"
     },
     {
-        inputFileName: "droptable",
-        outputFileName: "droptable.csv",
-        columnCount: 6,
-        firstColumnName: "box_id"
-    },
-    {
-        inputFileName: "gachatable",
-        outputFileName: "gachatable.csv",
-        columnCount: 7,
-        firstColumnName: "index"
-    },
-    {
         inputFileName: "itemdata",
         outputFileName: "itemdata.csv",
         columnCount: 19,
@@ -82,7 +70,8 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 chapterNumber: (record =>  parseInt((<string> record['mission_chapterno'].slice(-2))) ),
                 stageNumber: (record => parseInt(record['mission_branch']) ),
                 isMission: (record => parseInt(record['mission_concept']) !== 0),
-                missionDetailId: (record => record['mission_concept'])
+                missionDetailId: (record => record['mission_concept']),
+                wings: (record => record['mission_feather'])
             });
 
             const anotherStageDatabase: Dictionary<Stage> = convertToObject("another_stages.csv", {
@@ -90,7 +79,8 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 chapterNumber: (record =>  parseInt((<string> record['scenario_chapterno'].slice(-2))) ),
                 stageNumber: (record => parseInt(record['scenario_branch']) ),
                 isMission: (record => parseInt(record['scenario_concept']) !== 0),
-                missionDetailId: (record => record['scenario_concept'])
+                missionDetailId: (record => record['scenario_concept']),
+                wings: (record => record['scenario_feather'])
             });
 
             const memeberCardColumns = ["concept_card1","concept_card2","concept_card3","concept_card4","concept_card5","concept_card6","concept_card7"];

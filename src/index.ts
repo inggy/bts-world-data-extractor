@@ -86,7 +86,7 @@ buildGameDatabase().then((gameDatabase) => {
         let member = "";
         let maxRecuperationLevel = 0;
         if (rewardItems.length >= 7) {
-            member = "ALL"
+            member = "Random"
             maxRecuperationLevel = Math.floor(rewardItems.length / 7);
         } else {
             const regexAgencyItemName = new RegExp(`Agency_(.*)_Item(\\d)`);
@@ -109,6 +109,7 @@ buildGameDatabase().then((gameDatabase) => {
         return [
             stage.chapterNumber,
             stage.stageNumber,
+            stage.wings,
             missionDetails.exp,
             missionDetails.goldMin,
             missionDetails.goldMax,
@@ -140,6 +141,7 @@ buildGameDatabase().then((gameDatabase) => {
             missionDetails.allowableMember,
             stage.chapterNumber,
             stage.stageNumber,
+            stage.wings,
             missionDetails.exp,
             missionDetails.goldMin,
             missionDetails.goldMax,

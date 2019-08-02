@@ -20,6 +20,7 @@ export interface Stage extends Indexable {
     stageNumber: number;
     isMission: boolean;
     missionDetailId: string;
+    wings: number;
 }
 
 export interface RewardToItemMapping extends Indexable {
