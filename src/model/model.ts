@@ -14,6 +14,7 @@ export interface Indexable extends Dictionary<any> {
 }
 
 export type ObjectConverterDefinition = Dictionary<(record: Dictionary<any>) => number | string | boolean>;
+export type ObjectConverterFilter = (record: Dictionary<any>) => boolean;
 
 export interface Stage extends Indexable {
     chapterNumber: number;
@@ -61,6 +62,18 @@ export interface Card extends Indexable {
     wisdom: number;
 }
 
+export interface MobileInteractionRow extends Indexable{
+    interactionGroup: number;
+    sequence: number;
+    dialogType: number;
+    affinity1: number;
+    dialogKey1: string;
+    affinity2: number;
+    dialogKey2: string;
+    affinity3: number;
+    dialogKey3: string;
+}
+
 export interface GameDatabase {
     mainMissionDatabase: Dictionary<Mission>,
     anotherMissionDatabase: Dictionary<Mission>,
@@ -71,6 +84,14 @@ export interface GameDatabase {
     itemDatabase: Dictionary<Item>
 }
 
+export interface MobileDatabase {
+    smsDatabase: Dictionary<MobileInteractionRow>,
+    smsNewDatabase: Dictionary<MobileInteractionRow>,
+    socialDatabase: Dictionary<MobileInteractionRow>,
+    socialNewDatabase: Dictionary<MobileInteractionRow>,
+    voiceDatabase: Dictionary<MobileInteractionRow>,
+    voiceNewDatabase: Dictionary<MobileInteractionRow>,
+}
 export const memberMapping: Dictionary<string> = {
     "8": "ALL",
     "1": "Jin",

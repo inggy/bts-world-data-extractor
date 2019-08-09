@@ -1,9 +1,14 @@
-import { ReadStream } from "fs";
 import fs from "fs";
 import parse from "csv-parse/lib/sync";
-import { Dictionary, Indexable, ObjectConverterDefinition } from "../model/model";
+import { Dictionary, Indexable, ObjectConverterDefinition, ObjectConverterFilter } from "../model/model";
 
-export const convertToObject = <T extends Indexable>(inputFileName: string, conversionDefinition: ObjectConverterDefinition): Dictionary<T> => {
+
+const alwaysIncludesFilter: ObjectConverterFilter = () => true;
+
+export const convertToObject = <T extends Indexable>(
+        inputFileName: string,
+        conversionDefinition: ObjectConverterDefinition,
+        rowFilter = alwaysIncludesFilter): Dictionary<T> => {
     const records = parse(fs.readFileSync(`./output/tmp/${inputFileName}`, 'utf-8'), {
         columns: true,
         delimiter: ","
@@ -11,13 +16,14 @@ export const convertToObject = <T extends Indexable>(inputFileName: string, conv
     const database: Dictionary<T> = {};
 
     records.forEach((row: any) => {
-        const result: any = { id: "0" }
-
-        Object.keys(conversionDefinition).forEach((key) => {
-            result[key] = conversionDefinition[key](row);
-        });
-
-        database[result.id] = result;
+        if (rowFilter(row)) {
+            const result: any = { id: "0" }
+            Object.keys(conversionDefinition).forEach((key) => {
+                result[key] = conversionDefinition[key](row);
+            });
+    
+            database[result.id] = result;
+        }
     });
     return database;
 }
