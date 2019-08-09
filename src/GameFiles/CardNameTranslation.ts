@@ -25,6 +25,7 @@ function processStringFile():string {
     outText = outText.replace(/\d{2}[.]\d{2}[.]\d{2}/g, "");
     outText = outText.replace(/★\n/g, "★");
     outText = outText.replace(/’/g, "'");
+    outText = outText.replace(/A \(\)/g, "");
     outText = outText.replace(/card_1star/gmi, "/card_1star");
     outText = outText.replace(/card_2star/gmi, "/card_2star");
     outText = outText.replace(/card_3star/gmi, "/card_3star");

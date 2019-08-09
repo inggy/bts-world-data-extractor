@@ -285,3 +285,24 @@ card_4star_jungkook_015,Jungkook,4,Board Game Time,passion,1024,1302,446,480
 card_5star_jimin_007,Jimin,5,Dreamland Jimin,stamina,540,1152,1465,502
 card_5star_v_007,V,5,Dreamland V,wisdom,502,1188,524,1465
 card_5star_jungkook_007,Jungkook,5,Dreamland Jung Kook,passion,502,1465,1152,540
+card_3star_jin_001,Jin,3,Blowing Kisses,wisdom,280,560,840,1120
+card_3star_jin_002,Jin,3,"Heart, Pew",passion,272,1232,781,560
+card_3star_suga_001,Suga,3,Min SUGA Genius,stamina,280,560,1120,840
+card_3star_suga_002,Suga,3,Found this Heart,empathy,1120,280,840,560
+card_3star_jhope_001,J-Hope,3,Rock Paper Scissors,passion,308,1042,560,815
+card_3star_jhope_002,J-Hope,3,Ho Ho,wisdom,272,924,521,1120
+card_3star_rm_001,RM,3,Love Love Love,empathy,1232,272,560,781
+card_3star_rm_002,RM,3,Don't Worry,stamina,272,924,1042,560
+card_3star_jimin_001,Jimin,3,"1, 2, Freeze!",wisdom,308,543,840,1042
+card_3star_jimin_002,Jimin,3,Finger Hearts,empathy,1120,308,815,521
+card_3star_v_001,V,3,So Fatal,stamina,308,521,1120,815
+card_3star_v_002,V,3,You Know How I Feel,passion,260,1232,815,560
+card_3star_jungkook_001,Jungkook,3,To the Next Class,passion,308,1086,560,781
+card_3star_jungkook_002,Jungkook,3,Ah Ppaiting,stamina,272,924,1042,560
+card_5star_jin_011,Jin,5,Boy of Summer Jin,stamina,1080,670,1584,349
+card_5star_suga_011,Suga,5,Boy of Summer SUGA,empathy,1584,1048,720,335
+card_5star_jhope_011,J-Hope,5,Boy of Summer j-hope,wisdom,1004,720,349,1584
+card_5star_rm_011,RM,5,Boy of Summer RM,passion,1004,1584,698,360
+card_5star_jimin_011,Jimin,5,Boy of Summer Jimin,stamina,1080,335,1584,698
+card_5star_v_011,V,5,Boy of Summer V,wisdom,1004,360,698,1584
+card_5star_jungkook_011,Jungkook,5,Boy of Summer Jung Kook,passion,1004,1584,349,720
