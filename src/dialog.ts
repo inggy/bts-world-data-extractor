@@ -1,47 +1,7 @@
 import { GameFileConversionConfig, MobileInteractionRow, Dictionary, memberMapping } from "./model/model";
-import fs, { exists } from 'fs';
+import fs from 'fs';
 import { writeDataToCSV } from "./GameFiles/CSVFileWriter";
-import { convertToObject } from "./GameFiles/GameCSVToObjectConverter";
 import { buildMobileDatabase } from "./Database/MobileDatabase";
-
-const fileConfigs: GameFileConversionConfig[] = [
-    {
-        inputFileName: "mobile_sms_new",
-        outputFileName: "mobile_sms_new.csv",
-        columnCount: 24,
-        firstColumnName: "groupid",
-    },
-    {
-        inputFileName: "mobile_sms",
-        outputFileName: "mobile_sms.csv",
-        columnCount: 24,
-        firstColumnName: "groupid",
-    },
-    {
-        inputFileName: "mobile_sns",
-        outputFileName: "mobile_sns.csv",
-        columnCount: 21,
-        firstColumnName: "groupid",
-    },
-    {
-        inputFileName: "mobile_sns_new",
-        outputFileName: "mobile_sns_new.csv",
-        columnCount: 21,
-        firstColumnName: "groupid",
-    },
-    {
-        inputFileName: "mobile_call",
-        outputFileName: "mobile_call.csv",
-        columnCount: 21,
-        firstColumnName: "groupid",
-    },
-    {
-        inputFileName: "mobile_call_new",
-        outputFileName: "mobile_call_new.csv",
-        columnCount: 21,
-        firstColumnName: "groupid",
-    },
-];
 
 const validChar = ["’", "\n", "★", " "];
 function isValidDialogChar(char: String): boolean {
@@ -163,8 +123,6 @@ function convertAllRowToDialog(rows: MobileInteractionRow[]): string[] {
 function processDatabase(
         outFileName: string,
         db: Dictionary<MobileInteractionRow>,
-        questionOffset: number,
-        choicesOffset: number,
         stringDb: Dictionary<string>): void {
     writeDataToCSV(outFileName, Object.values(db)
     .filter(interaction => interaction.affinity1 > 0)
@@ -223,20 +181,14 @@ buildMobileDatabase().then(mobileDatabase => {
 
     const {
         smsDatabase,
-        smsNewDatabase,
         socialDatabase,
-        socialNewDatabase,
         voiceDatabase,
-        voiceNewDatabase
     } = mobileDatabase;
 
 
-    processDatabase("mobile_sms.csv", smsDatabase, -3, -2, mobileStrings);
-    processDatabase("mobile_sms_new.csv", smsNewDatabase, -3, -2, mobileStrings);
+    processDatabase("mobile_sms.csv", smsDatabase, mobileStrings);
     
-    processDatabase("mobile_social.csv", socialDatabase, -2, -1, mobileStrings);
-    processDatabase("mobile_social_new.csv", socialNewDatabase, -2, -1, mobileStrings);
+    processDatabase("mobile_social.csv", socialDatabase, mobileStrings);
 
-    processDatabase("mobile_voice.csv", voiceDatabase, -3, -2, mobileStrings);
-    processDatabase("mobile_voice_new.csv", voiceNewDatabase, -3, -2, mobileStrings);
+    processDatabase("mobile_voice.csv", voiceDatabase, mobileStrings);
 });

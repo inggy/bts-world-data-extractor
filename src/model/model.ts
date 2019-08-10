@@ -86,12 +86,10 @@ export interface GameDatabase {
 
 export interface MobileDatabase {
     smsDatabase: Dictionary<MobileInteractionRow>,
-    smsNewDatabase: Dictionary<MobileInteractionRow>,
     socialDatabase: Dictionary<MobileInteractionRow>,
-    socialNewDatabase: Dictionary<MobileInteractionRow>,
     voiceDatabase: Dictionary<MobileInteractionRow>,
-    voiceNewDatabase: Dictionary<MobileInteractionRow>,
 }
+
 export const memberMapping: Dictionary<string> = {
     "8": "ALL",
     "1": "Jin",
