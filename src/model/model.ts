@@ -51,6 +51,9 @@ export interface Mission extends Indexable {
     drop2: string; // droptabl_index_2
 }
 
+export type EventMission = Mission & Stage;
+
+
 export interface Card extends Indexable {
     name: string;
     member: string;
@@ -80,9 +83,11 @@ export interface GameDatabase {
     mainStageDatabase: Dictionary<Stage>,
     anotherStageDatabase: Dictionary<Stage>,
     cardDatabase: Dictionary<Card>,
+    eventMissionDatabase: Dictionary<EventMission>
     rewardToItemDatabase: Dictionary<RewardToItemMapping>,
     itemDatabase: Dictionary<Item>
 }
+
 
 export interface MobileDatabase {
     smsDatabase: Dictionary<MobileInteractionRow>,

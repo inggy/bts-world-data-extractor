@@ -9,7 +9,8 @@ import {
     statMapping,
     Card,
     RewardToItemMapping,
-    Item
+    Item,
+    EventMission
 } from "./model/model";
 import { convertGameDataFile } from "./GameFiles/GameFileCSVConverter";
 import { convertToObject } from "./GameFiles/GameCSVToObjectConverter";
@@ -108,6 +109,32 @@ export function buildGameDatabase(): Promise<GameDatabase> {
 
             const mainMissionDatabase: Dictionary<Mission> = convertToObject("main_mission_details.csv", missionConversionConfig);
             const anotherMissionDatabase: Dictionary<Mission> = convertToObject("another_mission_details.csv", missionConversionConfig);
+            const eventMissionDatabase: Dictionary<EventMission> = convertToObject("event_stages.csv", {
+                // Shared Attribute
+                id: (record =>  record['index']),
+                // Stage attributes      
+                chapterNumber: (record =>  1),
+                stageNumber: (record => parseInt(record['stageseq']) ),
+                isMission: (record => record['stagetype'] === "2"),
+                missionDetailId: (record => "0"),
+                wings: (record => "0"),
+                // Mission attributes
+                empathy: (record =>  parseInt(record['missionpara1']) / 100),
+                passion: (record =>  parseInt(record['missionpara2']) / 100),
+                stamina: (record =>  parseInt(record['missionpara3']) / 100),
+                wisdom: (record =>  parseInt(record['missionpara4']) / 100),
+                targetScore1: (record =>  parseInt(record['clearscore1'])),
+                targetScore2: (record =>  parseInt(record['clearscore2'])),
+                targetScore3: (record =>  parseInt(record['clearscore3'])),
+                numCards: (record =>  parseInt(record['cardslotcount'])),
+                allowableMember: (record => memberMapping["8"]),
+                exp: (record => 0),
+                goldMin: (record => 0),
+                goldMax: (record => 0),
+                drop1: (record => 0),
+                drop2: (record => 0),
+            });
+
             const cardDatabase: Dictionary<Card> = convertToObject("cards_raw.csv", {
                 id: (record =>  record['membercard_name'].toLowerCase()),
                 name: (record =>  record['membercard_name'].toLowerCase()),
@@ -119,7 +146,6 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 stamina: (record => parseInt(record['membercard_idea_basic'])),
                 wisdom: (record => parseInt(record['membercard_design_basic'])),
             });
-
             const rewardToItemDatabase: Dictionary<RewardToItemMapping> = convertToObject("droplist.csv", {
                 id: (record =>  record['index']),
                 rewardId: (record =>  record['box_id']),
@@ -132,11 +158,14 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 name: (record =>  record['name_id']),
             });
 
+            
+
             resolve({
                 mainMissionDatabase,
                 anotherMissionDatabase,
                 mainStageDatabase,
                 anotherStageDatabase,
+                eventMissionDatabase,
                 cardDatabase,
                 rewardToItemDatabase,
                 itemDatabase,

@@ -1,8 +1,6 @@
-import fs from 'fs';
 import { GameFileConversionConfig, MobileInteractionRow, Dictionary, MobileDatabase, ObjectConverterDefinition, ObjectConverterFilter } from "../model/model";
-import { writeDataToCSV } from "../GameFiles/CSVFileWriter";
 import { convertToObject } from "../GameFiles/GameCSVToObjectConverter";
-import { convertMobileDataFile } from '../GameFiles/GameFileCSVConverter';
+import { convertGameDataFile } from '../GameFiles/GameFileCSVConverter';
 
 const fileConfigs: GameFileConversionConfig[] = [
     {
@@ -28,7 +26,7 @@ const fileConfigs: GameFileConversionConfig[] = [
 export function buildMobileDatabase(): Promise<MobileDatabase> {
     return new Promise((resolve, reject) => {
         Promise.all(fileConfigs.map((fileConfig) => {
-            return convertMobileDataFile(fileConfig)
+            return convertGameDataFile(fileConfig)
         }))
         .then(() => {
             const smsCSVToObjectConverter: ObjectConverterDefinition = {

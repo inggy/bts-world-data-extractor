@@ -13,6 +13,7 @@ buildGameDatabase().then((gameDatabase) => {
         cardDatabase,
         rewardToItemDatabase,
         itemDatabase,
+        eventMissionDatabase,
     } = gameDatabase;
 
 
@@ -32,6 +33,21 @@ buildGameDatabase().then((gameDatabase) => {
         ];
     }));
 
+    writeDataToCSV("summer_19_event_stage.csv", Object.values(eventMissionDatabase).filter(stage => stage.isMission).map((mission) => {
+        return [
+            mission.chapterNumber,
+            mission.stageNumber,
+            mission.targetScore1,
+            mission.targetScore2,
+            mission.targetScore3,
+            mission.numCards,
+            mission.empathy,
+            mission.passion,
+            mission.stamina,
+            mission.wisdom
+        ];
+    }));
+    
     writeDataToCSV("consumable_another_stages.csv", Object.values(anotherStageDatabase).filter(stage => stage.isMission).map((stage) => {
         const missionDetails = anotherMissionDatabase[stage.missionDetailId];
         return [
