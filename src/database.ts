@@ -57,6 +57,12 @@ const fileConfigs: GameFileConversionConfig[] = [
         outputFileName: "event_stages.csv",
         columnCount: 44,
         firstColumnName: "index",
+    },
+    {
+        inputFileName: "membercard",
+        outputFileName: "cards_raw.csv",
+        columnCount: 61,
+        firstColumnName: "index",
     }
 ];
 
