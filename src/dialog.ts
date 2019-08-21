@@ -59,126 +59,128 @@ function processStringFile(): Dictionary<string> {
 function buildRowId(group: number, sequence: number) {
     return `${group}-${sequence}`
 }
-function getChoicesRowOffset(db: Dictionary<MobileInteractionRow>, resultsRow: MobileInteractionRow): MobileInteractionRow | void {
-    const resultsSequenceNum = resultsRow.sequence;
-    let testSquenceNum = resultsSequenceNum;
-    while (testSquenceNum-- > 0) {
-        const rowId = buildRowId(resultsRow.interactionGroup, testSquenceNum);
-        const testRow = db[rowId];
-        if (testRow && testRow.dialogType === 1) {
-            return testRow;
-        }
-    }
+
+interface TempDialog {
+    groupId: number;
+    sequence: number;
+    contextDialog: string[];
+    dialogKey1?: string;
+    dialogKey2?: string;
+    dialogKey3?: string;
+    affinity1: number;
+    affinity2: number;
+    affinity3: number;
 }
 
-function getContextRows(db: Dictionary<MobileInteractionRow>, resultsRow: MobileInteractionRow, choicesSequenceNumber: number): MobileInteractionRow[] {
-    const results = [];
-    for (let i = 0; i < choicesSequenceNumber; i++) {
-        const rowId = buildRowId(resultsRow.interactionGroup, i);
-        const testRow = db[rowId];
-        if (testRow) {
-            results.push(testRow);
-            if (testRow.dialogKey1 !== "0") {
-                break;
-            }
+function convertTempDialogToResultsRow(d: TempDialog, stringDb: Dictionary<string>) {
+
+    const member = Object.values(memberMapping).find(memberName => {
+        if (!d.dialogKey1) {
+            return "NO DIALOG";
         }
-    }
+        return d.dialogKey1.toLocaleLowerCase().indexOf(`_${memberName.toLocaleLowerCase()}_`) > -1
+    });
 
-
-    for (let i = choicesSequenceNumber - 1; i > 0; i--) {
-        const rowId = buildRowId(resultsRow.interactionGroup, i);
-        const testRow = db[rowId];
-        if (testRow) {
-            results.push(testRow);
-            if (testRow.dialogKey1 !== "0") {
-                break;
-            }
-        }
-    }
-
-    return results;
+    let contextDialogArray = d.contextDialog.map(strKey => stringDb[strKey]);
+    contextDialogArray = contextDialogArray.filter((s, i) => i == contextDialogArray.indexOf(s));
+    return [
+        buildRowId(d.groupId, d.sequence),
+        member,
+        contextDialogArray,
+        d.affinity1,
+        d.dialogKey1,
+        d.affinity2,
+        d.dialogKey2,
+        d.affinity3,
+        d.dialogKey3,
+        d.dialogKey1? stringDb[d.dialogKey1] : "",
+        d.dialogKey2? stringDb[d.dialogKey2] : "",
+        d.dialogKey3? stringDb[d.dialogKey3] : "",
+    ];
 }
 
-function convertAllRowToDialog(rows: MobileInteractionRow[]): string[] {
-    let result: string[] = [];
-    rows.forEach(row => {
-        if (row.dialogKey1 === "0") {
-            result.push("MEDIA_FILE");
-        } else {
-            result.push(mobileStrings[row.dialogKey1]);
+function processConversation(conversation: MobileInteractionRow[]): TempDialog[] {
+    const contextArray: string[] = [];
+    const result: TempDialog[] = [];
+
+    let curTempDialog: TempDialog | null = null;
+    for (let i = 0; i < conversation.length; i++) {
+        const curRow = conversation[i];
+
+        if (contextArray.length === 0 || contextArray[contextArray.length - 1] === "0") {
+            contextArray.push(curRow.dialogKey1);
+        }
+                
+        if (/* this is a dialog choice row */ curRow.dialogType === 1) {
+            
+            if (curTempDialog && curTempDialog.affinity1 !== 0) {
+                result.push(curTempDialog);
+                curTempDialog = null;
+            }
+
+            if (!curTempDialog) {
+                curTempDialog = {
+                    groupId: curRow.interactionGroup,
+                    sequence: curRow.sequence,
+                    contextDialog: [...contextArray],
+                    affinity1: 0,
+                    affinity2: 0,
+                    affinity3: 0,
+                }
+            }
+
+            curTempDialog.dialogKey1 = curRow.dialogKey1;
+            curTempDialog.dialogKey2 = curRow.dialogKey2;
+            curTempDialog.dialogKey3 = curRow.dialogKey3;
+
+            // Add previous row to context
+            curTempDialog.contextDialog.push(conversation[i-1].dialogKey1)
         }
 
-        if (row.dialogKey2 !== "0") {
-            result.push(mobileStrings[row.dialogKey2]);
+        if (curTempDialog) {
+            curTempDialog.affinity1 = Math.max(curTempDialog.affinity1, curRow.affinity1);
+            curTempDialog.affinity2 = Math.max(curTempDialog.affinity2, curRow.affinity2);
+            curTempDialog.affinity3 = Math.max(curTempDialog.affinity3, curRow.affinity3);
         }
+    }
 
-        if (row.dialogKey3 !== "0") {
-            result.push(mobileStrings[row.dialogKey3]);
-        }
-    })
-    result = result.filter((s, i) => i == result.indexOf(s));
+    if (curTempDialog && curTempDialog.affinity1 !== 0) {
+        result.push(curTempDialog);
+    }
+
     return result;
 }
 
+
 function processDatabase(
-        outFileName: string,
-        db: Dictionary<MobileInteractionRow>,
-        stringDb: Dictionary<string>): void {
-    writeDataToCSV(outFileName, Object.values(db)
-    .filter(interaction => interaction.affinity1 > 0)
-    .map(interactionResult => {
-            const { affinity1, affinity2, affinity3 } = interactionResult;
-            const choicesRow = getChoicesRowOffset(db, interactionResult);
-            if (!choicesRow) {
-                console.log(interactionResult);
-                throw "No choices found";
-            }
+    outFileName: string,
+    db: Dictionary<MobileInteractionRow>,
+    stringDb: Dictionary<string>): void {
 
-            const {
-                dialogKey1,
-                dialogKey2,
-                dialogKey3,
-            } = choicesRow;
+    const interactionGrouped: Dictionary<MobileInteractionRow[]> = {};
 
-            const dialogArray = convertAllRowToDialog(getContextRows(db, interactionResult, choicesRow.sequence));
-            if (dialogArray.length === 0) {
-                console.log(interactionResult);
-                throw "No context found for result";
-            }
+    Object.values(db).forEach(interaction => {
+        if (!interactionGrouped.hasOwnProperty(interaction.interactionGroup)) {
+            interactionGrouped[interaction.interactionGroup] = [];
+        }
+        interactionGrouped[interaction.interactionGroup].push(interaction);
+    });
 
-            const member = Object.values(memberMapping).find(memberName => {
-                return interactionResult.dialogKey1.toLocaleLowerCase().indexOf(`_${memberName.toLocaleLowerCase()}_`) > -1
-            });
+    Object.values(interactionGrouped).forEach(rows => {
+        rows.sort((a, b) => a.sequence - b.sequence);
+    });
 
-            if (!member) {
-                console.log(interactionResult)
-                throw "cannot identify member";
-            }
+    const rows: any[] = [];
+    Object.values(interactionGrouped).forEach(conversation => processConversation(conversation)
+        .forEach(tempDialog => rows.push(convertTempDialogToResultsRow(tempDialog, stringDb))));
 
-
-        return [
-            interactionResult.id,
-            member,
-            dialogArray,
-            affinity1,
-            dialogKey1,
-            affinity2,
-            dialogKey2,
-            affinity3,
-            dialogKey3,
-            stringDb[dialogKey1],
-            stringDb[dialogKey2],
-            stringDb[dialogKey3],
-        ];
-    })
-);
+    writeDataToCSV(outFileName, rows);
 }
 
 const mobileStrings = processStringFile();
 
 buildMobileDatabase().then(mobileDatabase => {
     
-
     const {
         smsDatabase,
         socialDatabase,

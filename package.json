@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build": "tsc -p .",
+    "clean": "rm output/*.csv && rm output/tmp/*.*",
     "start": "npm run-script build && node lib/index.js",
     "dialog": "npm run-script build && node lib/dialog.js"
   },
