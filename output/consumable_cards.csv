@@ -313,3 +313,17 @@ card_5star_rm_006,RM,5,Let's Do This RM,stamina,360,335,2772,349
 card_5star_jimin_006,Jimin,5,Let's Do This Jimin,passion,360,2772,349,335
 card_5star_v_006,V,5,Let's Do This V,empathy,2772,335,360,349
 card_5star_jungkook_006,Jungkook,5,Let's Do This Jung Kook,wisdom,335,360,349,2772
+card_4star_jin_018,Jin,4,Handsome From All Angles,wisdom,298,320,310,2464
+card_5star_jin_013,Jin,5,Straight Through the Heart,wisdom,134,1656,105,1861
+card_4star_suga_018,Suga,4,Dozing,passion,320,2464,298,310
+card_5star_suga_013,Suga,5,I'm Gonna Win,passion,105,1861,1574,108
+card_4star_jhope_020,J-Hope,4,Balloon of Hope,empathy,2464,298,320,310
+card_5star_jhope_013,J-Hope,5,A Moment to Ponder,empathy,1861,1574,108,105
+card_4star_rm_019,RM,4,Get Sparkling Clean,stamina,320,298,2464,310
+card_5star_rm_013,RM,5,Pretty Good,stamina,108,100,1861,1641
+card_4star_jimin_003,Jimin,4,Hip Hop Baby,stamina,320,310,2464,298
+card_5star_jimin_013,Jimin,5,"Ready, Action",empathy,1861,105,1656,134
+card_4star_v_019,V,4,Mobile Game,passion,298,2464,310,320
+card_5star_v_013,V,5,Curiosity Satisfied,passion,1540,1861,105,144
+card_4star_jungkook_019,Jungkook,4,Cartoon Boy,wisdom,298,320,310,2464
+card_5star_jungkook_013,Jungkook,5,Sunshine Boy,wisdom,1574,108,105,1861
