@@ -4,8 +4,12 @@
   "description": "Extracts game data from BTS World game files",
   "main": "index.js",
   "dependencies": {
+    "@types/cheerio": "^0.22.13",
+    "@types/node-fetch": "^2.5.0",
+    "cheerio": "^1.0.0-rc.3",
     "csv-parse": "^4.4.3",
-    "csv-stringify": "^5.3.0"
+    "csv-stringify": "^5.3.0",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "@types/node": "^12.6.3",
@@ -15,7 +19,8 @@
     "build": "tsc -p .",
     "clean": "rm output/*.csv && rm output/tmp/*.*",
     "start": "npm run-script build && node lib/index.js",
-    "dialog": "npm run-script build && node lib/dialog.js"
+    "dialog": "npm run-script build && node lib/dialog.js",
+    "draws": "npm run-script build && node lib/draws.js"
   },
   "author": "Ingrid Ho",
   "license": "ISC"
