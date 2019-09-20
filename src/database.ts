@@ -49,13 +49,13 @@ const fileConfigs: GameFileConversionConfig[] = [
     {
         inputFileName: "itemdata",
         outputFileName: "itemdata.csv",
-        columnCount: 19,
+        columnCount: 20,
         firstColumnName: "id"
     },
     {
         inputFileName: "eventstagemission",
         outputFileName: "event_stages.csv",
-        columnCount: 44,
+        columnCount: 47,
         firstColumnName: "index",
     },
     {
@@ -152,6 +152,7 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 stamina: (record => parseInt(record['membercard_idea_basic'])),
                 wisdom: (record => parseInt(record['membercard_design_basic'])),
             });
+            
             const rewardToItemDatabase: Dictionary<RewardToItemMapping> = convertToObject("droplist.csv", {
                 id: (record =>  record['index']),
                 rewardId: (record =>  record['box_id']),
