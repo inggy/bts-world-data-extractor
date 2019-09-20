@@ -29,7 +29,8 @@ buildGameDatabase().then((gameDatabase) => {
             missionDetails.empathy,
             missionDetails.passion,
             missionDetails.stamina,
-            missionDetails.wisdom
+            missionDetails.wisdom,
+            missionDetails.cardRestrictions
         ];
     }));
 
@@ -44,7 +45,8 @@ buildGameDatabase().then((gameDatabase) => {
             mission.empathy,
             mission.passion,
             mission.stamina,
-            mission.wisdom
+            mission.wisdom,
+            mission.cardRestrictions
         ];
     }));
     
@@ -61,7 +63,8 @@ buildGameDatabase().then((gameDatabase) => {
             missionDetails.empathy,
             missionDetails.passion,
             missionDetails.stamina,
-            missionDetails.wisdom
+            missionDetails.wisdom,
+            missionDetails.cardRestrictions
         ];
     }));
 
@@ -130,8 +133,7 @@ buildGameDatabase().then((gameDatabase) => {
             missionDetails.goldMin,
             missionDetails.goldMax,
             ...convertRewardIdToFlowerCounts(missionDetails.drop1),
-            ...convertToAgencyItem(missionDetails.drop2),
-            
+            ...convertToAgencyItem(missionDetails.drop2),           
         ];
     }));
 

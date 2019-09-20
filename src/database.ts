@@ -10,7 +10,8 @@ import {
     Card,
     RewardToItemMapping,
     Item,
-    EventMission
+    EventMission,
+    CardRestriction
 } from "./model/model";
 import { convertGameDataFile } from "./GameFiles/GameFileCSVConverter";
 import { convertToObject } from "./GameFiles/GameCSVToObjectConverter";
@@ -91,6 +92,29 @@ export function buildGameDatabase(): Promise<GameDatabase> {
             });
 
             const memeberCardColumns = ["concept_card1","concept_card2","concept_card3","concept_card4","concept_card5","concept_card6","concept_card7"];
+            
+            function calculateCardRestrictions(record: Dictionary<any>): CardRestriction[] {
+                const result: any[] = [];
+                memeberCardColumns.forEach(columnName => {
+                    const cardFilter = parseInt(record[columnName]);
+                    let member = 'ALL';
+                    let trait = 'ALL'
+                    if (cardFilter > 0) {
+                        if (cardFilter <= 8) {
+                            member = memberMapping[cardFilter]
+                        } else {
+                            member = memberMapping[Math.floor(cardFilter / 100)];
+                            trait = statMapping[cardFilter % 100];
+                        }
+                        result.push({
+                            m: member,
+                            t: trait
+                        });
+                    }
+                })
+                return result;
+            }
+
             const missionConversionConfig: ObjectConverterDefinition = {
                 id: (record =>  record['index']),
                 empathy: (record =>  parseInt(record['concept_para1']) / 100),
@@ -111,6 +135,7 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 goldMax: (record => parseInt(record['reward_gold_max'])),
                 drop1: (record => record['droptabl_index_1']),
                 drop2: (record => record['droptabl_index_2']),
+                cardRestrictions: (record => calculateCardRestrictions(record))
             };
 
             const mainMissionDatabase: Dictionary<Mission> = convertToObject("main_mission_details.csv", missionConversionConfig);
@@ -139,6 +164,16 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 goldMax: (record => 0),
                 drop1: (record => 0),
                 drop2: (record => 0),
+                cardRestrictions: (record => {
+                    const result: CardRestriction[] = [];
+                    for(let i = 0; i < parseInt(record['cardslotcount']); i++) {
+                        result.push({
+                            m: 'ALL',
+                            t: 'ALL'
+                        })
+                    }
+                    return result;
+                }),
             });
 
             const cardDatabase: Dictionary<Card> = convertToObject("cards_raw.csv", {

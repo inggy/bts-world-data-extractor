@@ -13,7 +13,7 @@ export interface Indexable extends Dictionary<any> {
     id: string;
 }
 
-export type ObjectConverterDefinition = Dictionary<(record: Dictionary<any>) => number | string | boolean>;
+export type ObjectConverterDefinition = Dictionary<(record: Dictionary<any>) => number | string | boolean | Array<any>>;
 export type ObjectConverterFilter = (record: Dictionary<any>) => boolean;
 
 export interface Stage extends Indexable {
@@ -34,6 +34,11 @@ export interface Item extends Indexable {
     name: string; // name_id
 }
 
+export interface CardRestriction {
+    m: string;
+    t: string;
+}
+
 export interface Mission extends Indexable {
     empathy: number; // 3 concept_para1
     passion: number; // 5 concept_para2
@@ -49,6 +54,7 @@ export interface Mission extends Indexable {
     goldMax: number; // reward_gold_max,
     drop1: string; // droptabl_index_1,
     drop2: string; // droptabl_index_2
+    cardRestrictions: CardRestriction[];
 }
 
 export type EventMission = Mission & Stage;
@@ -111,6 +117,7 @@ export const statMapping: Dictionary<string> = {
     "2": "passion",
     "3": "stamina",
     "4": "wisdom",
+    "0": "ALL"
 }
 
 export const agencyItemMemberNameToCanonicalName: Dictionary<string> = {
