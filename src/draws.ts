@@ -80,8 +80,8 @@ const gemPromise = fetchBlogContent(gemDrawUrl).then(htmlContent => {
 
 const loyaltyBoxPromise = fetchBlogContent(loyaltyBoxUrl).then(htmlContent => {
     return {
-        blue: [...extractCardTitles(htmlContent, 0, 4)],
-        yellow: [...extractCardTitles(htmlContent, 1, 5), ...extractCardTitles(htmlContent, 2, 4)], 
+        blue: [...extractCardTitles(htmlContent, 1, 5), ...extractCardTitles(htmlContent, 2, 4)],
+        yellow: [...extractCardTitles(htmlContent, 0, 4)], 
     }
 });
 
