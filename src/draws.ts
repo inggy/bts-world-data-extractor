@@ -53,7 +53,7 @@ function extractCardTitles(content: string, tableIndex: number, cardLevel: numbe
         }
     });
 
-    return results;
+    return results.sort();
 }
 
 
