@@ -19,7 +19,7 @@
     "build": "tsc -p .",
     "clean": "rm output/*.csv && rm output/tmp/*.*",
     "start": "npm run-script build && node lib/index.js",
-    "dialog": "npm run-script build && node lib/dialog.js",
+    "mobile": "npm run-script build && node lib/dialog.js",
     "draws": "npm run-script build && node lib/draws.js"
   },
   "author": "Ingrid Ho",

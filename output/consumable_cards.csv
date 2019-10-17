@@ -341,3 +341,10 @@ card_4star_rm_013,RM,4,Charisma,empathy,1920,149,1056,155
 card_4star_jimin_013,Jimin,4,Bodyguard,passion,160,1862,176,893
 card_4star_v_013,V,4,One Wish,wisdom,893,176,155,1920
 card_4star_jungkook_013,Jungkook,4,Red Sun,stamina,179,160,1862,1056
+card_5star_jin_015,Jin,5,Brave Jin,stamina,108,105,1861,1574
+card_5star_suga_015,Suga,5,Brave SUGA,empathy,1861,1574,108,105
+card_5star_jhope_015,J-Hope,5,Brave j-hope,passion,105,1861,1574,108
+card_5star_rm_015,RM,5,Brave RM,empathy,1861,105,1656,134
+card_5star_jimin_015,Jimin,5,Brave Jimin,wisdom,134,1656,105,1861
+card_5star_v_015,V,5,Brave V,empathy,1861,105,1656,134
+card_5star_jungkook_015,Jungkook,5,Brave Jung Kook,passion,1540,1861,105,144

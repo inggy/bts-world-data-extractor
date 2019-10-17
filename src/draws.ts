@@ -13,9 +13,24 @@ const loyaltyBoxUrl = "http://forum.netmarble.com/api/game/btsw/official/forum/b
 // http://forum.netmarble.com/btsworld/view/36/21
 const goldDrawUrl = "http://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/21?menuSeq=36&viewFlag=false&_=1567747014594";
 
-const purple = ["card_5star_rm_003","card_5star_rm_009","card_5star_jin_002","card_5star_jin_009","card_5star_suga_003",
-"card_5star_suga_009","card_5star_jhope_004","card_5star_jhope_009","card_5star_jimin_004","card_5star_jimin_009",
-"card_5star_v_003","card_5star_v_009","card_5star_jungkook_002","card_5star_jungkook_009"];
+// https://forum.netmarble.com/btsworld/view/36/1093967
+const memberDrawTicketUrl = "https://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/1093967?menuSeq=36&viewFlag=false&_=1571291201265";
+
+const purple = [
+    "card_5star_rm_007",
+    "card_5star_rm_011",
+    "card_5star_jin_007",
+    "card_5star_jin_011",
+    "card_5star_suga_007",
+    "card_5star_suga_011",
+    "card_5star_jhope_007",
+    "card_5star_jhope_011",
+    "card_5star_jimin_007",
+    "card_5star_jimin_011",
+    "card_5star_v_007",
+    "card_5star_v_011",
+    "card_5star_jungkook_007",
+    "card_5star_jungkook_011"];
 
 const records = parse(fs.readFileSync(`./output/consumable_cards.csv`, 'utf-8'), {
     columns: false,
@@ -94,13 +109,33 @@ const goldDrawPromise = fetchBlogContent(goldDrawUrl).then(htmlContent => {
 
 });
 
+const memberDrawTicketPromise = fetchBlogContent(memberDrawTicketUrl).then(htmlContent => {
+    return [
+        ...extractCardTitles(htmlContent, 0, 5),
+        ...extractCardTitles(htmlContent, 1, 4),
+        ...extractCardTitles(htmlContent, 2, 5),
+        ...extractCardTitles(htmlContent, 3, 4),
+        ...extractCardTitles(htmlContent, 4, 5),
+        ...extractCardTitles(htmlContent, 5, 4),
+        ...extractCardTitles(htmlContent, 6, 5),
+        ...extractCardTitles(htmlContent, 7, 4),
+        ...extractCardTitles(htmlContent, 8, 5),
+        ...extractCardTitles(htmlContent, 9, 4),
+        ...extractCardTitles(htmlContent, 10, 5),
+        ...extractCardTitles(htmlContent, 11, 4),
+        ...extractCardTitles(htmlContent, 12, 5),
+        ...extractCardTitles(htmlContent, 13, 4),
+    ];
+})
 
-Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise]).then(results => {
+
+Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPromise]).then(results => {
     const combinedResults:Dictionary<string[]> = {
         purple,
         ...results[0],
         gem: results[1],
         gold: results[2],
+        memberDraw: results[3]
     };
 
     Object.keys(combinedResults).forEach(key => console.log(key, combinedResults[key].length));
