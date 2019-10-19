@@ -35,8 +35,18 @@ export interface Item extends Indexable {
 }
 
 export interface CardRestriction {
-    m: string;
-    t: string;
+    member: string;
+    trait: string;
+}
+
+export interface CardBonus {
+    hashtagId: string;
+    multiplier: number;
+}
+
+export interface HashTagCard extends Indexable {
+    hashtagStringId: string;
+    cardId: string;
 }
 
 export interface Mission extends Indexable {
@@ -44,8 +54,6 @@ export interface Mission extends Indexable {
     passion: number; // 5 concept_para2
     stamina: number; // 7 concept_para3
     wisdom: number; // 9 concept_para4
-    numCards: number; // 11-17 concept_card[1-7]
-    allowableMember: string; //11-17
     targetScore1: number; // 19 mission_score_1
     targetScore2: number; // 20 mission_score_2
     targetScore3: number; // 31 mission_score_3
@@ -55,6 +63,7 @@ export interface Mission extends Indexable {
     drop1: string; // droptabl_index_1,
     drop2: string; // droptabl_index_2
     cardRestrictions: CardRestriction[];
+    cardBonuses: CardBonus[];
 }
 
 export type EventMission = Mission & Stage;
@@ -91,7 +100,8 @@ export interface GameDatabase {
     cardDatabase: Dictionary<Card>,
     eventMissionDatabase: Dictionary<EventMission>
     rewardToItemDatabase: Dictionary<RewardToItemMapping>,
-    itemDatabase: Dictionary<Item>
+    itemDatabase: Dictionary<Item>,
+    hashtagDatabase: Dictionary<HashTagCard>
 }
 
 

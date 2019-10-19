@@ -1,5 +1,4 @@
-import { Dictionary, Stage, Mission, ObjectConverterDefinition, memberMapping, agencyItemMemberNameToCanonicalName } from "./model/model";
-import { convertToObject } from "./GameFiles/GameCSVToObjectConverter";
+import { agencyItemMemberNameToCanonicalName, CardRestriction, CardBonus } from "./model/model";
 import { writeDataToCSV } from "./GameFiles/CSVFileWriter";
 import { buildGameDatabase } from "./database";
 import { CardNameTranslation } from "./GameFiles/CardNameTranslation";
@@ -14,8 +13,21 @@ buildGameDatabase().then((gameDatabase) => {
         rewardToItemDatabase,
         itemDatabase,
         eventMissionDatabase,
+        hashtagDatabase,
     } = gameDatabase;
 
+
+    function encodeRestrictions(cardRestrictions: CardRestriction[]): string {
+        return cardRestrictions.map(cr => {
+            return `${cr.member},${cr.trait}`;
+        }).join("|");
+    }
+
+    function encodeCardBonuses(cardBonuses: CardBonus[]): string {
+        return cardBonuses.map(cb => {
+            return `${cb.hashtagId},${cb.multiplier}`
+        }).join("|");
+    }
 
     writeDataToCSV("consumable_main_stage.csv", Object.values(mainStageDatabase).filter(stage => stage.isMission).map((stage) => {
         const missionDetails = mainMissionDatabase[stage.missionDetailId];
@@ -25,14 +37,26 @@ buildGameDatabase().then((gameDatabase) => {
             missionDetails.targetScore1,
             missionDetails.targetScore2,
             missionDetails.targetScore3,
-            missionDetails.numCards,
             missionDetails.empathy,
             missionDetails.passion,
             missionDetails.stamina,
             missionDetails.wisdom,
-            missionDetails.cardRestrictions
+            encodeRestrictions(missionDetails.cardRestrictions),
+            encodeCardBonuses(missionDetails.cardBonuses)
         ];
-    }));
+    }), [
+        "chapter",
+        "mission",
+        "targetScore1",
+        "targetScore2",
+        "targetScore3",
+        "empathy",
+        "passion",
+        "stamina",
+        "wisdom",
+        "cardRestrictions",
+        "cardBonuses"
+    ],);
 
     writeDataToCSV("summer_19_event_stage.csv", Object.values(eventMissionDatabase).filter(stage => stage.isMission).map((mission) => {
         return [
@@ -41,32 +65,55 @@ buildGameDatabase().then((gameDatabase) => {
             mission.targetScore1,
             mission.targetScore2,
             mission.targetScore3,
-            mission.numCards,
             mission.empathy,
             mission.passion,
             mission.stamina,
             mission.wisdom,
-            mission.cardRestrictions
+            encodeRestrictions(mission.cardRestrictions),
+            encodeCardBonuses(mission.cardBonuses),
         ];
-    }));
+    }), [
+        "chapter",
+        "mission",
+        "targetScore1",
+        "targetScore2",
+        "targetScore3",
+        "empathy",
+        "passion",
+        "stamina",
+        "wisdom",
+        "cardRestrictions",
+        "cardBonuses",
+    ]);
     
     writeDataToCSV("consumable_another_stages.csv", Object.values(anotherStageDatabase).filter(stage => stage.isMission).map((stage) => {
         const missionDetails = anotherMissionDatabase[stage.missionDetailId];
         return [
-            missionDetails.allowableMember,
             stage.chapterNumber,
             stage.stageNumber,
             missionDetails.targetScore1,
             missionDetails.targetScore2,
             missionDetails.targetScore3,
-            missionDetails.numCards,
             missionDetails.empathy,
             missionDetails.passion,
             missionDetails.stamina,
             missionDetails.wisdom,
-            missionDetails.cardRestrictions
+            encodeRestrictions(missionDetails.cardRestrictions),
+            encodeCardBonuses(missionDetails.cardBonuses),
         ];
-    }));
+    }), [
+        "chapter",
+        "mission",
+        "targetScore1",
+        "targetScore2",
+        "targetScore3",
+        "empathy",
+        "passion",
+        "stamina",
+        "wisdom",
+        "cardRestrictions",
+        "cardBonuses"
+    ]);
 
     function convertRewardIdToFlowerCounts(rewardId: string): number[] {
         const countMax = [0, 0, 0];
@@ -135,7 +182,22 @@ buildGameDatabase().then((gameDatabase) => {
             ...convertRewardIdToFlowerCounts(missionDetails.drop1),
             ...convertToAgencyItem(missionDetails.drop2),           
         ];
-    }));
+    }), [
+        "chapter",
+        "mission",
+        "wings",
+        "exp",
+        "goldMin",
+        "goldMax",
+        "flower1Min",
+        "flower1Max",
+        "flower2Min",
+        "flower2Max",
+        "flower3Min",
+        "flower3Max",
+        "agencyItemMember",
+        "agencyItemLevel"
+    ]);
 
     function convertToCraftableCardId(rewardId: string): (string | number)[] {
         const rewardItems = Object.values(rewardToItemDatabase)
@@ -156,16 +218,25 @@ buildGameDatabase().then((gameDatabase) => {
             throw "Unexpected second reward exists in an another stage mission";
         }
         return [
-            missionDetails.allowableMember,
             stage.chapterNumber,
             stage.stageNumber,
             stage.wings,
             missionDetails.exp,
             missionDetails.goldMin,
             missionDetails.goldMax,
+            missionDetails.cardRestrictions[0].member,
             ...convertToCraftableCardId(missionDetails.drop1),
         ];
-    }));
+    }), [
+        "chapter",
+        "mission",
+        "wings",
+        "exp",
+        "goldMin",
+        "goldMax",
+        "member",
+        "craftableCardId"
+    ]);
 
     const cardNameTranslation = CardNameTranslation();
 
@@ -183,5 +254,15 @@ buildGameDatabase().then((gameDatabase) => {
             card.stamina,
             card.wisdom
         ];
-}));
+    }), [
+        "id",
+        "member",
+        "stars",
+        "name",
+        "primaryStat",
+        "empathy",
+        "passion",
+        "stamina",
+        "wisdom"
+    ]);
 });

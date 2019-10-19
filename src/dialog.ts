@@ -174,7 +174,20 @@ function processDatabase(
     Object.values(interactionGrouped).forEach(conversation => processConversation(conversation)
         .forEach(tempDialog => rows.push(convertTempDialogToResultsRow(tempDialog, stringDb))));
 
-    writeDataToCSV(outFileName, rows);
+    writeDataToCSV(outFileName, rows, [
+        "id",
+        "member",
+        "contextStrings",
+        "affinity1",
+        "dialogKey1",
+        "affinity2",
+        "dialogKey2",
+        "affinity3",
+        "dialogKey3",
+        "dialogString1",
+        "dialogString2",
+        "dialogString3",
+    ]);
 }
 
 const mobileStrings = processStringFile();

@@ -1,3 +1,4 @@
+id,contextDialog,affinity1,dialogKey1,affinity2,dialogKey2,affinity3,dialogKey3,dialogString1,dialogString2,dialogString3
 11010505-2,Jin,"[""Manager... Are you busy?""]",80,SMS_M_Jin_36_02_01,104,SMS_M_Jin_36_03_01,0,0,Nope nope not at all!,&A little but it's okay. What's up?,
 11010505-10,Jin,"[""Manager... Are you busy?"","")Wait... This sounds a lot like a goodbye?""]",104,SMS_M_Jin_36_05_01,80,SMS_M_Jin_36_06_01,0,0,I don't understand?,This is so sudden!,
 11010818-3,Jin,"[""Manager are you sleeping?"",""IThinking about flying back to Korea tomorrow makes it hard to fall asleep""]",208,SMS_M_Jin_74_02_01,160,SMS_M_Jin_74_03_01,0,0,I can't sleep either,I'm sleeping,

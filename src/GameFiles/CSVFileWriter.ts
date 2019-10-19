@@ -1,7 +1,10 @@
 import fs from 'fs';
 import stringify from 'csv-stringify';
 
-export const writeDataToCSV = (outputFileName: string, data: any[][]): Promise<void> => {
+export const writeDataToCSV = (outputFileName: string, data: any[][], headers?: string[]): Promise<void> => {
+    if (headers) {
+        data.unshift(headers);
+    }
     return new Promise((resolve, reject) => {
         stringify(data, (err: any, records: any) => {
             if (err) reject();
@@ -16,5 +19,4 @@ export const writeDataToCSV = (outputFileName: string, data: any[][]): Promise<v
             });
         });
     });
-    
 }

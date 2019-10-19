@@ -11,7 +11,9 @@ import {
     RewardToItemMapping,
     Item,
     EventMission,
-    CardRestriction
+    CardRestriction,
+    CardBonus,
+    HashTagCard
 } from "./model/model";
 import { convertGameDataFile } from "./GameFiles/GameFileCSVConverter";
 import { convertToObject } from "./GameFiles/GameCSVToObjectConverter";
@@ -64,7 +66,14 @@ const fileConfigs: GameFileConversionConfig[] = [
         outputFileName: "cards_raw.csv",
         columnCount: 61,
         firstColumnName: "index",
-    }
+    },
+
+    {
+        inputFileName: "hashtag",
+        outputFileName: "event_hashtag.csv",
+        columnCount: 6,
+        firstColumnName: "index",
+    },    
 ];
 
 export function buildGameDatabase(): Promise<GameDatabase> {
@@ -94,7 +103,7 @@ export function buildGameDatabase(): Promise<GameDatabase> {
             const memeberCardColumns = ["concept_card1","concept_card2","concept_card3","concept_card4","concept_card5","concept_card6","concept_card7"];
             
             function calculateCardRestrictions(record: Dictionary<any>): CardRestriction[] {
-                const result: any[] = [];
+                const result: CardRestriction[] = [];
                 memeberCardColumns.forEach(columnName => {
                     const cardFilter = parseInt(record[columnName]);
                     let member = 'ALL';
@@ -107,8 +116,8 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                             trait = statMapping[cardFilter % 100];
                         }
                         result.push({
-                            m: member,
-                            t: trait
+                            member,
+                            trait
                         });
                     }
                 })
@@ -124,18 +133,13 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 targetScore1: (record =>  parseInt(record['mission_score1'])),
                 targetScore2: (record =>  parseInt(record['mission_score2'])),
                 targetScore3: (record =>  parseInt(record['mission_score3'])),
-                numCards: (record =>  {
-                    return memeberCardColumns
-                        .filter((columnName) => parseInt(record[columnName]) > 0)
-                        .length;
-                }),
-                allowableMember: (record => memberMapping[record[memeberCardColumns[0]]]),
+                cardRestrictions: (record => calculateCardRestrictions(record)),
+                cardBonuses: (record => []),
                 exp: (record => parseInt(record['concept_accountexp'])),
                 goldMin: (record => parseInt(record['reward_gold_min'])),
                 goldMax: (record => parseInt(record['reward_gold_max'])),
                 drop1: (record => record['droptabl_index_1']),
-                drop2: (record => record['droptabl_index_2']),
-                cardRestrictions: (record => calculateCardRestrictions(record))
+                drop2: (record => record['droptabl_index_2'])
             };
 
             const mainMissionDatabase: Dictionary<Mission> = convertToObject("main_mission_details.csv", missionConversionConfig);
@@ -158,7 +162,6 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 targetScore2: (record =>  parseInt(record['clearscore2'])),
                 targetScore3: (record =>  parseInt(record['clearscore3'])),
                 numCards: (record =>  parseInt(record['cardslotcount'])),
-                allowableMember: (record => memberMapping["8"]),
                 exp: (record => 0),
                 goldMin: (record => 0),
                 goldMax: (record => 0),
@@ -168,12 +171,34 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                     const result: CardRestriction[] = [];
                     for(let i = 0; i < parseInt(record['cardslotcount']); i++) {
                         result.push({
-                            m: 'ALL',
-                            t: 'ALL'
+                            member: 'ALL',
+                            trait: 'ALL'
                         })
                     }
                     return result;
                 }),
+                cardBonuses: (record => {
+                    const result: CardBonus[] = [];
+                    if (record['hashtaggroupid1'] !== "0") {
+                        result.push({
+                            hashtagId: record['hashtaggroupid1'],
+                            multiplier: Math.floor(parseInt(record['hashtagbonuspara1']) / 100)
+                        });
+                    }
+                    if (record['hashtaggroupid2'] !== "0") {
+                        result.push({
+                            hashtagId: record['hashtaggroupid2'],
+                            multiplier: Math.floor(parseInt(record['hashtagbonuspara2']) / 100)
+                        });
+                    }
+                    if (record['hashtaggroupid3'] !== "0") {
+                        result.push({
+                            hashtagId: record['hashtaggroupid3'],
+                            multiplier: Math.floor(parseInt(record['hashtagbonuspara3']) / 100)
+                        });
+                    }
+                    return result;
+                })
             });
 
             const cardDatabase: Dictionary<Card> = convertToObject("cards_raw.csv", {
@@ -200,7 +225,11 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 name: (record =>  record['name_id']),
             });
 
-            
+            const hashtagDatabase: Dictionary<HashTagCard> = convertToObject("event_hashtag.csv", {
+                id: (record => record['id']),
+                hashtagStringId: (record => record['hashtagtitle']),
+                cardId: (record => record['typeinfoid'])
+            });
 
             resolve({
                 mainMissionDatabase,
@@ -208,6 +237,7 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 mainStageDatabase,
                 anotherStageDatabase,
                 eventMissionDatabase,
+                hashtagDatabase,
                 cardDatabase,
                 rewardToItemDatabase,
                 itemDatabase,
