@@ -285,7 +285,7 @@ buildGameDatabase().then((gameDatabase) => {
                                     });
 
     
-    writeDataToCSV("event_hastags.csv", Object.entries(_.groupBy(eventHashTagRows,
+    writeDataToCSV("event_hashtags.csv", Object.entries(_.groupBy(eventHashTagRows,
             'hashtagId'))
             .map(([hashtagId, hashtagCards]) => {
         
