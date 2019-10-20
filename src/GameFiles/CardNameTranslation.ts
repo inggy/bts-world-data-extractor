@@ -45,11 +45,11 @@ function processStringFile():string {
     return outText;
 }
 
-export function CardNameTranslation(): { getName: {(card: Card): string }} {
+export function CardNameTranslation(): { getName(card: Card): string; getHashtag(stringId: string): string} {
     const corpus = processStringFile();
     return {
         getName: ((card: Card) => {
-            const template = `${card.id}[\\d]*/Card${card.stars}★([^/]+)`;
+            const template = `${card.name}[\\d]*/Card${card.stars}★([^/]+)`;
         
             const regex1 = new RegExp(template,'igm');
         
@@ -60,6 +60,20 @@ export function CardNameTranslation(): { getName: {(card: Card): string }} {
             } else {
                 return "NO_MATCH";
             }
-        })        
+        }),
+        getHashtag: (stringId: string) => {
+
+            const template = `${stringId}[^\\/]*(.+?)(?=<\\/color>)`;
+            const regex1 = new RegExp(template,'igm');
+            const regexResult = regex1.exec(corpus);
+            if (regexResult ) {
+                const fullMatch = regexResult[1]
+                return fullMatch.substring(fullMatch.lastIndexOf("#"));
+            } else {
+                return "NO_MATCH";
+            }
+            return "";
+        }
     };
 }
+

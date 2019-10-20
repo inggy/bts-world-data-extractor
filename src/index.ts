@@ -1,7 +1,16 @@
-import { agencyItemMemberNameToCanonicalName, CardRestriction, CardBonus } from "./model/model";
+import { agencyItemMemberNameToCanonicalName, CardRestriction, CardBonus, HashTagCard } from "./model/model";
 import { writeDataToCSV } from "./GameFiles/CSVFileWriter";
 import { buildGameDatabase } from "./database";
 import { CardNameTranslation } from "./GameFiles/CardNameTranslation";
+import groupBy from 'lodash/groupBy';
+import flatMap from 'lodash/flatMap';
+import uniq from 'lodash/uniq';
+
+const _ = {
+    groupBy,
+    flatMap,
+    uniq,
+}
 
 buildGameDatabase().then((gameDatabase) => {
     const {
@@ -244,7 +253,7 @@ buildGameDatabase().then((gameDatabase) => {
         .filter((card) => card.name.indexOf("_max") < 0)
         .map((card) => {
         return [
-            card.id,
+            card.name,
             card.member,
             card.stars,
             cardNameTranslation.getName(card),
@@ -265,4 +274,31 @@ buildGameDatabase().then((gameDatabase) => {
         "stamina",
         "wisdom"
     ]);
+    
+    const eventHashTags: string[] = _.uniq(_.flatMap(Object.values(eventMissionDatabase), (eventMission) => {
+        return eventMission.cardBonuses.map(cb => cb.hashtagId);
+    }));
+
+    const eventHashTagRows = Object.values(hashtagDatabase)
+                                    .filter(ht => {
+                                        return eventHashTags.indexOf(ht.hashtagId) > -1;
+                                    });
+
+    
+    writeDataToCSV("event_hastags.csv", Object.entries(_.groupBy(eventHashTagRows,
+            'hashtagId'))
+            .map(([hashtagId, hashtagCards]) => {
+        
+                const hastagStringId = hashtagCards[0].hashtagStringId;
+                return [
+                    hashtagId,
+                    cardNameTranslation.getHashtag(hastagStringId),
+                    hashtagCards.map(hashtagCard => hashtagCard.cardId)
+                                .sort()
+                                .map(cardId => cardDatabase[cardId])
+                                .filter(card => card.name.indexOf("_max") === -1)
+                                .map(card => card.name)
+                ];
+    }), ["hashtagId", "hashtagName", "cards"]);
+
 });

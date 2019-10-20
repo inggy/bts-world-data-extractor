@@ -202,7 +202,7 @@ export function buildGameDatabase(): Promise<GameDatabase> {
             });
 
             const cardDatabase: Dictionary<Card> = convertToObject("cards_raw.csv", {
-                id: (record =>  record['membercard_name'].toLowerCase()),
+                id: (record =>  record['index']),
                 name: (record =>  record['membercard_name'].toLowerCase()),
                 member: (record =>  memberMapping[record['membercard_member']]),
                 primaryStat: (record =>  statMapping[record['membercard_temper']]),
@@ -226,7 +226,8 @@ export function buildGameDatabase(): Promise<GameDatabase> {
             });
 
             const hashtagDatabase: Dictionary<HashTagCard> = convertToObject("event_hashtag.csv", {
-                id: (record => record['id']),
+                id: (record => record['index']),
+                hashtagId: (record => record['groupid']),
                 hashtagStringId: (record => record['hashtagtitle']),
                 cardId: (record => record['typeinfoid'])
             });

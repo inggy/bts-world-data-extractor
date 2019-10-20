@@ -5,10 +5,12 @@
   "main": "index.js",
   "dependencies": {
     "@types/cheerio": "^0.22.13",
+    "@types/lodash": "^4.14.144",
     "@types/node-fetch": "^2.5.0",
     "cheerio": "^1.0.0-rc.3",
     "csv-parse": "^4.4.3",
     "csv-stringify": "^5.3.0",
+    "lodash": "^4.17.15",
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {

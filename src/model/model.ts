@@ -45,6 +45,7 @@ export interface CardBonus {
 }
 
 export interface HashTagCard extends Indexable {
+    hashtagId: string;
     hashtagStringId: string;
     cardId: string;
 }
