@@ -48,6 +48,7 @@ card_5star_jin_010,Jin,5,Red Carpet Jin,wisdom,1080,198,167,2095
 card_5star_jin_011,Jin,5,Boy of Summer Jin,stamina,1080,670,1584,349
 card_5star_jin_012,Jin,5,Boy In Luv Jin,stamina,171,1296,2484,180
 card_5star_jin_013,Jin,5,Straight Through the Heart,wisdom,134,1656,105,1861
+card_5star_jin_014,Jin,5,DOPE Jin,passion,670,2772,349,360
 card_5star_jin_015,Jin,5,Brave Jin,stamina,108,105,1861,1574
 card_1star_suga_003,Suga,1,Hello,wisdom,400,372,582,660
 card_1star_suga_004,Suga,1,I'm Tired,stamina,500,485,550,465
@@ -98,6 +99,7 @@ card_5star_suga_010,Suga,5,Red Carpet SUGA,wisdom,198,1048,180,2009
 card_5star_suga_011,Suga,5,Boy of Summer SUGA,empathy,1584,1048,720,335
 card_5star_suga_012,Suga,5,Boy In Luv SUGA,empathy,2376,175,180,1339
 card_5star_suga_013,Suga,5,I'm Gonna Win,passion,105,1861,1574,108
+card_5star_suga_014,Suga,5,DOPE SUGA,stamina,360,349,2772,670
 card_5star_suga_015,Suga,5,Brave SUGA,empathy,1861,1574,108,105
 card_1star_jhope_003,J-Hope,1,This and That,passion,465,550,485,500
 card_1star_jhope_004,J-Hope,1,Aha,stamina,600,372,660,388
@@ -148,6 +150,7 @@ card_5star_jhope_010,J-Hope,5,Red Carpet j-hope,wisdom,175,180,1004,2376
 card_5star_jhope_011,J-Hope,5,Boy of Summer j-hope,wisdom,1004,720,349,1584
 card_5star_jhope_012,J-Hope,5,Boy In Luv j-hope,wisdom,1397,180,167,2376
 card_5star_jhope_013,J-Hope,5,A Moment to Ponder,empathy,1861,1574,108,105
+card_5star_jhope_014,J-Hope,5,DOPE j-hope,wisdom,698,360,335,2772
 card_5star_jhope_015,J-Hope,5,Brave j-hope,passion,105,1861,1574,108
 card_1star_rm_003,RM,1,I'm Angry,stamina,500,485,550,465
 card_1star_rm_004,RM,1,Love It,passion,372,660,581,400
@@ -198,6 +201,7 @@ card_5star_rm_010,RM,5,Red Carpet RM,wisdom,1188,175,180,2009
 card_5star_rm_011,RM,5,Boy of Summer RM,passion,1004,1584,698,360
 card_5star_rm_012,RM,5,Boy In Luv RM,passion,180,2376,1397,167
 card_5star_rm_013,RM,5,Pretty Good,stamina,108,100,1861,1641
+card_5star_rm_014,RM,5,DOPE RM,empathy,2772,698,360,335
 card_5star_rm_015,RM,5,Brave RM,empathy,1861,105,1656,134
 card_1star_jimin_003,Jimin,1,Thumbs Up,wisdom,465,500,485,550
 card_1star_jimin_004,Jimin,1,Nervous,empathy,660,582,400,372
