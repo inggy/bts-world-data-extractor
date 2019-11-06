@@ -252,6 +252,7 @@ card_5star_jimin_010,Jimin,5,Red Carpet Jimin,wisdom,175,1188,167,2160
 card_5star_jimin_011,Jimin,5,Boy of Summer Jimin,stamina,1080,335,1584,698
 card_5star_jimin_012,Jimin,5,Boy In Luv Jimin,passion,1397,2376,167,180
 card_5star_jimin_013,Jimin,5,"Ready, Action",empathy,1861,105,1656,134
+card_5star_jimin_014,Jimin,5,DOPE Jimin,stamina,360,335,2772,698
 card_5star_jimin_015,Jimin,5,Brave Jimin,wisdom,134,1656,105,1861
 card_1star_v_003,V,1,Confused,stamina,400,558,660,388
 card_1star_v_004,V,1,Racing Heart,stamina,500,485,550,465
@@ -302,6 +303,7 @@ card_5star_v_010,V,5,Red Carpet V,wisdom,167,198,1048,2160
 card_5star_v_011,V,5,Boy of Summer V,wisdom,1004,360,698,1584
 card_5star_v_012,V,5,Boy In Luv V,empathy,2376,175,1440,167
 card_5star_v_013,V,5,Curiosity Satisfied,passion,1540,1861,105,144
+card_5star_v_014,V,5,DOPE V,wisdom,670,360,349,2772
 card_5star_v_015,V,5,Brave V,empathy,1861,105,1656,134
 card_1star_jungkook_003,Jungkook,1,Jeon Mayfly,wisdom,485,500,465,550
 card_1star_jungkook_004,Jungkook,1,All Eyes on Me,stamina,600,388,660,372
@@ -352,4 +354,5 @@ card_5star_jungkook_010,Jungkook,5,Red Carpet Jung Kook,wisdom,1188,167,180,2095
 card_5star_jungkook_011,Jungkook,5,Boy of Summer Jung Kook,passion,1004,1584,349,720
 card_5star_jungkook_012,Jungkook,5,Boy In Luv Jung Kook,stamina,180,167,2376,1397
 card_5star_jungkook_013,Jungkook,5,Sunshine Boy,wisdom,1574,108,105,1861
+card_5star_jungkook_014,Jungkook,5,DOPE Jung Kook,stamina,360,349,2772,670
 card_5star_jungkook_015,Jungkook,5,Brave Jung Kook,passion,1540,1861,105,144
