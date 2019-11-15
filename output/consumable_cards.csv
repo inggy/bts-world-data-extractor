@@ -50,6 +50,7 @@ card_5star_jin_012,Jin,5,Boy In Luv Jin,stamina,171,1296,2484,180
 card_5star_jin_013,Jin,5,Straight Through the Heart,wisdom,134,1656,105,1861
 card_5star_jin_014,Jin,5,DOPE Jin,passion,670,2772,349,360
 card_5star_jin_015,Jin,5,Brave Jin,stamina,108,105,1861,1574
+card_5star_jin_017,Jin,5,Autumn Snap Jin,empathy,2376,314,1080,33
 card_1star_suga_003,Suga,1,Hello,wisdom,400,372,582,660
 card_1star_suga_004,Suga,1,I'm Tired,stamina,500,485,550,465
 card_1star_suga_005,Suga,1,Leave It to Me,passion,600,660,372,388
@@ -101,6 +102,7 @@ card_5star_suga_012,Suga,5,Boy In Luv SUGA,empathy,2376,175,180,1339
 card_5star_suga_013,Suga,5,I'm Gonna Win,passion,105,1861,1574,108
 card_5star_suga_014,Suga,5,DOPE SUGA,stamina,360,349,2772,670
 card_5star_suga_015,Suga,5,Brave SUGA,empathy,1861,1574,108,105
+card_5star_suga_017,Suga,5,Autumn Snap SUGA,wisdom,307,43,1004,2376
 card_1star_jhope_003,J-Hope,1,This and That,passion,465,550,485,500
 card_1star_jhope_004,J-Hope,1,Aha,stamina,600,372,660,388
 card_1star_jhope_005,J-Hope,1,So at Ease,stamina,400,582,660,372
@@ -152,6 +154,7 @@ card_5star_jhope_012,J-Hope,5,Boy In Luv j-hope,wisdom,1397,180,167,2376
 card_5star_jhope_013,J-Hope,5,A Moment to Ponder,empathy,1861,1574,108,105
 card_5star_jhope_014,J-Hope,5,DOPE j-hope,wisdom,698,360,335,2772
 card_5star_jhope_015,J-Hope,5,Brave j-hope,passion,105,1861,1574,108
+card_5star_jhope_017,J-Hope,5,Autumn Snap j-hope,wisdom,1048,324,33,2376
 card_1star_rm_003,RM,1,I'm Angry,stamina,500,485,550,465
 card_1star_rm_004,RM,1,Love It,passion,372,660,581,400
 card_1star_rm_005,RM,1,You're the Best,wisdom,558,400,388,660
@@ -203,6 +206,7 @@ card_5star_rm_012,RM,5,Boy In Luv RM,passion,180,2376,1397,167
 card_5star_rm_013,RM,5,Pretty Good,stamina,108,100,1861,1641
 card_5star_rm_014,RM,5,DOPE RM,empathy,2772,698,360,335
 card_5star_rm_015,RM,5,Brave RM,empathy,1861,105,1656,134
+card_5star_rm_017,RM,5,Autumn Snap RM,passion,1004,2376,297,54
 card_1star_jimin_003,Jimin,1,Thumbs Up,wisdom,465,500,485,550
 card_1star_jimin_004,Jimin,1,Nervous,empathy,660,582,400,372
 card_1star_jimin_005,Jimin,1,Impossible to Replace,passion,400,660,372,582
@@ -254,6 +258,7 @@ card_5star_jimin_012,Jimin,5,Boy In Luv Jimin,passion,1397,2376,167,180
 card_5star_jimin_013,Jimin,5,"Ready, Action",empathy,1861,105,1656,134
 card_5star_jimin_014,Jimin,5,DOPE Jimin,stamina,360,335,2772,698
 card_5star_jimin_015,Jimin,5,Brave Jimin,wisdom,134,1656,105,1861
+card_5star_jimin_017,Jimin,5,Autumn Snap Jimin,passion,35,2376,1004,324
 card_1star_v_003,V,1,Confused,stamina,400,558,660,388
 card_1star_v_004,V,1,Racing Heart,stamina,500,485,550,465
 card_1star_v_005,V,1,V for Victory,passion,582,660,372,400
@@ -305,6 +310,7 @@ card_5star_v_012,V,5,Boy In Luv V,empathy,2376,175,1440,167
 card_5star_v_013,V,5,Curiosity Satisfied,passion,1540,1861,105,144
 card_5star_v_014,V,5,DOPE V,wisdom,670,360,349,2772
 card_5star_v_015,V,5,Brave V,empathy,1861,105,1656,134
+card_5star_v_017,V,5,Autumn Snap V,stamina,1080,33,2376,314
 card_1star_jungkook_003,Jungkook,1,Jeon Mayfly,wisdom,485,500,465,550
 card_1star_jungkook_004,Jungkook,1,All Eyes on Me,stamina,600,388,660,372
 card_1star_jungkook_005,Jungkook,1,Pit-A-Pat,empathy,660,582,400,372
@@ -356,3 +362,4 @@ card_5star_jungkook_012,Jungkook,5,Boy In Luv Jung Kook,stamina,180,167,2376,139
 card_5star_jungkook_013,Jungkook,5,Sunshine Boy,wisdom,1574,108,105,1861
 card_5star_jungkook_014,Jungkook,5,DOPE Jung Kook,stamina,360,349,2772,670
 card_5star_jungkook_015,Jungkook,5,Brave Jung Kook,passion,1540,1861,105,144
+card_5star_jungkook_017,Jungkook,5,Autumn Snap Jung Kook,wisdom,1004,324,35,2376

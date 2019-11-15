@@ -30,7 +30,8 @@ function processStringFile():string {
     outText = outText.replace(/:\(  \)20/g, "");
     outText = outText.replace(/\(9 \)20/g, "");
     outText = outText.replace(/A \(\)/g, "");
-    
+    //outText = outText.replace(/_0170\//g, "_017/")
+
     outText = outText.replace(/card_1star/gmi, "/card_1star");
     outText = outText.replace(/card_2star/gmi, "/card_2star");
     outText = outText.replace(/card_3star/gmi, "/card_3star");
@@ -58,6 +59,15 @@ export function CardNameTranslation(): { getName(card: Card): string; getHashtag
             if (regexResult ) {
                 return regexResult[1];
             } else {
+
+                const template2 = `${card.name}[\\d]*/Card0([^/]+)`;
+                const regex2 = new RegExp(template2,'igm');
+        
+                const regexResult2 = regex2.exec(corpus);
+                if (regexResult2) {
+                    return regexResult2[1];
+                }
+
                 return "NO_MATCH";
             }
         }),
