@@ -26,7 +26,7 @@ export const convertGameDataFile = (gameFileConfig: GameFileConversionConfig): P
     } = gameFileConfig;
 
     return new Promise((resolve, reject) => {
-        fs.open(`./game_data/${inputFileName}`, 'r', function(err: any, fd:any) {
+        fs.open(`./gd/${inputFileName}`, 'r', function(err: any, fd:any) {
             if (err) reject();
 
             let buffer = Buffer.alloc(1);

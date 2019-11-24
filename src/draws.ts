@@ -18,33 +18,49 @@ const memberDrawTicketUrl = "https://forum.netmarble.com/api/game/btsw/official/
 
 const purple = [
     "card_5star_rm_003",
-    "card_5star_rm_009",
     "card_5star_jin_002",
-    "card_5star_jin_009",
     "card_5star_suga_003",
-    "card_5star_suga_009",
     "card_5star_jhope_004",
-    "card_5star_jhope_009",
     "card_5star_jimin_004",
-    "card_5star_jimin_009",
     "card_5star_v_003",
-    "card_5star_v_009",
     "card_5star_jungkook_002",
+
+    /* Fake Love */
+    "card_5star_rm_009",
+    "card_5star_jin_009",
+    "card_5star_suga_009",
+    "card_5star_jhope_009",
+    "card_5star_jimin_009",
+    "card_5star_v_009",
     "card_5star_jungkook_009",
+     
+    /* Dreamland */
     "card_5star_rm_007",
-    "card_5star_rm_011",
-    "card_5star_jin_007",
-    "card_5star_jin_011",
     "card_5star_suga_007",
-    "card_5star_suga_011",
+    "card_5star_jin_007",
     "card_5star_jhope_007",
-    "card_5star_jhope_011",
     "card_5star_jimin_007",
-    "card_5star_jimin_011",
     "card_5star_v_007",
-    "card_5star_v_011",
     "card_5star_jungkook_007",
-    "card_5star_jungkook_011"];
+
+    /* Boy of Summer */
+    "card_5star_rm_011",
+    "card_5star_jin_011",
+    "card_5star_suga_011",
+    "card_5star_jhope_011",
+    "card_5star_jimin_011",
+    "card_5star_v_011",
+    "card_5star_jungkook_011",
+
+    /* Dorm */
+    "card_5star_rm_013",
+    "card_5star_jin_013",
+    "card_5star_suga_013",
+    "card_5star_jhope_013",
+    "card_5star_jimin_013",
+    "card_5star_v_013",
+    "card_5star_jungkook_013",
+];
 
 const records = parse(fs.readFileSync(`./output/consumable_cards.csv`, 'utf-8'), {
     columns: false,
@@ -145,7 +161,7 @@ const memberDrawTicketPromise = fetchBlogContent(memberDrawTicketUrl).then(htmlC
 
 Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPromise]).then(results => {
     const combinedResults:Dictionary<string[]> = {
-        purple,
+        purple: purple.sort(),
         ...results[0],
         gem: results[1],
         gold: results[2],

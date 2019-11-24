@@ -10,7 +10,7 @@ function isValidChar(char: String): boolean {
 }
 
 function processStringFile():string {
-    let text: string = fs.readFileSync("./game_data/mtf_string_string_en", 'utf-8');
+    let text: string = fs.readFileSync("./gd/mtf_string_string_en", 'utf-8');
         
     let outText = "";
     for (var i = 0; i < text.length; i++) {
