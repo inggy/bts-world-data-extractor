@@ -50,6 +50,22 @@ export interface HashTagCard extends Indexable {
     cardId: string;
 }
 
+export interface MagicShopMission extends Indexable {
+    chapterNumber: number;
+    stageNumber: number;
+    isMission: boolean;
+    empathy: number; // 3 concept_para1
+    passion: number; // 5 concept_para2
+    stamina: number; // 7 concept_para3
+    wisdom: number; // 9 concept_para4
+    targetScore: number // clearscoregoal
+    clearScoreRange1: number //clearscorerange_1
+    clearScoreRange2: number //clearscorerange_2
+    clearScoreRange3: number //clearscorerange_3
+    cardRestrictions: CardRestriction[];
+    cardBonuses: CardBonus[];
+}
+
 export interface Mission extends Indexable {
     empathy: number; // 3 concept_para1
     passion: number; // 5 concept_para2
@@ -74,6 +90,7 @@ export interface Card extends Indexable {
     name: string;
     member: string;
     primaryStat: string;
+    tier: number,
     stars: number;
     empathy: number;
     passion: number;
@@ -102,7 +119,8 @@ export interface GameDatabase {
     eventMissionDatabase: Dictionary<EventMission>
     rewardToItemDatabase: Dictionary<RewardToItemMapping>,
     itemDatabase: Dictionary<Item>,
-    hashtagDatabase: Dictionary<HashTagCard>
+    hashtagDatabase: Dictionary<HashTagCard>,
+    magicShopDatabase: Dictionary<MagicShopMission>,
 }
 
 

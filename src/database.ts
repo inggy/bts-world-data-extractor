@@ -13,7 +13,8 @@ import {
     EventMission,
     CardRestriction,
     CardBonus,
-    HashTagCard
+    HashTagCard,
+    MagicShopMission
 } from "./model/model";
 import { convertGameDataFile } from "./GameFiles/GameFileCSVConverter";
 import { convertToObject } from "./GameFiles/GameCSVToObjectConverter";
@@ -64,16 +65,21 @@ const fileConfigs: GameFileConversionConfig[] = [
     {
         inputFileName: "membercard",
         outputFileName: "cards_raw.csv",
-        columnCount: 61,
+        columnCount: 62,
         firstColumnName: "index",
     },
-
     {
         inputFileName: "hashtag",
         outputFileName: "event_hashtag.csv",
         columnCount: 6,
         firstColumnName: "index",
-    },    
+    },
+    {
+        inputFileName: "anotherstory_mission",
+        outputFileName: "magic_shop.csv",
+        columnCount: 64,
+        firstColumnName: "index",
+    }
 ];
 
 export function buildGameDatabase(): Promise<GameDatabase> {
@@ -102,9 +108,9 @@ export function buildGameDatabase(): Promise<GameDatabase> {
 
             const memeberCardColumns = ["concept_card1","concept_card2","concept_card3","concept_card4","concept_card5","concept_card6","concept_card7"];
             
-            function calculateCardRestrictions(record: Dictionary<any>): CardRestriction[] {
+            function calculateCardRestrictions(record: Dictionary<any>, columnsNames: string[]): CardRestriction[] {
                 const result: CardRestriction[] = [];
-                memeberCardColumns.forEach(columnName => {
+                columnsNames.forEach(columnName => {
                     const cardFilter = parseInt(record[columnName]);
                     let member = 'ALL';
                     let trait = 'ALL'
@@ -133,7 +139,7 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 targetScore1: (record =>  parseInt(record['mission_score1'])),
                 targetScore2: (record =>  parseInt(record['mission_score2'])),
                 targetScore3: (record =>  parseInt(record['mission_score3'])),
-                cardRestrictions: (record => calculateCardRestrictions(record)),
+                cardRestrictions: (record => calculateCardRestrictions(record, memeberCardColumns)),
                 cardBonuses: (record => []),
                 exp: (record => parseInt(record['concept_accountexp'])),
                 goldMin: (record => parseInt(record['reward_gold_min'])),
@@ -211,6 +217,11 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 passion: (record => parseInt(record['membercard_manage_basic'])), 
                 stamina: (record => parseInt(record['membercard_idea_basic'])),
                 wisdom: (record => parseInt(record['membercard_design_basic'])),
+                tier: (record => {
+                    const star = parseInt(record['membercard_grade']);
+                    if (star <= 2) return 0;
+                    return 1;
+                })
             });
             
             const rewardToItemDatabase: Dictionary<RewardToItemMapping> = convertToObject("droplist.csv", {
@@ -232,6 +243,45 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 cardId: (record => record['typeinfoid'])
             });
 
+            const magicShopCardColumns = ["card1","card2","card3","card4","card5","card6","card7"]
+            const magicShopDatabase: Dictionary<MagicShopMission> = convertToObject("magic_shop.csv", {
+                id: (record => record['index']),
+                chapterNumber: (record => parseInt((<string> record['chapterno'].slice(-2)))),
+                stageNumber: (record => parseInt(record['stageseq'])),
+                isMission: (record => parseInt(record['stagetype']) === 2),
+                empathy: (record =>  parseInt(record['para1']) / 100),
+                passion: (record =>  parseInt(record['para2']) / 100),
+                stamina: (record =>  parseInt(record['para3']) / 100),
+                wisdom: (record =>  parseInt(record['para4']) / 100),
+                targetScore: (record =>  parseInt(record['clearscoregoal'])), // clearscoregoal
+                clearScoreRange1: (record => parseInt(record['clearscorerange_1'])), //clearscorerange_1
+                clearScoreRange2: (record => parseInt(record['clearscorerange_2'])), //clearscorerange_2
+                clearScoreRange3: (record => parseInt(record['clearscorerange_3'])), //clearscorerange_3
+                cardRestrictions: (record => calculateCardRestrictions(record, magicShopCardColumns)),
+                cardBonuses: (record => {
+                    const result: CardBonus[] = [];
+                    if (record['hashtaggroupid1'] !== "0") {
+                        result.push({
+                            hashtagId: record['hashtaggroupid1'],
+                            multiplier: Math.floor(parseInt(record['hashtagaddpoint1']) / 100)
+                        });
+                    }
+                    if (record['hashtaggroupid2'] !== "0") {
+                        result.push({
+                            hashtagId: record['hashtaggroupid2'],
+                            multiplier: Math.floor(parseInt(record['hashtagaddpoint2']) / 100)
+                        });
+                    }
+                    if (record['hashtaggroupid3'] !== "0") {
+                        result.push({
+                            hashtagId: record['hashtaggroupid3'],
+                            multiplier: Math.floor(parseInt(record['hashtagaddpoint3']) / 100)
+                        });
+                    }
+                    return result;
+                })
+            });
+
             resolve({
                 mainMissionDatabase,
                 anotherMissionDatabase,
@@ -242,6 +292,7 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 cardDatabase,
                 rewardToItemDatabase,
                 itemDatabase,
+                magicShopDatabase,
             });
        
         });
