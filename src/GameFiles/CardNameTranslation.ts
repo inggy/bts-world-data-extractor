@@ -72,17 +72,22 @@ export function CardNameTranslation(): { getName(card: Card): string; getHashtag
             }
         }),
         getHashtag: (stringId: string) => {
+            /*
+             * Match stringId + 0 + (optionally one quote), then
+             * /{part1}/{part2}/Hashtags(optionally one space)(#THE_TAG){Stop at possible beginnings of the next string id}
+             */
+            const template = `${stringId}0"?\\/(Styling|Card|Event Stage|Event)\\/Hashtags ?(#.+?)((Hashtag|Mobile|HashTag|Event|Shop|styling|Gachaitem|Gacha|Mission)_|#)`;
 
-            const template = `${stringId}[^\\/]*(.+?)(?=<\\/color>)`;
             const regex1 = new RegExp(template,'igm');
             const regexResult = regex1.exec(corpus);
-            if (regexResult ) {
-                const fullMatch = regexResult[1]
-                return fullMatch.substring(fullMatch.lastIndexOf("#"));
+            if (regexResult) {
+                //console.log(regexResult[2]);
+                return regexResult[2].trim();
             } else {
-                return "NO_MATCH";
+                console.log("no hash tag match for ", stringId);
+                return stringId;
             }
-            return "";
+
         }
     };
 }

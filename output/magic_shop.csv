@@ -1,4 +1,4 @@
-chapter,mission,targetScore,clearScoreRange1,clearScoreRange2,clearScoreRange3,empathy,passion,stamina,wisdom,cardRestrictions,"cardBonuses,"
+chapter,mission,targetScore,clearScoreRange1,clearScoreRange2,clearScoreRange3,empathy,passion,stamina,wisdom,cardRestrictions,cardBonuses
 1,2,16506,4400,2000,800,90,90,155,155,"ALL,ALL","8800057,60"
 1,4,52129,2500,1400,700,30,70,5,455,"RM,ALL|ALL,ALL|ALL,ALL","8800007,30|8800058,20"
 1,6,87653,2500,1400,700,5,35,595,195,"V,ALL|ALL,ALL|ALL,ALL|ALL,ALL","8800007,30|8800059,20"
