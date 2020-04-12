@@ -87,6 +87,24 @@ const purple = [
     "card_5star_jimin_010",
     "card_5star_v_010",
     "card_5star_jungkook_010",
+
+    /* Winter */
+    "card_5star_rm_019",
+    "card_5star_jin_019",
+    "card_5star_suga_019",
+    "card_5star_jhope_019",
+    "card_5star_jimin_019",
+    "card_5star_v_019",
+    "card_5star_jungkook_019",
+
+    /* Hope-full */
+    "card_5star_rm_020",
+    "card_5star_jin_020",
+    "card_5star_suga_020",
+    "card_5star_jhope_020",
+    "card_5star_jimin_020",
+    "card_5star_v_020",
+    "card_5star_jungkook_020",
 ];
 
 const records = parse(fs.readFileSync(`./output/consumable_cards.csv`, 'utf-8'), {

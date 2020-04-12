@@ -352,7 +352,7 @@ buildGameDatabase().then((gameDatabase) => {
         "stamina",
         "wisdom",
         "cardRestrictions",
-        "cardBonuses,"
+        "cardBonuses"
     ]);
     
 
