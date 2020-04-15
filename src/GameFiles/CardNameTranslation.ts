@@ -76,7 +76,7 @@ export function CardNameTranslation(): { getName(card: Card): string; getHashtag
              * Match stringId + 0 + (optionally one quote), then
              * /{part1}/{part2}/Hashtags(optionally one space)(#THE_TAG){Stop at possible beginnings of the next string id}
              */
-            const template = `${stringId}0"?\\/(Styling|Card|Event Stage|Event)\\/Hashtags ?(#.+?)((Hashtag|Mobile|HashTag|Event|Shop|styling|Gachaitem|Gacha|Mission)_|#)`;
+            const template = `${stringId}0"?\\/(Styling|Card|Event Stage|Event)\\/Hashtags ?(#.+?)((Hashtag|Mobile|HashTag|Event|Shop|styling|Gachaitem|Gacha|Mission|Banner)_|#)`;
 
             const regex1 = new RegExp(template,'igm');
             const regexResult = regex1.exec(corpus);

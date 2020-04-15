@@ -219,7 +219,11 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 wisdom: (record => parseInt(record['membercard_design_basic'])),
                 tier: (record => {
                     const star = parseInt(record['membercard_grade']);
-                    if (star <= 2) return 0;
+                    if (star === 5 &&  record['membercard_name'].toLowerCase().indexOf("007") > -1 ) {
+                        return 2;
+                    } else if (star <= 2) {
+                        return 0;
+                    }
                     return 1;
                 })
             });

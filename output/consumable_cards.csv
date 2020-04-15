@@ -46,7 +46,7 @@ card_5star_jin_002,Jin,5,Worldwide Handsome,stamina,1,1080,698,1188,670
 card_5star_jin_003,Jin,5,Ready for Work,passion,1,360,1980,1004,349
 card_5star_jin_004,Jin,5,Pleased to Meet You,wisdom,1,1440,360,360,1440
 card_5star_jin_006,Jin,5,Let's Do This Jin,empathy,1,2772,349,360,335
-card_5star_jin_007,Jin,5,Dreamland Jin,passion,1,524,1465,1105,540
+card_5star_jin_007,Jin,5,Dreamland Jin,passion,2,524,1465,1105,540
 card_5star_jin_008,Jin,5,Romantic Jin,stamina,1,1188,349,1800,335
 card_5star_jin_009,Jin,5,FAKE LOVE Jin,wisdom,1,1048,1188,335,1080
 card_5star_jin_010,Jin,5,Red Carpet Jin,wisdom,1,1080,198,167,2095
@@ -63,6 +63,7 @@ card_5star_jin_020,Jin,5,Hope-full Jin,empathy,1,2574,837,180,175
 card_5star_jin_021,Jin,5,Best Cut Jin,wisdom,1,1189,36,35,2871
 card_5star_jin_022,Jin,5,Valentine Jin,stamina,1,1404,20,2376,14
 card_5star_jin_023,Jin,5,Capture the Moment Jin,empathy,1,2851,1152,144,33
+card_5star_jin_024,Jin,5,Spring is Blooming Jin,wisdom,1,384,576,469,2732
 card_1star_suga_003,Suga,1,Hello,wisdom,0,400,372,582,660
 card_1star_suga_004,Suga,1,I'm Tired,stamina,0,500,485,550,465
 card_1star_suga_005,Suga,1,Leave It to Me,passion,0,600,660,372,388
@@ -110,7 +111,7 @@ card_5star_suga_002,Suga,5,Twinkle Twinkle,passion,1,360,1980,1048,335
 card_5star_suga_003,Suga,5,Adjacent Library Seat,wisdom,1,1048,720,670,1188
 card_5star_suga_004,Suga,5,The Decisive Moment,stamina,1,1584,349,1440,335
 card_5star_suga_006,Suga,5,Let's Do This SUGA,wisdom,1,349,360,335,2772
-card_5star_suga_007,Suga,5,Dreamland SUGA,stamina,1,540,1152,1465,502
+card_5star_suga_007,Suga,5,Dreamland SUGA,stamina,2,540,1152,1465,502
 card_5star_suga_008,Suga,5,Romantic SUGA,stamina,1,1080,396,1746,335
 card_5star_suga_009,Suga,5,FAKE LOVE SUGA,passion,1,1048,1080,335,1188
 card_5star_suga_010,Suga,5,Red Carpet SUGA,wisdom,1,198,1048,180,2009
@@ -127,6 +128,7 @@ card_5star_suga_020,Suga,5,Hope-full SUGA,wisdom,1,873,162,134,2633
 card_5star_suga_021,Suga,5,Best Cut SUGA,passion,1,33,2871,1240,36
 card_5star_suga_022,Suga,5,Valentine SUGA,wisdom,1,21,14,1306,2376
 card_5star_suga_023,Suga,5,Capture the Moment SUGA,stamina,1,1170,70,2851,117
+card_5star_suga_024,Suga,5,Spring is Blooming SUGA,passion,1,384,2732,469,576
 card_1star_jhope_003,J-Hope,1,This and That,passion,0,465,550,485,500
 card_1star_jhope_004,J-Hope,1,Aha,stamina,0,600,372,660,388
 card_1star_jhope_005,J-Hope,1,So at Ease,stamina,0,400,582,660,372
@@ -174,7 +176,7 @@ card_5star_jhope_002,J-Hope,5,"Let's Play, Friend!",passion,1,360,1980,1048,335
 card_5star_jhope_003,J-Hope,5,White-coated Angel,passion,1,1397,1440,335,396
 card_5star_jhope_004,J-Hope,5,See-Through Umbrella,empathy,1,1188,1048,720,670
 card_5star_jhope_006,J-Hope,5,Let's Do This j-hope,stamina,1,360,349,2772,335
-card_5star_jhope_007,J-Hope,5,Dreamland j-hope,wisdom,1,524,1188,502,1465
+card_5star_jhope_007,J-Hope,5,Dreamland j-hope,wisdom,2,524,1188,502,1465
 card_5star_jhope_008,J-Hope,5,Romantic j-hope,stamina,1,1048,396,1674,360
 card_5star_jhope_009,J-Hope,5,FAKE LOVE j-hope,stamina,1,360,1188,1048,1004
 card_5star_jhope_010,J-Hope,5,Red Carpet j-hope,wisdom,1,175,180,1004,2376
@@ -191,6 +193,7 @@ card_5star_jhope_020,J-Hope,5,Hope-full j-hope,passion,1,873,2574,167,180
 card_5star_jhope_021,J-Hope,5,Best Cut j-hope,stamina,1,1278,33,2871,35
 card_5star_jhope_022,J-Hope,5,Valentine j-hope,empathy,1,2376,17,25,1299
 card_5star_jhope_023,J-Hope,5,Capture the Moment j-hope,empathy,1,2851,157,1134,67
+card_5star_jhope_024,J-Hope,5,Spring is Blooming j-hope,stamina,1,360,536,2732,524
 card_1star_rm_003,RM,1,I'm Angry,stamina,0,500,485,550,465
 card_1star_rm_004,RM,1,Love It,passion,0,372,660,581,400
 card_1star_rm_005,RM,1,You're the Best,wisdom,0,558,400,388,660
@@ -238,7 +241,7 @@ card_5star_rm_002,RM,5,Smile,passion,1,349,1980,1004,360
 card_5star_rm_003,RM,5,Classic,passion,1,1080,1188,698,670
 card_5star_rm_004,RM,5,Professional,empathy,1,1397,1440,335,396
 card_5star_rm_006,RM,5,Let's Do This RM,stamina,1,360,335,2772,349
-card_5star_rm_007,RM,5,Dreamland RM,empathy,1,1465,524,1188,502
+card_5star_rm_007,RM,5,Dreamland RM,empathy,2,1465,524,1188,502
 card_5star_rm_008,RM,5,Romantic RM,stamina,1,1080,396,1746,335
 card_5star_rm_009,RM,5,FAKE LOVE RM,empathy,1,1048,1080,1004,396
 card_5star_rm_010,RM,5,Red Carpet RM,wisdom,1,1188,175,180,2009
@@ -255,6 +258,7 @@ card_5star_rm_020,RM,5,Hope-full RM,stamina,1,954,117,2614,140
 card_5star_rm_021,RM,5,Best Cut RM,stamina,1,25,30,2871,1254
 card_5star_rm_022,RM,5,Valentine RM,passion,1,14,2376,1362,20
 card_5star_rm_023,RM,5,Capture the Moment RM,stamina,1,1134,17,2851,210
+card_5star_rm_024,RM,5,Spring is Blooming RM,passion,1,576,2732,524,335
 card_1star_jimin_003,Jimin,1,Thumbs Up,wisdom,0,465,500,485,550
 card_1star_jimin_004,Jimin,1,Nervous,empathy,0,660,582,400,372
 card_1star_jimin_005,Jimin,1,Impossible to Replace,passion,0,400,660,372,582
@@ -302,7 +306,7 @@ card_5star_jimin_002,Jimin,5,Dancing Mang-gae-ddeok,passion,1,360,1980,1048,335
 card_5star_jimin_003,Jimin,5,World's Greatest Swordsman,wisdom,1,1397,360,335,1584
 card_5star_jimin_004,Jimin,5,Nighttime Stroll,stamina,1,1080,670,1188,698
 card_5star_jimin_006,Jimin,5,Let's Do This Jimin,passion,1,360,2772,349,335
-card_5star_jimin_007,Jimin,5,Dreamland Jimin,stamina,1,540,1152,1465,502
+card_5star_jimin_007,Jimin,5,Dreamland Jimin,stamina,2,540,1152,1465,502
 card_5star_jimin_008,Jimin,5,Romantic Jimin,stamina,1,1048,360,1674,396
 card_5star_jimin_009,Jimin,5,FAKE LOVE Jimin,wisdom,1,1188,349,1080,1004
 card_5star_jimin_010,Jimin,5,Red Carpet Jimin,wisdom,1,175,1188,167,2160
@@ -319,6 +323,7 @@ card_5star_jimin_020,Jimin,5,Hope-full Jimin,passion,1,158,2594,890,154
 card_5star_jimin_021,Jimin,5,Best Cut Jimin,wisdom,1,31,1292,23,2871
 card_5star_jimin_022,Jimin,5,Valentine Jimin,empathy,1,2376,1362,14,20
 card_5star_jimin_023,Jimin,5,Capture the Moment Jimin,wisdom,1,1152,54,117,2851
+card_5star_jimin_024,Jimin,5,Spring is Blooming Jimin,wisdom,1,502,576,349,2732
 card_1star_v_003,V,1,Confused,stamina,0,400,558,660,388
 card_1star_v_004,V,1,Racing Heart,stamina,0,500,485,550,465
 card_1star_v_005,V,1,V for Victory,passion,0,582,660,372,400
@@ -366,7 +371,7 @@ card_5star_v_002,V,5,Wise Guy,passion,1,349,1800,1004,396
 card_5star_v_003,V,5,I Purple You,passion,1,1048,1188,670,720
 card_5star_v_004,V,5,Orchard Boy,stamina,1,1397,396,1339,360
 card_5star_v_006,V,5,Let's Do This V,empathy,1,2772,335,360,349
-card_5star_v_007,V,5,Dreamland V,wisdom,1,502,1188,524,1465
+card_5star_v_007,V,5,Dreamland V,wisdom,2,502,1188,524,1465
 card_5star_v_008,V,5,Romantic V,stamina,1,1188,335,1800,349
 card_5star_v_009,V,5,FAKE LOVE V,stamina,1,349,1188,1004,1080
 card_5star_v_010,V,5,Red Carpet V,wisdom,1,167,198,1048,2160
@@ -383,6 +388,7 @@ card_5star_v_020,V,5,Hope-full V,stamina,1,936,122,2614,151
 card_5star_v_021,V,5,Best Cut V,passion,1,25,2871,31,1202
 card_5star_v_022,V,5,Valentine V,wisdom,1,17,1397,23,2376
 card_5star_v_023,V,5,Capture the Moment V,empathy,1,2851,1055,126,105
+card_5star_v_024,V,5,Spring is Blooming V,empathy,1,2732,384,504,536
 card_1star_jungkook_003,Jungkook,1,Jeon Mayfly,wisdom,0,485,500,465,550
 card_1star_jungkook_004,Jungkook,1,All Eyes on Me,stamina,0,600,388,660,372
 card_1star_jungkook_005,Jungkook,1,Pit-A-Pat,empathy,0,660,582,400,372
@@ -395,7 +401,7 @@ card_2star_jungkook_002,Jungkook,2,Can't Trust Me?,stamina,0,480,446,792,698
 card_2star_jungkook_003,Jungkook,2,Come at Me,passion,0,480,792,670,466
 card_2star_jungkook_004,Jungkook,2,Shh... Quiet,empathy,0,660,582,600,558
 card_2star_jungkook_007,Jungkook,2,2nd Grade,empathy,0,792,670,480,466
-card_2star_jungkook_011,Jungkook,2,Feeling Animated Jung KookGachaitem_Jin_3star_5star0$,wisdom,0,223,240,233,264
+card_2star_jungkook_011,Jungkook,2,Feeling Animated Jung Kook,wisdom,0,223,240,233,264
 card_3star_jungkook_001,Jungkook,3,To the Next Class,passion,1,308,1086,560,781
 card_3star_jungkook_002,Jungkook,3,Ah Ppaiting,stamina,1,272,924,1042,560
 card_3star_jungkook_008,Jungkook,3,Don't Even Know,stamina,1,770,651,700,679
@@ -430,7 +436,7 @@ card_5star_jungkook_002,Jungkook,5,The Name's Jung Kook,empathy,1,1048,1188,670,
 card_5star_jungkook_003,Jungkook,5,To the Store,passion,1,1584,1339,360,349
 card_5star_jungkook_004,Jungkook,5,Golden Maknae,passion,1,349,1980,1004,360
 card_5star_jungkook_006,Jungkook,5,Let's Do This Jung Kook,wisdom,1,335,360,349,2772
-card_5star_jungkook_007,Jungkook,5,Dreamland Jung Kook,passion,1,502,1465,1152,540
+card_5star_jungkook_007,Jungkook,5,Dreamland Jung Kook,passion,2,502,1465,1152,540
 card_5star_jungkook_008,Jungkook,5,Romantic Jung Kook,stamina,1,1048,396,1674,360
 card_5star_jungkook_009,Jungkook,5,FAKE LOVE Jung Kook,passion,1,1004,1188,1048,360
 card_5star_jungkook_010,Jungkook,5,Red Carpet Jung Kook,wisdom,1,1188,167,180,2095
@@ -447,3 +453,4 @@ card_5star_jungkook_020,Jungkook,5,Hope-full Jung Kook,wisdom,1,157,162,837,2614
 card_5star_jungkook_021,Jungkook,5,Best Cut Jung Kook,empathy,1,2871,1189,36,35
 card_5star_jungkook_022,Jungkook,5,Valentine Jung Kook,passion,1,13,2376,1362,22
 card_5star_jungkook_023,Jungkook,5,Capture the Moment Jung Kook,stamina,1,36,134,2851,1152
+card_5star_jungkook_024,Jungkook,5,Spring is Blooming Jung Kook,empathy,1,2732,502,576,349
