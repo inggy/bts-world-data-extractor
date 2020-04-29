@@ -16,6 +16,9 @@ const goldDrawUrl = "http://forum.netmarble.com/api/game/btsw/official/forum/bts
 // https://forum.netmarble.com/btsworld/view/36/1093967
 const memberDrawTicketUrl = "https://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/1093967?menuSeq=36&viewFlag=false&_=1571291201265";
 
+// http://forum.netmarble.com/btsworld/view/51/1405665
+const seasonChallengeUrl = "http://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/1405665?menuSeq=51&viewFlag=false&_=1588054799725";
+
 const purple = [
     "card_5star_rm_003",
     "card_5star_jin_002",
@@ -105,6 +108,15 @@ const purple = [
     "card_5star_jimin_020",
     "card_5star_v_020",
     "card_5star_jungkook_020",
+
+    /* Valentine */
+    "card_5star_rm_022",
+    "card_5star_jin_022",
+    "card_5star_suga_022",
+    "card_5star_jhope_022",
+    "card_5star_jimin_022",
+    "card_5star_v_022",
+    "card_5star_jungkook_022",
 ];
 
 const records = parse(fs.readFileSync(`./output/consumable_cards.csv`, 'utf-8'), {
@@ -203,14 +215,21 @@ const memberDrawTicketPromise = fetchBlogContent(memberDrawTicketUrl).then(htmlC
     ];
 })
 
+const seasonChallengePromise = fetchBlogContent(seasonChallengeUrl).then(htmlContent => {
+    return [
+        ...extractCardTitles(htmlContent, 0, 5)
+    ]
+})
 
-Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPromise]).then(results => {
+Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPromise, seasonChallengePromise]).then(results => {
     const combinedResults:Dictionary<string[]> = {
         purple: purple.sort(),
         ...results[0],
+        seasonChallenge: results[4],
         gem: results[1],
         gold: results[2],
-        memberDraw: results[3]
+        memberDraw: results[3],
+        
     };
 
     Object.keys(combinedResults).forEach(key => console.log(key, combinedResults[key].length));
