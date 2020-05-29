@@ -66,6 +66,7 @@ card_5star_jin_023,Jin,5,Capture the Moment Jin,empathy,1,2851,1152,144,33
 card_5star_jin_024,Jin,5,Spring is Blooming Jin,wisdom,1,384,576,469,2732
 card_5star_jin_025,Jin,5,Spring Day Jin,wisdom,1,2064,32,23,2348
 card_5star_jin_026,Jin,5,Interview Jin,empathy,1,2444,18,670,772
+card_5star_jin_027,Jin,5,Just Dance Jin,wisdom,1,559,576,435,2970
 card_1star_suga_003,Suga,1,Hello,wisdom,0,400,372,582,660
 card_1star_suga_004,Suga,1,I'm Tired,stamina,0,500,485,550,465
 card_1star_suga_005,Suga,1,Leave It to Me,passion,0,600,660,372,388
@@ -133,6 +134,7 @@ card_5star_suga_023,Suga,5,Capture the Moment SUGA,stamina,1,1170,70,2851,117
 card_5star_suga_024,Suga,5,Spring is Blooming SUGA,passion,1,384,2732,469,576
 card_5star_suga_025,Suga,5,Spring Day SUGA,empathy,1,2356,24,29,1975
 card_5star_suga_026,Suga,5,Interview SUGA,passion,1,20,2444,702,670
+card_5star_suga_027,Suga,5,Just Dance SUGA,stamina,1,468,559,2970,536
 card_1star_jhope_003,J-Hope,1,This and That,passion,0,465,550,485,500
 card_1star_jhope_004,J-Hope,1,Aha,stamina,0,600,372,660,388
 card_1star_jhope_005,J-Hope,1,So at Ease,stamina,0,400,582,660,372
@@ -200,6 +202,7 @@ card_5star_jhope_023,J-Hope,5,Capture the Moment j-hope,empathy,1,2851,157,1134,
 card_5star_jhope_024,J-Hope,5,Spring is Blooming j-hope,stamina,1,360,536,2732,524
 card_5star_jhope_025,J-Hope,5,Spring Day j-hope,wisdom,1,23,29,2060,2356
 card_5star_jhope_026,J-Hope,5,Interview j-hope,wisdom,1,653,720,17,2772
+card_5star_jhope_027,J-Hope,5,Just Dance j-hope,empathy,1,2970,469,540,559
 card_1star_rm_003,RM,1,I'm Angry,stamina,0,500,485,550,465
 card_1star_rm_004,RM,1,Love It,passion,0,372,660,581,400
 card_1star_rm_005,RM,1,You're the Best,wisdom,0,558,400,388,660
@@ -267,6 +270,7 @@ card_5star_rm_023,RM,5,Capture the Moment RM,stamina,1,1134,17,2851,210
 card_5star_rm_024,RM,5,Spring is Blooming RM,passion,1,576,2732,524,335
 card_5star_rm_025,RM,5,Spring Day RM,stamina,1,2124,28,2356,23
 card_5star_rm_026,RM,5,Interview RM,wisdom,1,756,35,713,2344
+card_5star_rm_027,RM,5,Just Dance RM,passion,1,454,2970,536,576
 card_1star_jimin_003,Jimin,1,Thumbs Up,wisdom,0,465,500,485,550
 card_1star_jimin_004,Jimin,1,Nervous,empathy,0,660,582,400,372
 card_1star_jimin_005,Jimin,1,Impossible to Replace,passion,0,400,660,372,582
@@ -334,6 +338,7 @@ card_5star_jimin_023,Jimin,5,Capture the Moment Jimin,wisdom,1,1152,54,117,2851
 card_5star_jimin_024,Jimin,5,Spring is Blooming Jimin,wisdom,1,502,576,349,2732
 card_5star_jimin_025,Jimin,5,Spring Day Jimin,passion,1,30,2348,24,2128
 card_5star_jimin_026,Jimin,5,Interview Jimin,empathy,1,2344,713,733,36
+card_5star_jimin_027,Jimin,5,Just Dance Jimin,wisdom,1,559,468,536,2970
 card_1star_v_003,V,1,Confused,stamina,0,400,558,660,388
 card_1star_v_004,V,1,Racing Heart,stamina,0,500,485,550,465
 card_1star_v_005,V,1,V for Victory,passion,0,582,660,372,400
@@ -401,6 +406,7 @@ card_5star_v_023,V,5,Capture the Moment V,empathy,1,2851,1055,126,105
 card_5star_v_024,V,5,Spring is Blooming V,empathy,1,2732,384,504,536
 card_5star_v_025,V,5,Spring Day V,passion,1,28,2356,1975,25
 card_5star_v_026,V,5,Interview V,passion,1,35,2772,603,756
+card_5star_v_027,V,5,Just Dance V,empathy,1,2970,536,540,489
 card_1star_jungkook_003,Jungkook,1,Jeon Mayfly,wisdom,0,485,500,465,550
 card_1star_jungkook_004,Jungkook,1,All Eyes on Me,stamina,0,600,388,660,372
 card_1star_jungkook_005,Jungkook,1,Pit-A-Pat,empathy,0,660,582,400,372
@@ -468,3 +474,4 @@ card_5star_jungkook_023,Jungkook,5,Capture the Moment Jung Kook,stamina,1,36,134
 card_5star_jungkook_024,Jungkook,5,Spring is Blooming Jung Kook,empathy,1,2732,502,576,349
 card_5star_jungkook_025,Jungkook,5,Spring Day Jung Kook,empathy,1,2348,1979,32,24
 card_5star_jungkook_026,Jungkook,5,Interview Jung Kook,stamina,1,792,653,2520,17
+card_5star_jungkook_027,Jungkook,5,Just Dance Jung Kook,passion,1,576,2970,489,502

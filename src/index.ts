@@ -325,7 +325,7 @@ buildGameDatabase().then((gameDatabase) => {
                 ];
     }), ["hashtagId", "hashtagName", "cards"]);
 
-    writeDataToCSV("magic_shop.csv", Object.values(magicShopDatabase).filter(stage => stage.isMission).map((mission) => {
+    writeDataToCSV("magic_shop_mission.csv", Object.values(magicShopDatabase).filter(stage => stage.isMission).map((mission) => {
         return [
             mission.chapterNumber,
             mission.stageNumber,
