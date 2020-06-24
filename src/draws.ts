@@ -117,6 +117,16 @@ const purple = [
     "card_5star_jimin_022",
     "card_5star_v_022",
     "card_5star_jungkook_022",
+
+    /* Spring is blooming */
+
+    "card_5star_rm_024",
+    "card_5star_jin_024",
+    "card_5star_suga_024",
+    "card_5star_jhope_024",
+    "card_5star_jimin_024",
+    "card_5star_v_024",
+    "card_5star_jungkook_024",
 ];
 
 const records = parse(fs.readFileSync(`./output/consumable_cards.csv`, 'utf-8'), {
@@ -225,7 +235,7 @@ Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPro
     const combinedResults:Dictionary<string[]> = {
         purple: purple.sort(),
         ...results[0],
-        seasonChallenge: results[4],
+        //seasonChallenge: results[4],
         gem: results[1],
         gold: results[2],
         memberDraw: results[3],
