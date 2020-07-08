@@ -72,6 +72,7 @@ card_5star_jin_026,Jin,5,Interview Jin,empathy,1,2444,18,670,772
 card_5star_jin_027,Jin,5,Just Dance Jin,wisdom,1,559,576,435,2970
 card_5star_jin_028,Jin,5,House Party Jin,passion,1,324,2772,698,368
 card_5star_jin_029,Jin,5,Heart Boys Jin,empathy,1,2376,52,1782,301
+card_5star_jin_030,Jin,5,On Stage Jin,stamina,1,504,335,2970,733
 card_1star_suga_003,Suga,1,Hello,wisdom,0,400,372,582,660
 card_1star_suga_004,Suga,1,I'm Tired,stamina,0,500,485,550,465
 card_1star_suga_005,Suga,1,Leave It to Me,passion,0,600,660,372,388
@@ -145,6 +146,7 @@ card_5star_suga_026,Suga,5,Interview SUGA,passion,1,20,2444,702,670
 card_5star_suga_027,Suga,5,Just Dance SUGA,stamina,1,468,559,2970,536
 card_5star_suga_028,Suga,5,House Party SUGA,wisdom,1,384,720,301,2772
 card_5star_suga_029,Suga,5,Heart Boys SUGA,wisdom,1,35,1800,301,2376
+card_5star_suga_030,Suga,5,On Stage SUGA,wisdom,1,733,576,268,2970
 card_1star_jhope_003,J-Hope,1,This and That,passion,0,465,550,485,500
 card_1star_jhope_004,J-Hope,1,Aha,stamina,0,600,372,660,388
 card_1star_jhope_005,J-Hope,1,So at Ease,stamina,0,400,582,660,372
@@ -218,6 +220,7 @@ card_5star_jhope_026,J-Hope,5,Interview j-hope,wisdom,1,653,720,17,2772
 card_5star_jhope_027,J-Hope,5,Just Dance j-hope,empathy,1,2970,469,540,559
 card_5star_jhope_028,J-Hope,5,House Party j-hope,stamina,1,378,318,2772,698
 card_5star_jhope_029,J-Hope,5,Heart Boys j-hope,passion,1,301,2376,1746,36
+card_5star_jhope_030,J-Hope,5,On Stage j-hope,empathy,1,2970,733,504,335
 card_1star_rm_003,RM,1,I'm Angry,stamina,0,500,485,550,465
 card_1star_rm_004,RM,1,Love It,passion,0,372,660,581,400
 card_1star_rm_005,RM,1,You're the Best,wisdom,0,558,400,388,660
@@ -291,6 +294,7 @@ card_5star_rm_026,RM,5,Interview RM,wisdom,1,756,35,713,2344
 card_5star_rm_027,RM,5,Just Dance RM,passion,1,454,2970,536,576
 card_5star_rm_028,RM,5,House Party RM,empathy,1,2772,314,720,368
 card_5star_rm_029,RM,5,Heart Boys RM,empathy,1,2376,1729,324,50
+card_5star_rm_030,RM,5,On Stage RM,passion,1,360,2970,733,469
 card_1star_jimin_003,Jimin,1,Thumbs Up,wisdom,0,465,500,485,550
 card_1star_jimin_004,Jimin,1,Nervous,empathy,0,660,582,400,372
 card_1star_jimin_005,Jimin,1,Impossible to Replace,passion,0,400,660,372,582
@@ -364,6 +368,7 @@ card_5star_jimin_026,Jimin,5,Interview Jimin,empathy,1,2344,713,733,36
 card_5star_jimin_027,Jimin,5,Just Dance Jimin,wisdom,1,559,468,536,2970
 card_5star_jimin_028,Jimin,5,House Party Jimin,empathy,1,2772,352,342,698
 card_5star_jimin_029,Jimin,5,Heart Boys Jimin,empathy,1,2376,35,1800,301
+card_5star_jimin_030,Jimin,5,On Stage Jimin,passion,1,756,2970,502,314
 card_1star_v_003,V,1,Confused,stamina,0,400,558,660,388
 card_1star_v_004,V,1,Racing Heart,stamina,0,500,485,550,465
 card_1star_v_005,V,1,V for Victory,passion,0,582,660,372,400
@@ -437,6 +442,7 @@ card_5star_v_026,V,5,Interview V,passion,1,35,2772,603,756
 card_5star_v_027,V,5,Just Dance V,empathy,1,2970,536,540,489
 card_5star_v_028,V,5,House Party V,stamina,1,720,314,2772,368
 card_5star_v_029,V,5,Heart Boys V,stamina,1,1710,32,2484,324
+card_5star_v_030,V,5,On Stage V,passion,1,559,2970,318,702
 card_1star_jungkook_003,Jungkook,1,Jeon Mayfly,wisdom,0,485,500,465,550
 card_1star_jungkook_004,Jungkook,1,All Eyes on Me,stamina,0,600,388,660,372
 card_1star_jungkook_005,Jungkook,1,Pit-A-Pat,empathy,0,660,582,400,372
@@ -510,3 +516,4 @@ card_5star_jungkook_026,Jungkook,5,Interview Jung Kook,stamina,1,792,653,2520,17
 card_5star_jungkook_027,Jungkook,5,Just Dance Jung Kook,passion,1,576,2970,489,502
 card_5star_jungkook_028,Jungkook,5,House Party Jung Kook,wisdom,1,670,378,332,2772
 card_5star_jungkook_029,Jungkook,5,Heart Boys Jung Kook,wisdom,1,332,36,1657,2376
+card_5star_jungkook_030,Jungkook,5,On Stage Jung Kook,wisdom,1,559,324,670,2970
