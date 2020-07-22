@@ -30,6 +30,7 @@ card_3star_jin_022,Jin,3,Freestyle,empathy,1,1540,521,560,272
 card_3star_jin_023,Jin,3,Bang!,stamina,1,280,815,1540,260
 card_3star_jin_024,Jin,3,Bright Laughter,wisdom,1,136,840,130,1848
 card_3star_jin_025,Jin,3,The Last Cold Snap,wisdom,1,815,840,260,924
+card_3star_jin_026,Jin,3,Temperature of a Handsome Guy,empathy,1,1448,1277,84,78
 card_4star_jin_001,Jin,4,Looks Working Overtime,empathy,1,1056,893,640,621
 card_4star_jin_002,Jin,4,Special Service,empathy,1,1280,310,704,893
 card_4star_jin_003,Jin,4,Man with a Flower,passion,1,320,1190,1056,621
@@ -53,7 +54,7 @@ card_5star_jin_007,Jin,5,Dreamland Jin,passion,2,524,1465,1105,540
 card_5star_jin_008,Jin,5,Romantic Jin,stamina,1,1188,349,1800,335
 card_5star_jin_009,Jin,5,FAKE LOVE Jin,wisdom,1,1048,1188,335,1080
 card_5star_jin_010,Jin,5,Red Carpet Jin,wisdom,2,1080,198,167,2095
-card_5star_jin_011,Jin,5,Boy of Summer Jin,stamina,1,1080,670,1584,349
+card_5star_jin_011,Jin,5,Boy of Summer Jin,stamina,2,1080,670,1584,349
 card_5star_jin_012,Jin,5,Boy In Luv Jin,stamina,1,171,1296,2484,180
 card_5star_jin_013,Jin,5,Straight Through the Heart,wisdom,1,134,1656,105,1861
 card_5star_jin_014,Jin,5,DOPE Jin,passion,1,670,2772,349,360
@@ -104,6 +105,7 @@ card_3star_suga_022,Suga,3,Charging Complete,passion,1,521,1540,543,280
 card_3star_suga_023,Suga,3,Do Not Approach,stamina,1,1120,260,1232,272
 card_3star_suga_024,Suga,3,Precious Me,wisdom,1,280,308,781,1358
 card_3star_suga_025,Suga,3,Charismatic Black Sugar,stamina,1,280,781,924,815
+card_3star_suga_026,Suga,3,Melting Point,passion,1,84,1448,1277,78
 card_4star_suga_001,Suga,4,Metronome,empathy,1,893,640,931,704
 card_4star_suga_002,Suga,4,Pure White Sugar,passion,1,298,1408,931,640
 card_4star_suga_003,Suga,4,Bowtie,stamina,1,320,960,1600,320
@@ -127,7 +129,7 @@ card_5star_suga_007,Suga,5,Dreamland SUGA,stamina,2,540,1152,1465,502
 card_5star_suga_008,Suga,5,Romantic SUGA,stamina,1,1080,396,1746,335
 card_5star_suga_009,Suga,5,FAKE LOVE SUGA,passion,1,1048,1080,335,1188
 card_5star_suga_010,Suga,5,Red Carpet SUGA,wisdom,2,198,1048,180,2009
-card_5star_suga_011,Suga,5,Boy of Summer SUGA,empathy,1,1584,1048,720,335
+card_5star_suga_011,Suga,5,Boy of Summer SUGA,empathy,2,1584,1048,720,335
 card_5star_suga_012,Suga,5,Boy In Luv SUGA,empathy,1,2376,175,180,1339
 card_5star_suga_013,Suga,5,I'm Gonna Win,passion,1,105,1861,1574,108
 card_5star_suga_014,Suga,5,DOPE SUGA,stamina,1,360,349,2772,670
@@ -178,6 +180,7 @@ card_3star_jhope_022,J-Hope,3,Dance Time,wisdom,1,521,560,272,1540
 card_3star_jhope_023,J-Hope,3,Another Great Day,stamina,1,280,280,1400,840
 card_3star_jhope_024,J-Hope,3,Awww!,wisdom,1,840,140,140,1680
 card_3star_jhope_025,J-Hope,3,Hope Swag,passion,1,840,924,781,272
+card_3star_jhope_026,J-Hope,3,Summertime,passion,1,1198,1448,81,112
 card_4star_jhope_001,J-Hope,4,Pretty Pretty,empathy,1,1242,352,595,960
 card_4star_jhope_002,J-Hope,4,"Sit, Wait",passion,1,320,1760,893,310
 card_4star_jhope_003,J-Hope,4,Great Work,stamina,1,1190,320,1242,352
@@ -201,7 +204,7 @@ card_5star_jhope_007,J-Hope,5,Dreamland j-hope,wisdom,2,524,1188,502,1465
 card_5star_jhope_008,J-Hope,5,Romantic j-hope,stamina,1,1048,396,1674,360
 card_5star_jhope_009,J-Hope,5,FAKE LOVE j-hope,stamina,1,360,1188,1048,1004
 card_5star_jhope_010,J-Hope,5,Red Carpet j-hope,wisdom,2,175,180,1004,2376
-card_5star_jhope_011,J-Hope,5,Boy of Summer j-hope,wisdom,1,1004,720,349,1584
+card_5star_jhope_011,J-Hope,5,Boy of Summer j-hope,wisdom,2,1004,720,349,1584
 card_5star_jhope_012,J-Hope,5,Boy In Luv j-hope,wisdom,1,1397,180,167,2376
 card_5star_jhope_013,J-Hope,5,A Moment to Ponder,empathy,1,1861,1574,108,105
 card_5star_jhope_014,J-Hope,5,DOPE j-hope,wisdom,1,698,360,335,2772
@@ -252,6 +255,7 @@ card_3star_rm_022,RM,3,Warming Up,empathy,1,1540,521,280,543
 card_3star_rm_023,RM,3,Cutesy,stamina,1,140,781,1848,136
 card_3star_rm_024,RM,3,Inspired,wisdom,1,840,616,543,781
 card_3star_rm_025,RM,3,"No, Not Today",passion,1,272,924,781,840
+card_3star_rm_026,RM,3,Summer Daily,stamina,1,84,81,1448,1224
 card_4star_rm_001,RM,4,Sherlock Namjun,wisdom,1,1242,320,298,1408
 card_4star_rm_002,RM,4,Collecting Evidence,empathy,1,1056,931,640,595
 card_4star_rm_003,RM,4,Decisive Clue,passion,1,310,1408,893,640
@@ -275,7 +279,7 @@ card_5star_rm_007,RM,5,Dreamland RM,empathy,2,1465,524,1188,502
 card_5star_rm_008,RM,5,Romantic RM,stamina,1,1080,396,1746,335
 card_5star_rm_009,RM,5,FAKE LOVE RM,empathy,1,1048,1080,1004,396
 card_5star_rm_010,RM,5,Red Carpet RM,wisdom,2,1188,175,180,2009
-card_5star_rm_011,RM,5,Boy of Summer RM,passion,1,1004,1584,698,360
+card_5star_rm_011,RM,5,Boy of Summer RM,passion,2,1004,1584,698,360
 card_5star_rm_012,RM,5,Boy In Luv RM,passion,1,180,2376,1397,167
 card_5star_rm_013,RM,5,Pretty Good,stamina,1,108,100,1861,1641
 card_5star_rm_014,RM,5,DOPE RM,empathy,1,2772,698,360,335
@@ -326,6 +330,7 @@ card_3star_jimin_022,Jimin,3,Gym Time,passion,1,543,1540,260,560
 card_3star_jimin_023,Jimin,3,Welcome,stamina,1,140,840,1680,140
 card_3star_jimin_024,Jimin,3,Pah!,wisdom,1,140,140,840,1680
 card_3star_jimin_025,Jimin,3,However I Feel,stamina,1,280,815,924,781
+card_3star_jimin_026,Jimin,3,Shooting Star,stamina,1,1288,104,1448,81
 card_4star_jimin_001,Jimin,4,Playlist,empathy,1,1280,320,640,960
 card_4star_jimin_002,Jimin,4,Eye Contact,passion,1,160,2112,155,893
 card_4star_jimin_003,Jimin,4,Hip Hop Baby,stamina,1,320,310,2464,298
@@ -349,7 +354,7 @@ card_5star_jimin_007,Jimin,5,Dreamland Jimin,stamina,2,540,1152,1465,502
 card_5star_jimin_008,Jimin,5,Romantic Jimin,stamina,1,1048,360,1674,396
 card_5star_jimin_009,Jimin,5,FAKE LOVE Jimin,wisdom,1,1188,349,1080,1004
 card_5star_jimin_010,Jimin,5,Red Carpet Jimin,wisdom,2,175,1188,167,2160
-card_5star_jimin_011,Jimin,5,Boy of Summer Jimin,stamina,1,1080,335,1584,698
+card_5star_jimin_011,Jimin,5,Boy of Summer Jimin,stamina,2,1080,335,1584,698
 card_5star_jimin_012,Jimin,5,Boy In Luv Jimin,passion,1,1397,2376,167,180
 card_5star_jimin_013,Jimin,5,"Ready, Action",empathy,1,1861,105,1656,134
 card_5star_jimin_014,Jimin,5,DOPE Jimin,stamina,1,360,335,2772,698
@@ -400,6 +405,7 @@ card_3star_v_022,V,3,Dodgeball King,wisdom,1,543,280,521,1540
 card_3star_v_023,V,3,Teary Teary,stamina,1,168,136,1848,781
 card_3star_v_024,V,3,The Sweetest Taste,wisdom,1,136,154,781,1680
 card_3star_v_025,V,3,Taetae's Here,wisdom,1,781,840,272,924
+card_3star_v_026,V,3,It's Summer Summery,empathy,1,1448,81,1288,104
 card_4star_v_001,V,4,Shocking Visual,empathy,1,1280,352,595,931
 card_4star_v_002,V,4,Taetae's Laboratory,passion,1,960,1600,320,320
 card_4star_v_003,V,4,Brilliant Glasses,stamina,1,160,1056,1862,149
@@ -423,7 +429,7 @@ card_5star_v_007,V,5,Dreamland V,wisdom,2,502,1188,524,1465
 card_5star_v_008,V,5,Romantic V,stamina,1,1188,335,1800,349
 card_5star_v_009,V,5,FAKE LOVE V,stamina,1,349,1188,1004,1080
 card_5star_v_010,V,5,Red Carpet V,wisdom,2,167,198,1048,2160
-card_5star_v_011,V,5,Boy of Summer V,wisdom,1,1004,360,698,1584
+card_5star_v_011,V,5,Boy of Summer V,wisdom,2,1004,360,698,1584
 card_5star_v_012,V,5,Boy In Luv V,empathy,1,2376,175,1440,167
 card_5star_v_013,V,5,Curiosity Satisfied,passion,1,1540,1861,105,144
 card_5star_v_014,V,5,DOPE V,wisdom,1,670,360,349,2772
@@ -474,6 +480,7 @@ card_3star_jungkook_022,Jungkook,3,Hope It Reaches You,empathy,1,1540,272,560,52
 card_3star_jungkook_023,Jungkook,3,You Over There,stamina,1,840,521,924,543
 card_3star_jungkook_024,Jungkook,3,"One, Two",wisdom,1,136,840,130,1848
 card_3star_jungkook_025,Jungkook,3,Heart Kook,empathy,1,924,781,840,272
+card_3star_jungkook_026,Jungkook,3,I Hear the Ocean,wisdom,1,1277,84,78,1448
 card_4star_jungkook_001,Jungkook,4,Taekwon Boy,empathy,1,1600,352,931,298
 card_4star_jungkook_002,Jungkook,4,Black Belt,stamina,1,1242,320,1190,352
 card_4star_jungkook_003,Jungkook,4,Ray of Sunshine,passion,1,176,1862,160,893
@@ -497,7 +504,7 @@ card_5star_jungkook_007,Jungkook,5,Dreamland Jung Kook,passion,2,502,1465,1152,5
 card_5star_jungkook_008,Jungkook,5,Romantic Jung Kook,stamina,1,1048,396,1674,360
 card_5star_jungkook_009,Jungkook,5,FAKE LOVE Jung Kook,passion,1,1004,1188,1048,360
 card_5star_jungkook_010,Jungkook,5,Red Carpet Jung Kook,wisdom,2,1188,167,180,2095
-card_5star_jungkook_011,Jungkook,5,Boy of Summer Jung Kook,passion,1,1004,1584,349,720
+card_5star_jungkook_011,Jungkook,5,Boy of Summer Jung Kook,passion,2,1004,1584,349,720
 card_5star_jungkook_012,Jungkook,5,Boy In Luv Jung Kook,stamina,1,180,167,2376,1397
 card_5star_jungkook_013,Jungkook,5,Sunshine Boy,wisdom,1,1574,108,105,1861
 card_5star_jungkook_014,Jungkook,5,DOPE Jung Kook,stamina,1,360,349,2772,670

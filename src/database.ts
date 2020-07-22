@@ -220,8 +220,10 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 tier: (record => {
                     const star = parseInt(record['membercard_grade']);
                     if (star === 5 && (
-                        record['membercard_name'].toLowerCase().indexOf("007") > -1 ||
-                        record['membercard_name'].toLowerCase().indexOf("010") > -1 ) ) {
+                        record['membercard_name'].toLowerCase().indexOf("007") > -1 || // dreamland
+                        record['membercard_name'].toLowerCase().indexOf("010") > -1 || // Red carpet
+                        record['membercard_name'].toLowerCase().indexOf("011") > -1  // boy of summer
+                    )) {
                         return 2;
                     } else if (star <= 2) {
                         return 0;
