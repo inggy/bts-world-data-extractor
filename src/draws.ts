@@ -127,6 +127,16 @@ const purple = [
     "card_5star_jimin_024",
     "card_5star_v_024",
     "card_5star_jungkook_024",
+
+    /* Interview */
+
+    "card_5star_rm_026",
+    "card_5star_jin_026",
+    "card_5star_suga_026",
+    "card_5star_jhope_026",
+    "card_5star_jimin_026",
+    "card_5star_v_026",
+    "card_5star_jungkook_026",
 ];
 
 const records = parse(fs.readFileSync(`./output/consumable_cards.csv`, 'utf-8'), {
