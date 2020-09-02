@@ -217,12 +217,15 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                 passion: (record => parseInt(record['membercard_manage_basic'])), 
                 stamina: (record => parseInt(record['membercard_idea_basic'])),
                 wisdom: (record => parseInt(record['membercard_design_basic'])),
+                // TIER 2
                 tier: (record => {
                     const star = parseInt(record['membercard_grade']);
                     if (star === 5 && (
                         record['membercard_name'].toLowerCase().indexOf("007") > -1 || // dreamland
                         record['membercard_name'].toLowerCase().indexOf("010") > -1 || // Red carpet
-                        record['membercard_name'].toLowerCase().indexOf("011") > -1  // boy of summer
+                        record['membercard_name'].toLowerCase().indexOf("011") > -1 || // boy of summer,
+                        record['membercard_name'].toLowerCase().indexOf("012") > -1 || // boy in luv,
+                        record['membercard_name'].toLowerCase().indexOf("006") > -1  // let's do this
                     )) {
                         return 2;
                     } else if (star <= 2) {
