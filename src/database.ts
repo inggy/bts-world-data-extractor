@@ -225,7 +225,8 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                         record['membercard_name'].toLowerCase().indexOf("010") > -1 || // Red carpet
                         record['membercard_name'].toLowerCase().indexOf("011") > -1 || // boy of summer,
                         record['membercard_name'].toLowerCase().indexOf("012") > -1 || // boy in luv,
-                        record['membercard_name'].toLowerCase().indexOf("006") > -1  // let's do this
+                        record['membercard_name'].toLowerCase().indexOf("006") > -1 ||  // let's do this,
+                        record['membercard_name'].toLowerCase().indexOf("008") > -1  // romantic
                     )) {
                         return 2;
                     } else if (star <= 2) {
