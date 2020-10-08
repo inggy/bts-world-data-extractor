@@ -1,5 +1,21 @@
 import fs from 'fs';
 import { Card } from '../model/model';
+const HARDCODED: Record<string, string> = {
+    "Hashtag_Another_Tuto": "#The_Everywhere_Card",
+    "Hashtag_Another_330110": "#Emergency_Withdrawal_Detective_Combo",
+    "Hashtag_Another_330218": "#SneakerOwner_and_ShelterEmployee",
+    "Hashtag_Another_330302": "#Manggae_Bakery_HappinessDeliverer",
+    "Hashtag_Another_330307": "#Looking_for_ManggaeShopOwners_Smile",
+    "Hashtag_Another_330309": "#OwnerofHappiness_Resembles_Manggaetteok",
+    "Hashtag_Another_330315": "#Define_Happiness_WithA_ManggaeRiceCake",
+    "Hashtag_Another_330317": "#HotelManager_and_ManggaeBakeryOwner",
+    "Hashtag_Another_330319": "#Extremely_Emotional_Piano_Playing",
+    
+    "Hashtag_Another_330321":"#HiAgain?_Manggae_Bakery",
+    "Hashtag_RedCarpet_BTS": "#RedCarpet_BTS",
+    "Hashtag_BasketballTeam_Hyung_Line": "#BasketballTeam_Hyung",
+    "card_2star_jungkook_011": "Feeling Animated Jung Kook",
+};
 
 const validChar = ["’", "\n", "★", " "];
 function isValidChar(char: String): boolean {
@@ -50,6 +66,9 @@ export function CardNameTranslation(): { getName(card: Card): string; getHashtag
     const corpus = processStringFile();
     return {
         getName: ((card: Card) => {
+            if (HARDCODED[card.name]) {
+                return HARDCODED[card.name];
+            }
             const template = `${card.name}[\\d]*/Card${card.stars}★([^/]+)`;
         
             const regex1 = new RegExp(template,'igm');
@@ -72,6 +91,9 @@ export function CardNameTranslation(): { getName(card: Card): string; getHashtag
             }
         }),
         getHashtag: (stringId: string) => {
+            if (HARDCODED[stringId]) {
+                return HARDCODED[stringId];
+            }
             /*
              * Match stringId + 0 + (optionally one quote), then
              * /{part1}/{part2}/Hashtags(optionally one space)(#THE_TAG){Stop at possible beginnings of the next string id}
