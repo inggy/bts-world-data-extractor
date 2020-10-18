@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 import cheerio from 'cheerio';
 import parse from "csv-parse/lib/sync";
 import { Dictionary } from "./model/model";
-
+import { additionalObtainableWays } from "./additionalObtainableWays";
 //"http://forum.netmarble.com/btsworld/view/36/22";
 const gemDrawUrl = "http://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/22?menuSeq=36&viewFlag=false&_=1567745684254";
 
@@ -19,141 +19,10 @@ const memberDrawTicketUrl = "https://forum.netmarble.com/api/game/btsw/official/
 // http://forum.netmarble.com/btsworld/view/51/1405665
 const seasonChallengeUrl = "http://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/1405665?menuSeq=51&viewFlag=false&_=1588054799725";
 
-const purple = [
-    "card_5star_rm_003",
-    "card_5star_jin_002",
-    "card_5star_suga_003",
-    "card_5star_jhope_004",
-    "card_5star_jimin_004",
-    "card_5star_v_003",
-    "card_5star_jungkook_002",
-
-    /* Fake Love */
-    "card_5star_rm_009",
-    "card_5star_jin_009",
-    "card_5star_suga_009",
-    "card_5star_jhope_009",
-    "card_5star_jimin_009",
-    "card_5star_v_009",
-    "card_5star_jungkook_009",
-     
-    /* Dreamland */
-    "card_5star_rm_007",
-    "card_5star_suga_007",
-    "card_5star_jin_007",
-    "card_5star_jhope_007",
-    "card_5star_jimin_007",
-    "card_5star_v_007",
-    "card_5star_jungkook_007",
-
-    /* Boy of Summer */
-    "card_5star_rm_011",
-    "card_5star_jin_011",
-    "card_5star_suga_011",
-    "card_5star_jhope_011",
-    "card_5star_jimin_011",
-    "card_5star_v_011",
-    "card_5star_jungkook_011",
-
-    /* Dorm */
-    "card_5star_rm_013",
-    "card_5star_jin_013",
-    "card_5star_suga_013",
-    "card_5star_jhope_013",
-    "card_5star_jimin_013",
-    "card_5star_v_013",
-    "card_5star_jungkook_013",
-
-    /* Brave */
-    "card_5star_rm_015",
-    "card_5star_jin_015",
-    "card_5star_suga_015",
-    "card_5star_jhope_015",
-    "card_5star_jimin_015",
-    "card_5star_v_015",
-    "card_5star_jungkook_015",
-
-    /* Autumn Snap */
-    "card_5star_rm_017",
-    "card_5star_jin_017",
-    "card_5star_suga_017",
-    "card_5star_jhope_017",
-    "card_5star_jimin_017",
-    "card_5star_v_017",
-    "card_5star_jungkook_017",
-
-    /* Red carpet */
-    "card_5star_rm_010",
-    "card_5star_jin_010",
-    "card_5star_suga_010",
-    "card_5star_jhope_010",
-    "card_5star_jimin_010",
-    "card_5star_v_010",
-    "card_5star_jungkook_010",
-
-    /* Winter */
-    "card_5star_rm_019",
-    "card_5star_jin_019",
-    "card_5star_suga_019",
-    "card_5star_jhope_019",
-    "card_5star_jimin_019",
-    "card_5star_v_019",
-    "card_5star_jungkook_019",
-
-    /* Hope-full */
-    "card_5star_rm_020",
-    "card_5star_jin_020",
-    "card_5star_suga_020",
-    "card_5star_jhope_020",
-    "card_5star_jimin_020",
-    "card_5star_v_020",
-    "card_5star_jungkook_020",
-
-    /* Valentine */
-    "card_5star_rm_022",
-    "card_5star_jin_022",
-    "card_5star_suga_022",
-    "card_5star_jhope_022",
-    "card_5star_jimin_022",
-    "card_5star_v_022",
-    "card_5star_jungkook_022",
-
-    /* Spring is blooming */
-
-    "card_5star_rm_024",
-    "card_5star_jin_024",
-    "card_5star_suga_024",
-    "card_5star_jhope_024",
-    "card_5star_jimin_024",
-    "card_5star_v_024",
-    "card_5star_jungkook_024",
-
-    /* Interview */
-
-    "card_5star_rm_026",
-    "card_5star_jin_026",
-    "card_5star_suga_026",
-    "card_5star_jhope_026",
-    "card_5star_jimin_026",
-    "card_5star_v_026",
-    "card_5star_jungkook_026",
-
-    /* House party */
-
-    "card_5star_rm_028",
-    "card_5star_jin_028",
-    "card_5star_suga_028",
-    "card_5star_jhope_028",
-    "card_5star_jimin_028",
-    "card_5star_v_028",
-    "card_5star_jungkook_028",
-];
-
 const records = parse(fs.readFileSync(`./output/consumable_cards.csv`, 'utf-8'), {
     columns: false,
     delimiter: ","
 });
-
 
 const titleToIdMap: Dictionary<string> = {};
 records.forEach((cols : any) => {
@@ -251,19 +120,28 @@ const seasonChallengePromise = fetchBlogContent(seasonChallengeUrl).then(htmlCon
     ]
 })
 
-Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPromise, seasonChallengePromise]).then(results => {
-    const combinedResults:Dictionary<string[]> = {
-        purple: purple.sort(),
-        ...results[0],
-        //seasonChallenge: results[4],
-        gem: results[1],
-        gold: results[2],
-        memberDraw: results[3],
-        
-    };
+function _addObtainableWay(cardMapping: Dictionary<string[]>, cardId: string, key: string) {
+    if (!cardMapping[cardId]) cardMapping[cardId] = [];
+    cardMapping[cardId].push(key);
+}
 
-    Object.keys(combinedResults).forEach(key => console.log(key, combinedResults[key].length));
+Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPromise, seasonChallengePromise]).then(results => {
+    const combinedResults: Dictionary<string[]> = {};
+
+    additionalObtainableWays.event.forEach(cardId => _addObtainableWay(combinedResults, cardId, "e"));
+    additionalObtainableWays.purple.forEach(cardId => _addObtainableWay(combinedResults, cardId, "p"));
+    results[0].blue.forEach(cardId => _addObtainableWay(combinedResults, cardId, "b"))
+    results[0].yellow.forEach(cardId => _addObtainableWay(combinedResults, cardId, "y"));
+    results[1].forEach(cardId => _addObtainableWay(combinedResults, cardId, "gem"));
+    results[2].forEach(cardId => _addObtainableWay(combinedResults, cardId, "$"));
+    //results[3].forEach(cardId => _addObtainableWay(combinedResults2, cardId, "MEMBER"));
+
+    additionalObtainableWays.first.forEach(cardId => _addObtainableWay(combinedResults, cardId, "first"));
+    additionalObtainableWays.c0.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c0"));
+    additionalObtainableWays.c10.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c10"));
+    additionalObtainableWays.c15.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c15"));
+    additionalObtainableWays.c25.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c25"));
     
-    fs.writeFile(`./output/draws.json`, JSON.stringify(combinedResults, null, 4), function(err:any) {})
-    
+    fs.writeFile(`./output/draws_pretty.json`, JSON.stringify(combinedResults, null, 4), function(err:any) {})
+    fs.writeFile(`./output/draws.txt`, JSON.stringify(combinedResults), function(err:any) {})
 });
