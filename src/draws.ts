@@ -14,7 +14,7 @@ const loyaltyBoxUrl = "http://forum.netmarble.com/api/game/btsw/official/forum/b
 const goldDrawUrl = "http://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/21?menuSeq=36&viewFlag=false&_=1567747014594";
 
 // https://forum.netmarble.com/btsworld/view/36/1093967
-const memberDrawTicketUrl = "https://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/1093967?menuSeq=36&viewFlag=false&_=1571291201265";
+const memberDrawTicketUrl = "https://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/1093967?menuSeq=60&viewFlag=false&_=1603331531429";
 
 // http://forum.netmarble.com/btsworld/view/51/1405665
 const seasonChallengeUrl = "http://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/1405665?menuSeq=51&viewFlag=false&_=1588054799725";
