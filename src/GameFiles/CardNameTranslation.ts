@@ -15,6 +15,10 @@ const HARDCODED: Record<string, string> = {
     "Hashtag_RedCarpet_BTS": "#RedCarpet_BTS",
     "Hashtag_BasketballTeam_Hyung_Line": "#BasketballTeam_Hyung",
     "card_2star_jungkook_011": "Feeling Animated Jung Kook",
+
+    "Hashtag_Another_330402": "#FishingSkillsScarierThanAGhostStory",
+    "Hashtag_Another_330421": "#ThatDaysBGM",
+    "Hashtag_HeartSkip_BTS": "#HeartSkip_BTS",
 };
 
 const validChar = ["’", "\n", "★", " "];
