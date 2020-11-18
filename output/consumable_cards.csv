@@ -33,6 +33,7 @@ card_3star_jin_023,Jin,3,Bang!,stamina,1,280,815,1540,260
 card_3star_jin_024,Jin,3,Bright Laughter,wisdom,1,136,840,130,1848
 card_3star_jin_025,Jin,3,The Last Cold Snap,wisdom,1,815,840,260,924
 card_3star_jin_026,Jin,3,Temperature of a Handsome Guy,empathy,1,1448,1277,84,78
+card_3star_jin_027,Jin,3,Rules of Autumn,stamina,1,19,832,1562,296
 card_4star_jin_001,Jin,4,Looks Working Overtime,empathy,1,1056,893,640,621
 card_4star_jin_002,Jin,4,Special Service,empathy,1,1280,310,704,893
 card_4star_jin_003,Jin,4,Man with a Flower,passion,1,320,1190,1056,621
@@ -63,7 +64,7 @@ card_5star_jin_013,Jin,5,Straight Through the Heart,wisdom,1,134,1656,105,1861
 card_5star_jin_014,Jin,5,DOPE Jin,passion,2,670,2772,349,360
 card_5star_jin_015,Jin,5,Brave Jin,stamina,1,108,105,1861,1574
 card_5star_jin_016,Jin,5,Signature Jin,stamina,1,288,67,2812,1013
-card_5star_jin_017,Jin,5,Autumn Snap Jin,empathy,1,2376,314,1080,33
+card_5star_jin_017,Jin,5,Autumn Snap Jin,empathy,2,2376,314,1080,33
 card_5star_jin_018,Jin,5,Blood Sweat & Tears Jin,passion,1,64,2336,1662,54
 card_5star_jin_019,Jin,5,Winter Wonderland Jin,wisdom,1,1172,144,35,2376
 card_5star_jin_020,Jin,5,Hope-full Jin,empathy,1,2574,837,180,175
@@ -115,6 +116,7 @@ card_3star_suga_023,Suga,3,Do Not Approach,stamina,1,1120,260,1232,272
 card_3star_suga_024,Suga,3,Precious Me,wisdom,1,280,308,781,1358
 card_3star_suga_025,Suga,3,Charismatic Black Sugar,stamina,1,280,781,924,815
 card_3star_suga_026,Suga,3,Melting Point,passion,1,84,1448,1277,78
+card_3star_suga_027,Suga,3,Human Autumn Leaves,stamina,1,840,26,1848,244
 card_4star_suga_001,Suga,4,Metronome,empathy,1,893,640,931,704
 card_4star_suga_002,Suga,4,Pure White Sugar,passion,1,298,1408,931,640
 card_4star_suga_003,Suga,4,Bowtie,stamina,1,320,960,1600,320
@@ -145,7 +147,7 @@ card_5star_suga_013,Suga,5,I'm Gonna Win,passion,1,105,1861,1574,108
 card_5star_suga_014,Suga,5,DOPE SUGA,stamina,2,360,349,2772,670
 card_5star_suga_015,Suga,5,Brave SUGA,empathy,1,1861,1574,108,105
 card_5star_suga_016,Suga,5,Signature SUGA,empathy,1,2812,290,1044,57
-card_5star_suga_017,Suga,5,Autumn Snap SUGA,wisdom,1,307,43,1004,2376
+card_5star_suga_017,Suga,5,Autumn Snap SUGA,wisdom,2,307,43,1004,2376
 card_5star_suga_018,Suga,5,Blood Sweat & Tears SUGA,stamina,1,54,67,2336,1659
 card_5star_suga_019,Suga,5,Winter Wonderland SUGA,stamina,1,36,140,2376,1172
 card_5star_suga_020,Suga,5,Hope-full SUGA,wisdom,1,873,162,134,2633
@@ -197,6 +199,7 @@ card_3star_jhope_023,J-Hope,3,Another Great Day,stamina,1,280,280,1400,840
 card_3star_jhope_024,J-Hope,3,Awww!,wisdom,1,840,140,140,1680
 card_3star_jhope_025,J-Hope,3,Hope Swag,passion,1,840,924,781,272
 card_3star_jhope_026,J-Hope,3,Summertime,passion,1,1198,1448,81,112
+card_3star_jhope_027,J-Hope,3,Hymangi is Autumn-y,wisdom,1,840,277,26,1630
 card_4star_jhope_001,J-Hope,4,Pretty Pretty,empathy,1,1242,352,595,960
 card_4star_jhope_002,J-Hope,4,"Sit, Wait",passion,1,320,1760,893,310
 card_4star_jhope_003,J-Hope,4,Great Work,stamina,1,1190,320,1242,352
@@ -227,7 +230,7 @@ card_5star_jhope_013,J-Hope,5,A Moment to Ponder,empathy,1,1861,1574,108,105
 card_5star_jhope_014,J-Hope,5,DOPE j-hope,wisdom,2,698,360,335,2772
 card_5star_jhope_015,J-Hope,5,Brave j-hope,passion,1,105,1861,1574,108
 card_5star_jhope_016,J-Hope,5,Signature j-hope,passion,1,268,2812,1013,72
-card_5star_jhope_017,J-Hope,5,Autumn Snap j-hope,wisdom,1,1048,324,33,2376
+card_5star_jhope_017,J-Hope,5,Autumn Snap j-hope,wisdom,2,1048,324,33,2376
 card_5star_jhope_018,J-Hope,5,Blood Sweat & Tears j-hope,passion,1,1641,2336,54,86
 card_5star_jhope_019,J-Hope,5,Winter Wonderland j-hope,passion,1,1172,2376,52,126
 card_5star_jhope_020,J-Hope,5,Hope-full j-hope,passion,1,873,2574,167,180
@@ -279,6 +282,7 @@ card_3star_rm_023,RM,3,Cutesy,stamina,1,140,781,1848,136
 card_3star_rm_024,RM,3,Inspired,wisdom,1,840,616,543,781
 card_3star_rm_025,RM,3,"No, Not Today",passion,1,272,924,781,840
 card_3star_rm_026,RM,3,Summer Daily,stamina,1,84,81,1448,1224
+card_3star_rm_027,RM,3,Fall Mood,empathy,1,1630,290,23,832
 card_4star_rm_001,RM,4,Sherlock Namjun,wisdom,1,1242,320,298,1408
 card_4star_rm_002,RM,4,Collecting Evidence,empathy,1,1056,931,640,595
 card_4star_rm_003,RM,4,Decisive Clue,passion,1,310,1408,893,640
@@ -309,7 +313,7 @@ card_5star_rm_013,RM,5,Pretty Good,stamina,1,108,100,1861,1641
 card_5star_rm_014,RM,5,DOPE RM,empathy,2,2772,698,360,335
 card_5star_rm_015,RM,5,Brave RM,empathy,1,1861,105,1656,134
 card_5star_rm_016,RM,5,Signature RM,wisdom,1,971,288,70,2812
-card_5star_rm_017,RM,5,Autumn Snap RM,passion,1,1004,2376,297,54
+card_5star_rm_017,RM,5,Autumn Snap RM,passion,2,1004,2376,297,54
 card_5star_rm_018,RM,5,Blood Sweat & Tears RM,empathy,1,2336,54,86,1641
 card_5star_rm_019,RM,5,Winter Wonderland RM,passion,1,36,2376,1172,140
 card_5star_rm_020,RM,5,Hope-full RM,stamina,1,954,117,2614,140
@@ -361,6 +365,7 @@ card_3star_jimin_023,Jimin,3,Welcome,stamina,1,140,840,1680,140
 card_3star_jimin_024,Jimin,3,Pah!,wisdom,1,140,140,840,1680
 card_3star_jimin_025,Jimin,3,However I Feel,stamina,1,280,815,924,781
 card_3star_jimin_026,Jimin,3,Shooting Star,stamina,1,1288,104,1448,81
+card_3star_jimin_027,Jimin,3,Autumn Manggae,passion,1,840,1630,262,39
 card_4star_jimin_001,Jimin,4,Playlist,empathy,1,1280,320,640,960
 card_4star_jimin_002,Jimin,4,Eye Contact,passion,1,160,2112,155,893
 card_4star_jimin_003,Jimin,4,Hip Hop Baby,stamina,1,320,310,2464,298
@@ -391,7 +396,7 @@ card_5star_jimin_013,Jimin,5,"Ready, Action",empathy,1,1861,105,1656,134
 card_5star_jimin_014,Jimin,5,DOPE Jimin,stamina,2,360,335,2772,698
 card_5star_jimin_015,Jimin,5,Brave Jimin,wisdom,1,134,1656,105,1861
 card_5star_jimin_016,Jimin,5,Signature Jimin,stamina,1,1044,59,2812,278
-card_5star_jimin_017,Jimin,5,Autumn Snap Jimin,passion,1,35,2376,1004,324
+card_5star_jimin_017,Jimin,5,Autumn Snap Jimin,passion,2,35,2376,1004,324
 card_5star_jimin_018,Jimin,5,Blood Sweat & Tears Jimin,stamina,1,1692,80,2336,56
 card_5star_jimin_019,Jimin,5,Winter Wonderland Jimin,empathy,1,2376,117,54,1222
 card_5star_jimin_020,Jimin,5,Hope-full Jimin,passion,1,158,2594,890,154
@@ -443,6 +448,7 @@ card_3star_v_023,V,3,Teary Teary,stamina,1,168,136,1848,781
 card_3star_v_024,V,3,The Sweetest Taste,wisdom,1,136,154,781,1680
 card_3star_v_025,V,3,Taetae's Here,wisdom,1,781,840,272,924
 card_3star_v_026,V,3,It's Summer Summery,empathy,1,1448,81,1288,104
+card_3star_v_027,V,3,Taetae's Line of Sight,empathy,1,1562,252,815,31
 card_4star_v_001,V,4,Shocking Visual,empathy,1,1280,352,595,931
 card_4star_v_002,V,4,Taetae's Laboratory,passion,1,960,1600,320,320
 card_4star_v_003,V,4,Brilliant Glasses,stamina,1,160,1056,1862,149
@@ -473,7 +479,7 @@ card_5star_v_013,V,5,Curiosity Satisfied,passion,1,1540,1861,105,144
 card_5star_v_014,V,5,DOPE V,wisdom,2,670,360,349,2772
 card_5star_v_015,V,5,Brave V,empathy,1,1861,105,1656,134
 card_5star_v_016,V,5,Signature V,empathy,1,2812,278,1044,59
-card_5star_v_017,V,5,Autumn Snap V,stamina,1,1080,33,2376,314
+card_5star_v_017,V,5,Autumn Snap V,stamina,2,1080,33,2376,314
 card_5star_v_018,V,5,Blood Sweat & Tears V,wisdom,1,56,1692,80,2336
 card_5star_v_019,V,5,Winter Wonderland V,empathy,1,2376,1222,144,33
 card_5star_v_020,V,5,Hope-full V,stamina,1,936,122,2614,151
@@ -525,6 +531,7 @@ card_3star_jungkook_023,Jungkook,3,You Over There,stamina,1,840,521,924,543
 card_3star_jungkook_024,Jungkook,3,"One, Two",wisdom,1,136,840,130,1848
 card_3star_jungkook_025,Jungkook,3,Heart Kook,empathy,1,924,781,840,272
 card_3star_jungkook_026,Jungkook,3,I Hear the Ocean,wisdom,1,1277,84,78,1448
+card_3star_jungkook_027,Jungkook,3,Jung Kook's Empathy,wisdom,1,271,31,840,1630
 card_4star_jungkook_001,Jungkook,4,Taekwon Boy,empathy,1,1600,352,931,298
 card_4star_jungkook_002,Jungkook,4,Black Belt,stamina,1,1242,320,1190,352
 card_4star_jungkook_003,Jungkook,4,Ray of Sunshine,passion,1,176,1862,160,893
@@ -555,7 +562,7 @@ card_5star_jungkook_013,Jungkook,5,Sunshine Boy,wisdom,1,1574,108,105,1861
 card_5star_jungkook_014,Jungkook,5,DOPE Jung Kook,stamina,2,360,349,2772,670
 card_5star_jungkook_015,Jungkook,5,Brave Jung Kook,passion,1,1540,1861,105,144
 card_5star_jungkook_016,Jungkook,5,Signature Jung Kook,empathy,1,2812,1013,288,67
-card_5star_jungkook_017,Jungkook,5,Autumn Snap Jung Kook,wisdom,1,1004,324,35,2376
+card_5star_jungkook_017,Jungkook,5,Autumn Snap Jung Kook,wisdom,2,1004,324,35,2376
 card_5star_jungkook_018,Jungkook,5,Blood Sweat & Tears Jung Kook,wisdom,1,1659,54,67,2336
 card_5star_jungkook_019,Jungkook,5,Winter Wonderland Jung Kook,stamina,1,36,134,2376,1222
 card_5star_jungkook_020,Jungkook,5,Hope-full Jung Kook,wisdom,1,157,162,837,2614
