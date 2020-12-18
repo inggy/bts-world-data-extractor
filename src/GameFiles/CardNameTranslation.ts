@@ -20,6 +20,9 @@ const HARDCODED: Record<string, string> = {
     "Hashtag_Another_330402": "#FishingSkillsScarierThanAGhostStory",
     "Hashtag_Another_330421": "#ThatDaysBGM",
     "Hashtag_HeartSkip_BTS": "#HeartSkip_BTS",
+    "Hashtag_Sleepyhead_BTS": "#Sleepyhead_BTS",
+    "Hashtag_Another_330506": "#KnockKnockIsThisTheMysteriousGarden?",
+    "Hashtag_Another_330521": "#WinterBearAndPurpleFlowersSecret"
 };
 
 const validChar = ["’", "\n", "★", " "];

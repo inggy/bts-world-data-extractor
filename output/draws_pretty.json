@@ -451,6 +451,11 @@
         "y",
         "gem"
     ],
+    "card_5star_jhope_035": [
+        "b",
+        "y",
+        "gem"
+    ],
     "card_5star_jimin_001": [
         "b",
         "y",
@@ -535,6 +540,11 @@
         "gem"
     ],
     "card_5star_jimin_034": [
+        "b",
+        "y",
+        "gem"
+    ],
+    "card_5star_jimin_035": [
         "b",
         "y",
         "gem"
@@ -627,6 +637,11 @@
         "y",
         "gem"
     ],
+    "card_5star_jin_035": [
+        "b",
+        "y",
+        "gem"
+    ],
     "card_5star_jungkook_001": [
         "b",
         "y",
@@ -711,6 +726,11 @@
         "gem"
     ],
     "card_5star_jungkook_034": [
+        "b",
+        "y",
+        "gem"
+    ],
+    "card_5star_jungkook_035": [
         "b",
         "y",
         "gem"
@@ -803,6 +823,11 @@
         "y",
         "gem"
     ],
+    "card_5star_rm_035": [
+        "b",
+        "y",
+        "gem"
+    ],
     "card_5star_suga_001": [
         "b",
         "y",
@@ -891,6 +916,11 @@
         "y",
         "gem"
     ],
+    "card_5star_suga_035": [
+        "b",
+        "y",
+        "gem"
+    ],
     "card_5star_v_001": [
         "b",
         "y",
@@ -975,6 +1005,11 @@
         "gem"
     ],
     "card_5star_v_034": [
+        "b",
+        "y",
+        "gem"
+    ],
+    "card_5star_v_035": [
         "b",
         "y",
         "gem"
@@ -1451,6 +1486,9 @@
     "card_3star_jhope_026": [
         "$"
     ],
+    "card_3star_jhope_027": [
+        "$"
+    ],
     "card_3star_jimin_001": [
         "$"
     ],
@@ -1473,6 +1511,9 @@
         "$"
     ],
     "card_3star_jimin_026": [
+        "$"
+    ],
+    "card_3star_jimin_027": [
         "$"
     ],
     "card_3star_jin_001": [
@@ -1499,6 +1540,9 @@
     "card_3star_jin_026": [
         "$"
     ],
+    "card_3star_jin_027": [
+        "$"
+    ],
     "card_3star_jungkook_001": [
         "$"
     ],
@@ -1521,6 +1565,9 @@
         "$"
     ],
     "card_3star_jungkook_026": [
+        "$"
+    ],
+    "card_3star_jungkook_027": [
         "$"
     ],
     "card_3star_rm_001": [
@@ -1547,6 +1594,9 @@
     "card_3star_rm_026": [
         "$"
     ],
+    "card_3star_rm_027": [
+        "$"
+    ],
     "card_3star_suga_001": [
         "$"
     ],
@@ -1571,6 +1621,9 @@
     "card_3star_suga_026": [
         "$"
     ],
+    "card_3star_suga_027": [
+        "$"
+    ],
     "card_3star_v_001": [
         "$"
     ],
@@ -1593,6 +1646,9 @@
         "$"
     ],
     "card_3star_v_026": [
+        "$"
+    ],
+    "card_3star_v_027": [
         "$"
     ],
     "card_2star_jhope_001": [

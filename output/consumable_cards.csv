@@ -8,6 +8,7 @@ card_1star_jin_011,Jin,1,Manager,empathy,0,220,194,200,186
 card_1star_jin_012,Jin,1,Areum,wisdom,0,194,200,186,220
 card_1star_jin_013,Jin,1,Decided on You,passion,0,400,660,372,582
 card_1star_jin_014,Jin,1,Accept It Please,stamina,0,800,194,880,186
+card_1star_jin_015,Jin,1,Reconstructed Memory,stamina,0,600,582,660,186
 card_2star_jin_001,Jin,2,Pouty,empathy,0,720,720,480,480
 card_2star_jin_002,Jin,2,Pit-A-Pat,passion,0,480,792,466,670
 card_2star_jin_003,Jin,2,Bzzt,stamina,0,480,698,792,446
@@ -16,6 +17,7 @@ card_2star_jin_006,Jin,2,Sorry,empathy,0,792,698,480,446
 card_2star_jin_011,Jin,2,Feeling Animated Jin,stamina,0,240,223,264,233
 card_2star_jin_012,Jin,2,Been Well,wisdom,0,670,480,466,792
 card_2star_jin_013,Jin,2,Your Jjinie,passion,0,698,792,670,240
+card_2star_jin_014,Jin,2,Bunny Jjin,passion,0,931,1056,223,240
 card_3star_jin_001,Jin,3,Blowing Kisses,wisdom,1,280,560,840,1120
 card_3star_jin_002,Jin,3,"Heart, Pew",passion,1,272,1232,781,560
 card_3star_jin_007,Jin,3,So Cozy,empathy,1,924,815,560,521
@@ -34,6 +36,7 @@ card_3star_jin_024,Jin,3,Bright Laughter,wisdom,1,136,840,130,1848
 card_3star_jin_025,Jin,3,The Last Cold Snap,wisdom,1,815,840,260,924
 card_3star_jin_026,Jin,3,Temperature of a Handsome Guy,empathy,1,1448,1277,84,78
 card_3star_jin_027,Jin,3,Rules of Autumn,stamina,1,19,832,1562,296
+card_3star_jin_028,Jin,3,Handsome Farmer,passion,1,11,1848,1059,16
 card_4star_jin_001,Jin,4,Looks Working Overtime,empathy,1,1056,893,640,621
 card_4star_jin_002,Jin,4,Special Service,empathy,1,1280,310,704,893
 card_4star_jin_003,Jin,4,Man with a Flower,passion,1,320,1190,1056,621
@@ -82,6 +85,7 @@ card_5star_jin_031,Jin,5,Basketball Team Jin,wisdom,1,363,364,820,2970
 card_5star_jin_032,Jin,5,Camping Boys Jin,stamina,1,205,954,2772,203
 card_5star_jin_033,Jin,5,Dignified Gentleman Jin,stamina,1,1051,17,3010,499
 card_5star_jin_034,Jin,5,Heart Skip Jin,empathy,1,3049,52,338,1075
+card_5star_jin_035,Jin,5,Sleepyhead Jin,stamina,1,72,1048,3089,335
 card_1star_suga_003,Suga,1,Hello,wisdom,0,400,372,582,660
 card_1star_suga_004,Suga,1,I'm Tired,stamina,0,500,485,550,465
 card_1star_suga_005,Suga,1,Leave It to Me,passion,0,600,660,372,388
@@ -91,6 +95,7 @@ card_1star_suga_011,Suga,1,Professor Na,wisdom,0,186,200,194,220
 card_1star_suga_012,Suga,1,Ji Sungmin,empathy,0,220,186,200,194
 card_1star_suga_013,Suga,1,Let's Do Well,wisdom,0,582,400,372,660
 card_1star_suga_014,Suga,1,Navy SUGA,passion,0,800,880,186,194
+card_1star_suga_015,Suga,1,Hmm,stamina,0,600,186,660,582
 card_2star_suga_002,Suga,2,I'm Warning You,wisdom,0,670,480,466,792
 card_2star_suga_004,Suga,2,Hmph,stamina,0,480,466,792,670
 card_2star_suga_005,Suga,2,That's Annoying,passion,0,480,792,670,466
@@ -99,6 +104,7 @@ card_2star_suga_007,Suga,2,Nice to See You,passion,0,466,792,446,720
 card_2star_suga_011,Suga,2,Feeling Animated SUGA,stamina,0,228,216,276,240
 card_2star_suga_012,Suga,2,Nothing Much,stamina,0,720,446,792,466
 card_2star_suga_013,Suga,2,Worry Less,empathy,0,792,670,720,233
+card_2star_suga_014,Suga,2,It's Complicated,wisdom,0,233,240,893,1056
 card_3star_suga_001,Suga,3,Min SUGA Genius,stamina,1,280,560,1120,840
 card_3star_suga_002,Suga,3,Found this Heart,empathy,1,1120,280,840,560
 card_3star_suga_007,Suga,3,Aflutter,passion,1,840,924,543,521
@@ -117,6 +123,7 @@ card_3star_suga_024,Suga,3,Precious Me,wisdom,1,280,308,781,1358
 card_3star_suga_025,Suga,3,Charismatic Black Sugar,stamina,1,280,781,924,815
 card_3star_suga_026,Suga,3,Melting Point,passion,1,84,1448,1277,78
 card_3star_suga_027,Suga,3,Human Autumn Leaves,stamina,1,840,26,1848,244
+card_3star_suga_028,Suga,3,Pied Piper Boy,empathy,1,1848,1016,11,16
 card_4star_suga_001,Suga,4,Metronome,empathy,1,893,640,931,704
 card_4star_suga_002,Suga,4,Pure White Sugar,passion,1,298,1408,931,640
 card_4star_suga_003,Suga,4,Bowtie,stamina,1,320,960,1600,320
@@ -165,6 +172,7 @@ card_5star_suga_031,Suga,5,Basketball Team SUGA,wisdom,1,830,367,349,2970
 card_5star_suga_032,Suga,5,Camping Boys SUGA,stamina,1,1044,192,2772,184
 card_5star_suga_033,Suga,5,Dignified Gentleman SUGA,passion,1,50,3010,1013,486
 card_5star_suga_034,Suga,5,Heart Skip SUGA,passion,1,30,3049,1090,392
+card_5star_suga_035,Suga,5,Sleepyhead SUGA,passion,1,1004,3089,349,72
 card_1star_jhope_003,J-Hope,1,This and That,passion,0,465,550,485,500
 card_1star_jhope_004,J-Hope,1,Aha,stamina,0,600,372,660,388
 card_1star_jhope_005,J-Hope,1,So at Ease,stamina,0,400,582,660,372
@@ -174,6 +182,7 @@ card_1star_jhope_011,J-Hope,1,Baekmani,passion,0,200,220,186,194
 card_1star_jhope_012,J-Hope,1,Mr. Sanggu,passion,0,186,220,194,200
 card_1star_jhope_013,J-Hope,1,Hopeful Thoughts,empathy,0,660,582,400,372
 card_1star_jhope_014,J-Hope,1,Hope Pew Pew,wisdom,0,776,200,186,880
+card_1star_jhope_015,J-Hope,1,Squirrel Mode,wisdom,0,582,200,558,660
 card_2star_jhope_001,J-Hope,2,Let's Think,passion,0,670,792,466,480
 card_2star_jhope_002,J-Hope,2,What The?,stamina,0,480,466,792,670
 card_2star_jhope_003,J-Hope,2,Dazed,wisdom,0,466,720,446,792
@@ -182,6 +191,7 @@ card_2star_jhope_006,J-Hope,2,Let's Walk,stamina,0,720,466,792,446
 card_2star_jhope_011,J-Hope,2,Feeling Animated j-hope,wisdom,0,223,240,233,264
 card_2star_jhope_012,J-Hope,2,Hope Ideas,wisdom,0,698,480,446,792
 card_2star_jhope_013,J-Hope,2,"Ow, Wisdom Tooth",empathy,0,792,698,240,670
+card_2star_jhope_014,J-Hope,2,Everyone Shh,passion,0,233,1056,893,240
 card_3star_jhope_001,J-Hope,3,Rock Paper Scissors,passion,1,308,1042,560,815
 card_3star_jhope_002,J-Hope,3,Ho Ho,wisdom,1,272,924,521,1120
 card_3star_jhope_007,J-Hope,3,"Forward, Forward",stamina,1,840,521,924,543
@@ -200,6 +210,7 @@ card_3star_jhope_024,J-Hope,3,Awww!,wisdom,1,840,140,140,1680
 card_3star_jhope_025,J-Hope,3,Hope Swag,passion,1,840,924,781,272
 card_3star_jhope_026,J-Hope,3,Summertime,passion,1,1198,1448,81,112
 card_3star_jhope_027,J-Hope,3,Hymangi is Autumn-y,wisdom,1,840,277,26,1630
+card_3star_jhope_028,J-Hope,3,Sunshine Farmer,stamina,1,20,1010,1848,14
 card_4star_jhope_001,J-Hope,4,Pretty Pretty,empathy,1,1242,352,595,960
 card_4star_jhope_002,J-Hope,4,"Sit, Wait",passion,1,320,1760,893,310
 card_4star_jhope_003,J-Hope,4,Great Work,stamina,1,1190,320,1242,352
@@ -248,6 +259,7 @@ card_5star_jhope_031,J-Hope,5,Basketball Team j-hope,passion,1,820,2970,363,364
 card_5star_jhope_032,J-Hope,5,Camping Boys j-hope,empathy,1,2772,1013,216,167
 card_5star_jhope_033,J-Hope,5,Dignified Gentleman j-hope,empathy,1,3010,1013,486,50
 card_5star_jhope_034,J-Hope,5,Heart Skip j-hope,stamina,1,378,1121,3049,13
+card_5star_jhope_035,J-Hope,5,Sleepyhead j-hope,passion,1,72,3089,1048,335
 card_1star_rm_003,RM,1,I'm Angry,stamina,0,500,485,550,465
 card_1star_rm_004,RM,1,Love It,passion,0,372,660,581,400
 card_1star_rm_005,RM,1,You're the Best,wisdom,0,558,400,388,660
@@ -257,6 +269,7 @@ card_1star_rm_011,RM,1,Jiyoung,stamina,0,200,186,220,194
 card_1star_rm_012,RM,1,Detective Park,stamina,0,200,186,220,194
 card_1star_rm_013,RM,1,Daily Aegyo,wisdom,0,372,600,388,660
 card_1star_rm_014,RM,1,Just 1 Minute,empathy,0,880,776,200,186
+card_1star_rm_015,RM,1,Proof of Pondering,passion,0,558,660,582,200
 card_2star_rm_001,RM,2,Dimples,stamina,0,720,446,792,466
 card_2star_rm_002,RM,2,Embarrassing,passion,0,466,792,446,720
 card_2star_rm_003,RM,2,Surprised,wisdom,0,446,720,466,792
@@ -265,6 +278,7 @@ card_2star_rm_005,RM,2,Brain Fully Activated,wisdom,0,720,480,480,720
 card_2star_rm_011,RM,2,Feeling Animated RM,empathy,0,264,223,240,233
 card_2star_rm_012,RM,2,Embarrassed Smile,empathy,0,792,698,480,446
 card_2star_rm_013,RM,2,Stop Worrying,stamina,0,720,670,792,233
+card_2star_rm_014,RM,2,Chic Daily,stamina,0,960,233,1056,223
 card_3star_rm_001,RM,3,Love Love Love,empathy,1,1232,272,560,781
 card_3star_rm_002,RM,3,Don't Worry,stamina,1,272,924,1042,560
 card_3star_rm_007,RM,3,To Go See You,wisdom,1,840,616,521,815
@@ -283,6 +297,7 @@ card_3star_rm_024,RM,3,Inspired,wisdom,1,840,616,543,781
 card_3star_rm_025,RM,3,"No, Not Today",passion,1,272,924,781,840
 card_3star_rm_026,RM,3,Summer Daily,stamina,1,84,81,1448,1224
 card_3star_rm_027,RM,3,Fall Mood,empathy,1,1630,290,23,832
+card_3star_rm_028,RM,3,Brainiac Farmer,empathy,1,1848,14,20,1010
 card_4star_rm_001,RM,4,Sherlock Namjun,wisdom,1,1242,320,298,1408
 card_4star_rm_002,RM,4,Collecting Evidence,empathy,1,1056,931,640,595
 card_4star_rm_003,RM,4,Decisive Clue,passion,1,310,1408,893,640
@@ -331,6 +346,7 @@ card_5star_rm_031,RM,5,Basketball Team RM,empathy,1,2970,820,364,363
 card_5star_rm_032,RM,5,Camping Boys RM,passion,1,216,2772,971,175
 card_5star_rm_033,RM,5,Dignified Gentleman RM,passion,1,1033,3010,27,506
 card_5star_rm_034,RM,5,Heart Skip RM,wisdom,1,1131,356,23,3049
+card_5star_rm_035,RM,5,Sleepyhead RM,empathy,1,3089,1004,360,70
 card_1star_jimin_003,Jimin,1,Thumbs Up,wisdom,0,465,500,485,550
 card_1star_jimin_004,Jimin,1,Nervous,empathy,0,660,582,400,372
 card_1star_jimin_005,Jimin,1,Impossible to Replace,passion,0,400,660,372,582
@@ -340,6 +356,7 @@ card_1star_jimin_011,Jimin,1,Bbangja,empathy,0,220,194,200,186
 card_1star_jimin_012,Jimin,1,Granny,wisdom,0,186,200,194,220
 card_1star_jimin_013,Jimin,1,Charismatic Manggae,empathy,0,660,558,400,388
 card_1star_jimin_014,Jimin,1,So Shy,passion,0,186,880,776,200
+card_1star_jimin_015,Jimin,1,Got Something to Say,wisdom,0,194,600,558,660
 card_2star_jimin_001,Jimin,2,Long Time No See,wisdom,0,698,480,446,792
 card_2star_jimin_002,Jimin,2,Are You Watching,empathy,0,720,480,720,480
 card_2star_jimin_003,Jimin,2,Flour Fairy,passion,0,446,792,698,480
@@ -348,6 +365,7 @@ card_2star_jimin_005,Jimin,2,Gonna Start Making Trouble,empathy,0,792,466,720,44
 card_2star_jimin_011,Jimin,2,Feeling Animated Jimin,passion,0,223,264,233,240
 card_2star_jimin_012,Jimin,2,One Bite Nomnom,stamina,0,720,446,792,466
 card_2star_jimin_013,Jimin,2,Gonna Get Upset,wisdom,0,670,720,233,792
+card_2star_jimin_014,Jimin,2,What to Do?,empathy,0,1056,931,240,223
 card_3star_jimin_001,Jimin,3,"1, 2, Freeze!",wisdom,1,308,543,840,1042
 card_3star_jimin_002,Jimin,3,Finger Hearts,empathy,1,1120,308,815,521
 card_3star_jimin_008,Jimin,3,Here Here,empathy,1,770,651,700,679
@@ -366,6 +384,7 @@ card_3star_jimin_024,Jimin,3,Pah!,wisdom,1,140,140,840,1680
 card_3star_jimin_025,Jimin,3,However I Feel,stamina,1,280,815,924,781
 card_3star_jimin_026,Jimin,3,Shooting Star,stamina,1,1288,104,1448,81
 card_3star_jimin_027,Jimin,3,Autumn Manggae,passion,1,840,1630,262,39
+card_3star_jimin_028,Jimin,3,Manggae's Flight,stamina,1,1092,16,1848,10
 card_4star_jimin_001,Jimin,4,Playlist,empathy,1,1280,320,640,960
 card_4star_jimin_002,Jimin,4,Eye Contact,passion,1,160,2112,155,893
 card_4star_jimin_003,Jimin,4,Hip Hop Baby,stamina,1,320,310,2464,298
@@ -414,6 +433,7 @@ card_5star_jimin_031,Jimin,5,Basketball Team Jimin,empathy,1,2970,349,367,830
 card_5star_jimin_032,Jimin,5,Camping Boys Jimin,passion,1,954,2772,203,205
 card_5star_jimin_033,Jimin,5,Dignified Gentleman Jimin,stamina,1,29,506,3010,961
 card_5star_jimin_034,Jimin,5,Heart Skip Jimin,empathy,1,3049,1117,360,33
+card_5star_jimin_035,Jimin,5,Sleepyhead Jimin,wisdom,1,1004,360,70,3089
 card_1star_v_003,V,1,Confused,stamina,0,400,558,660,388
 card_1star_v_004,V,1,Racing Heart,stamina,0,500,485,550,465
 card_1star_v_005,V,1,V for Victory,passion,0,582,660,372,400
@@ -423,6 +443,7 @@ card_1star_v_011,V,1,Farmer Manseok,passion,0,194,220,186,200
 card_1star_v_012,V,1,Friend Manseok,wisdom,0,194,200,186,220
 card_1star_v_013,V,1,Tons of Compliments,passion,0,388,660,372,600
 card_1star_v_014,V,1,Cutie Flower Pose,empathy,0,880,186,800,194
+card_1star_v_015,V,1,Nod and Nod,empathy,0,660,582,600,186
 card_2star_v_004,V,2,Chocobun,empathy,0,792,670,480,466
 card_2star_v_006,V,2,Glum,stamina,0,480,446,792,698
 card_2star_v_008,V,2,Mischief Maker,passion,0,480,720,720,480
@@ -431,6 +452,7 @@ card_2star_v_010,V,2,Tangjinjaem,passion,0,480,792,698,446
 card_2star_v_011,V,2,Feeling Animated V,empathy,0,264,233,240,223
 card_2star_v_012,V,2,Hmm So,passion,0,466,792,670,480
 card_2star_v_013,V,2,Country Town Diary,wisdom,0,670,240,698,792
+card_2star_v_014,V,2,Brilliant Moment,stamina,0,240,893,1056,233
 card_3star_v_001,V,3,So Fatal,stamina,1,308,521,1120,815
 card_3star_v_002,V,3,You Know How I Feel,passion,1,260,1232,815,560
 card_3star_v_008,V,3,Anniversary,wisdom,1,280,924,272,1302
@@ -449,6 +471,7 @@ card_3star_v_024,V,3,The Sweetest Taste,wisdom,1,136,154,781,1680
 card_3star_v_025,V,3,Taetae's Here,wisdom,1,781,840,272,924
 card_3star_v_026,V,3,It's Summer Summery,empathy,1,1448,81,1288,104
 card_3star_v_027,V,3,Taetae's Line of Sight,empathy,1,1562,252,815,31
+card_3star_v_028,V,3,Plum Farmer,wisdom,1,16,11,1016,1848
 card_4star_v_001,V,4,Shocking Visual,empathy,1,1280,352,595,931
 card_4star_v_002,V,4,Taetae's Laboratory,passion,1,960,1600,320,320
 card_4star_v_003,V,4,Brilliant Glasses,stamina,1,160,1056,1862,149
@@ -497,6 +520,7 @@ card_5star_v_031,V,5,Basketball Team V,stamina,1,365,358,2970,824
 card_5star_v_032,V,5,Camping Boys V,empathy,1,2772,203,205,954
 card_5star_v_033,V,5,Dignified Gentleman V,passion,1,515,3010,17,978
 card_5star_v_034,V,5,Heart Skip V,wisdom,1,13,356,1142,3049
+card_5star_v_035,V,5,Sleepyhead V,stamina,1,360,70,3089,1004
 card_1star_jungkook_003,Jungkook,1,Jeon Mayfly,wisdom,0,485,500,465,550
 card_1star_jungkook_004,Jungkook,1,All Eyes on Me,stamina,0,600,388,660,372
 card_1star_jungkook_005,Jungkook,1,Pit-A-Pat,empathy,0,660,582,400,372
@@ -506,6 +530,7 @@ card_1star_jungkook_011,Jungkook,1,Chisoo,stamina,0,190,180,230,200
 card_1star_jungkook_012,Jungkook,1,Cheon Muho,stamina,0,200,194,220,186
 card_1star_jungkook_013,Jungkook,1,"Hey, Wait",stamina,0,600,388,660,372
 card_1star_jungkook_014,Jungkook,1,See You Tomorrow,passion,0,200,880,194,744
+card_1star_jungkook_015,Jungkook,1,Know the Feeling,passion,0,558,660,194,600
 card_2star_jungkook_001,Jungkook,2,You're Toast,wisdom,0,698,480,446,792
 card_2star_jungkook_002,Jungkook,2,Can't Trust Me?,stamina,0,480,446,792,698
 card_2star_jungkook_003,Jungkook,2,Come at Me,passion,0,480,792,670,466
@@ -514,6 +539,7 @@ card_2star_jungkook_007,Jungkook,2,2nd Grade,empathy,0,792,670,480,466
 card_2star_jungkook_011,Jungkook,2,Feeling Animated Jung Kook,wisdom,0,223,240,233,264
 card_2star_jungkook_012,Jungkook,2,Let's Get It,passion,0,670,792,466,480
 card_2star_jungkook_013,Jungkook,2,Maknae's Line of Sight,stamina,0,720,233,792,670
+card_2star_jungkook_014,Jungkook,2,Roundy Out,wisdom,0,893,240,233,1056
 card_3star_jungkook_001,Jungkook,3,To the Next Class,passion,1,308,1086,560,781
 card_3star_jungkook_002,Jungkook,3,Ah Ppaiting,stamina,1,272,924,1042,560
 card_3star_jungkook_008,Jungkook,3,Don't Even Know,stamina,1,770,651,700,679
@@ -532,6 +558,7 @@ card_3star_jungkook_024,Jungkook,3,"One, Two",wisdom,1,136,840,130,1848
 card_3star_jungkook_025,Jungkook,3,Heart Kook,empathy,1,924,781,840,272
 card_3star_jungkook_026,Jungkook,3,I Hear the Ocean,wisdom,1,1277,84,78,1448
 card_3star_jungkook_027,Jungkook,3,Jung Kook's Empathy,wisdom,1,271,31,840,1630
+card_3star_jungkook_028,Jungkook,3,Cowboy,wisdom,1,13,1086,19,1848
 card_4star_jungkook_001,Jungkook,4,Taekwon Boy,empathy,1,1600,352,931,298
 card_4star_jungkook_002,Jungkook,4,Black Belt,stamina,1,1242,320,1190,352
 card_4star_jungkook_003,Jungkook,4,Ray of Sunshine,passion,1,176,1862,160,893
@@ -580,3 +607,4 @@ card_5star_jungkook_031,Jungkook,5,Basketball Team Jung Kook,passion,1,356,2970,
 card_5star_jungkook_032,Jungkook,5,Camping Boys Jung Kook,wisdom,1,184,194,1016,2772
 card_5star_jungkook_033,Jungkook,5,Dignified Gentleman Jung Kook,wisdom,1,964,29,503,3010
 card_5star_jungkook_034,Jungkook,5,Heart Skip Jung Kook,passion,1,42,3049,328,1152
+card_5star_jungkook_035,Jungkook,5,Sleepyhead Jung Kook,empathy,1,3089,349,72,1004
