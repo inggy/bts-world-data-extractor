@@ -229,7 +229,8 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                         record['membercard_name'].toLowerCase().indexOf("008") > -1 ||  // romantic,
                         record['membercard_name'].toLowerCase().indexOf("014") > -1 ||  // DOPE,
                         record['membercard_name'].toLowerCase().indexOf("009") > -1 || // Fake love
-                        record['membercard_name'].toLowerCase().indexOf("017") > -1  // Autumn Snap
+                        record['membercard_name'].toLowerCase().indexOf("017") > -1 || // Autumn Snap
+                        record['membercard_name'].toLowerCase().indexOf("019") > -1  // Winter Wonderland
                     )) {
                         return 2;
                     } else if (star <= 2) {

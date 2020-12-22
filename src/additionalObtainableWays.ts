@@ -1,12 +1,12 @@
 export const additionalObtainableWays = {
     "event": [
-      "card_5star_rm_017",
-      "card_5star_jin_017",
-      "card_5star_suga_017",
-      "card_5star_jhope_017",
-      "card_5star_jimin_017",
-      "card_5star_v_017",
-      "card_5star_jungkook_017",
+      "card_5star_rm_019",
+      "card_5star_jin_019",
+      "card_5star_suga_019",
+      "card_5star_jhope_019",
+      "card_5star_jimin_019",
+      "card_5star_v_019",
+      "card_5star_jungkook_019",
     ],
     "first": [
         "card_5star_rm_023",
