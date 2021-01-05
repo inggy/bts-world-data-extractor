@@ -136,12 +136,13 @@ Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPro
     results[2].forEach(cardId => _addObtainableWay(combinedResults, cardId, "$"));
     //results[3].forEach(cardId => _addObtainableWay(combinedResults2, cardId, "MEMBER"));
 
-    additionalObtainableWays.first.forEach(cardId => _addObtainableWay(combinedResults, cardId, "first"));
     additionalObtainableWays.c0.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c0"));
     additionalObtainableWays.c10.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c10"));
     additionalObtainableWays.c15.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c15"));
     additionalObtainableWays.c25.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c25"));
     
+    additionalObtainableWays["25day"].forEach(cardId => _addObtainableWay(combinedResults, cardId, "s5"));
+
     fs.writeFile(`./output/draws_pretty.json`, JSON.stringify(combinedResults, null, 4), function(err:any) {})
     fs.writeFile(`./output/draws.txt`, JSON.stringify(combinedResults), function(err:any) {})
 });
