@@ -38,6 +38,7 @@ function normalizeTitleString(member: string, title: string, stars: number) {
 }
 
 function fetchBlogContent(path: string): Promise<string> {
+    console.log('fetching ' + path)
     return fetch(path)
         .then(res => res.json())
         .then(json => json.article.content);
@@ -114,18 +115,19 @@ const memberDrawTicketPromise = fetchBlogContent(memberDrawTicketUrl).then(htmlC
     ];
 })
 
+/*
 const seasonChallengePromise = fetchBlogContent(seasonChallengeUrl).then(htmlContent => {
     return [
         ...extractCardTitles(htmlContent, 0, 5)
     ]
-})
+})*/
 
 function _addObtainableWay(cardMapping: Dictionary<string[]>, cardId: string, key: string) {
     if (!cardMapping[cardId]) cardMapping[cardId] = [];
     cardMapping[cardId].push(key);
 }
 
-Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPromise, seasonChallengePromise]).then(results => {
+Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPromise]).then(results => {
     const combinedResults: Dictionary<string[]> = {};
 
     additionalObtainableWays.event.forEach(cardId => _addObtainableWay(combinedResults, cardId, "e"));

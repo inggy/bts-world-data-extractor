@@ -88,6 +88,7 @@ card_5star_jin_033,Jin,5,Dignified Gentleman Jin,stamina,1,1051,17,3010,499
 card_5star_jin_034,Jin,5,Heart Skip Jin,empathy,1,3049,52,338,1075
 card_5star_jin_035,Jin,5,Sleepyhead Jin,stamina,1,72,1048,3089,335
 card_5star_jin_036,Jin,5,Missed You Jin,wisdom,1,139,112,1168,3089
+card_5star_jin_037,Jin,5,Charming Or Not Jin,passion,1,280,2851,165,902
 card_1star_suga_003,Suga,1,Hello,wisdom,0,400,372,582,660
 card_1star_suga_004,Suga,1,I'm Tired,stamina,0,500,485,550,465
 card_1star_suga_005,Suga,1,Leave It to Me,passion,0,600,660,372,388
@@ -177,6 +178,7 @@ card_5star_suga_033,Suga,5,Dignified Gentleman SUGA,passion,1,50,3010,1013,486
 card_5star_suga_034,Suga,5,Heart Skip SUGA,passion,1,30,3049,1090,392
 card_5star_suga_035,Suga,5,Sleepyhead SUGA,passion,1,1004,3089,349,72
 card_5star_suga_036,Suga,5,Missed You SUGA,passion,1,105,3089,1168,148
+card_5star_suga_037,Suga,5,Charming Or Not SUGA,empathy,1,2851,154,302,873
 card_1star_jhope_003,J-Hope,1,This and That,passion,0,465,550,485,500
 card_1star_jhope_004,J-Hope,1,Aha,stamina,0,600,372,660,388
 card_1star_jhope_005,J-Hope,1,So at Ease,stamina,0,400,582,660,372
@@ -266,6 +268,7 @@ card_5star_jhope_033,J-Hope,5,Dignified Gentleman j-hope,empathy,1,3010,1013,486
 card_5star_jhope_034,J-Hope,5,Heart Skip j-hope,stamina,1,378,1121,3049,13
 card_5star_jhope_035,J-Hope,5,Sleepyhead j-hope,passion,1,72,3089,1048,335
 card_5star_jhope_036,J-Hope,5,Missed You j-hope,stamina,1,118,1219,3089,127
+card_5star_jhope_037,J-Hope,5,Charming Or Not j-hope,stamina,1,902,269,2851,171
 card_1star_rm_003,RM,1,I'm Angry,stamina,0,500,485,550,465
 card_1star_rm_004,RM,1,Love It,passion,0,372,660,581,400
 card_1star_rm_005,RM,1,You're the Best,wisdom,0,558,400,388,660
@@ -355,6 +358,7 @@ card_5star_rm_033,RM,5,Dignified Gentleman RM,passion,1,1033,3010,27,506
 card_5star_rm_034,RM,5,Heart Skip RM,wisdom,1,1131,356,23,3049
 card_5star_rm_035,RM,5,Sleepyhead RM,empathy,1,3089,1004,360,70
 card_5star_rm_036,RM,5,Missed You RM,wisdom,1,134,1257,108,3089
+card_5star_rm_037,RM,5,Charming Or Not RM,wisdom,1,168,295,836,2851
 card_1star_jimin_003,Jimin,1,Thumbs Up,wisdom,0,465,500,485,550
 card_1star_jimin_004,Jimin,1,Nervous,empathy,0,660,582,400,372
 card_1star_jimin_005,Jimin,1,Impossible to Replace,passion,0,400,660,372,582
@@ -444,6 +448,7 @@ card_5star_jimin_033,Jimin,5,Dignified Gentleman Jimin,stamina,1,29,506,3010,961
 card_5star_jimin_034,Jimin,5,Heart Skip Jimin,empathy,1,3049,1117,360,33
 card_5star_jimin_035,Jimin,5,Sleepyhead Jimin,wisdom,1,1004,360,70,3089
 card_5star_jimin_036,Jimin,5,Missed You Jimin,empathy,1,3089,1172,140,108
+card_5star_jimin_037,Jimin,5,Charming Or Not Jimin,passion,1,835,2851,281,180
 card_1star_v_003,V,1,Confused,stamina,0,400,558,660,388
 card_1star_v_004,V,1,Racing Heart,stamina,0,500,485,550,465
 card_1star_v_005,V,1,V for Victory,passion,0,582,660,372,400
@@ -533,6 +538,7 @@ card_5star_v_033,V,5,Dignified Gentleman V,passion,1,515,3010,17,978
 card_5star_v_034,V,5,Heart Skip V,wisdom,1,13,356,1142,3049
 card_5star_v_035,V,5,Sleepyhead V,stamina,1,360,70,3089,1004
 card_5star_v_036,V,5,Missed You V,wisdom,1,1220,145,101,3089
+card_5star_v_037,V,5,Charming Or Not V,wisdom,1,280,900,167,2851
 card_1star_jungkook_003,Jungkook,1,Jeon Mayfly,wisdom,0,485,500,465,550
 card_1star_jungkook_004,Jungkook,1,All Eyes on Me,stamina,0,600,388,660,372
 card_1star_jungkook_005,Jungkook,1,Pit-A-Pat,empathy,0,660,582,400,372
@@ -622,3 +628,4 @@ card_5star_jungkook_033,Jungkook,5,Dignified Gentleman Jung Kook,wisdom,1,964,29
 card_5star_jungkook_034,Jungkook,5,Heart Skip Jung Kook,passion,1,42,3049,328,1152
 card_5star_jungkook_035,Jungkook,5,Sleepyhead Jung Kook,empathy,1,3089,349,72,1004
 card_5star_jungkook_036,Jungkook,5,Missed You Jung Kook,passion,1,1258,3089,116,125
+card_5star_jungkook_037,Jungkook,5,Charming Or Not Jung Kook,empathy,1,2851,873,180,268
