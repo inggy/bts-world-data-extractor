@@ -24,6 +24,10 @@ const HARDCODED: Record<string, string> = {
     "Hashtag_Another_330506": "#KnockKnockIsThisTheMysteriousGarden?",
     "Hashtag_Another_330521": "#WinterBearAndPurpleFlowersSecret",
     "Hashtag_MissedYou_BTS": "#MissedYou_BTS",
+    "Hashtag_Another_330602": "#Sanctuary_Owner_and_Ddoongis_Owner",
+    "Hashtag_Another_330615": "#Apartment_Neighbors_Bundle_of_Memories",
+    "Hashtag_Another_330619": "#Take_Care_of_Baekmani_Bokshils_Toys!",
+    "Hashtag_Another_330621": "#Time_For_Memories_With_You"
 };
 
 const validChar = ["’", "\n", "★", " "];
