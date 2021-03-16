@@ -76,9 +76,9 @@ card_5star_jin_021,Jin,5,Best Cut Jin,wisdom,1,1189,36,35,2871
 card_5star_jin_022,Jin,5,Valentine Jin,stamina,1,1404,20,2376,14
 card_5star_jin_023,Jin,5,Capture the Moment Jin,empathy,1,2851,1152,144,33
 card_5star_jin_024,Jin,5,Spring is Blooming Jin,wisdom,1,384,576,469,2732
-card_5star_jin_025,Jin,5,Spring Day Jin,wisdom,1,2064,32,23,2348
+card_5star_jin_025,Jin,5,Spring Day Jin,wisdom,2,2064,32,23,2348
 card_5star_jin_026,Jin,5,Interview Jin,empathy,1,2444,18,670,772
-card_5star_jin_027,Jin,5,Just Dance Jin,wisdom,1,559,576,435,2970
+card_5star_jin_027,Jin,5,Just Dance Jin,wisdom,2,559,576,435,2970
 card_5star_jin_028,Jin,5,House Party Jin,passion,1,324,2772,698,368
 card_5star_jin_029,Jin,5,Heart Boys Jin,empathy,1,2376,52,1782,301
 card_5star_jin_030,Jin,5,On Stage Jin,stamina,1,504,335,2970,733
@@ -169,9 +169,9 @@ card_5star_suga_021,Suga,5,Best Cut SUGA,passion,1,33,2871,1240,36
 card_5star_suga_022,Suga,5,Valentine SUGA,wisdom,1,21,14,1306,2376
 card_5star_suga_023,Suga,5,Capture the Moment SUGA,stamina,1,1170,70,2851,117
 card_5star_suga_024,Suga,5,Spring is Blooming SUGA,passion,1,384,2732,469,576
-card_5star_suga_025,Suga,5,Spring Day SUGA,empathy,1,2356,24,29,1975
+card_5star_suga_025,Suga,5,Spring Day SUGA,empathy,2,2356,24,29,1975
 card_5star_suga_026,Suga,5,Interview SUGA,passion,1,20,2444,702,670
-card_5star_suga_027,Suga,5,Just Dance SUGA,stamina,1,468,559,2970,536
+card_5star_suga_027,Suga,5,Just Dance SUGA,stamina,2,468,559,2970,536
 card_5star_suga_028,Suga,5,House Party SUGA,wisdom,1,384,720,301,2772
 card_5star_suga_029,Suga,5,Heart Boys SUGA,wisdom,1,35,1800,301,2376
 card_5star_suga_030,Suga,5,On Stage SUGA,wisdom,1,733,576,268,2970
@@ -262,9 +262,9 @@ card_5star_jhope_021,J-Hope,5,Best Cut j-hope,stamina,1,1278,33,2871,35
 card_5star_jhope_022,J-Hope,5,Valentine j-hope,empathy,1,2376,17,25,1299
 card_5star_jhope_023,J-Hope,5,Capture the Moment j-hope,empathy,1,2851,157,1134,67
 card_5star_jhope_024,J-Hope,5,Spring is Blooming j-hope,stamina,1,360,536,2732,524
-card_5star_jhope_025,J-Hope,5,Spring Day j-hope,wisdom,1,23,29,2060,2356
+card_5star_jhope_025,J-Hope,5,Spring Day j-hope,wisdom,2,23,29,2060,2356
 card_5star_jhope_026,J-Hope,5,Interview j-hope,wisdom,1,653,720,17,2772
-card_5star_jhope_027,J-Hope,5,Just Dance j-hope,empathy,1,2970,469,540,559
+card_5star_jhope_027,J-Hope,5,Just Dance j-hope,empathy,2,2970,469,540,559
 card_5star_jhope_028,J-Hope,5,House Party j-hope,stamina,1,378,318,2772,698
 card_5star_jhope_029,J-Hope,5,Heart Boys j-hope,passion,1,301,2376,1746,36
 card_5star_jhope_030,J-Hope,5,On Stage j-hope,empathy,1,2970,733,504,335
@@ -355,9 +355,9 @@ card_5star_rm_021,RM,5,Best Cut RM,stamina,1,25,30,2871,1254
 card_5star_rm_022,RM,5,Valentine RM,passion,1,14,2376,1362,20
 card_5star_rm_023,RM,5,Capture the Moment RM,stamina,1,1134,17,2851,210
 card_5star_rm_024,RM,5,Spring is Blooming RM,passion,1,576,2732,524,335
-card_5star_rm_025,RM,5,Spring Day RM,stamina,1,2124,28,2356,23
+card_5star_rm_025,RM,5,Spring Day RM,stamina,2,2124,28,2356,23
 card_5star_rm_026,RM,5,Interview RM,wisdom,1,756,35,713,2344
-card_5star_rm_027,RM,5,Just Dance RM,passion,1,454,2970,536,576
+card_5star_rm_027,RM,5,Just Dance RM,passion,2,454,2970,536,576
 card_5star_rm_028,RM,5,House Party RM,empathy,1,2772,314,720,368
 card_5star_rm_029,RM,5,Heart Boys RM,empathy,1,2376,1729,324,50
 card_5star_rm_030,RM,5,On Stage RM,passion,1,360,2970,733,469
@@ -448,9 +448,9 @@ card_5star_jimin_021,Jimin,5,Best Cut Jimin,wisdom,1,31,1292,23,2871
 card_5star_jimin_022,Jimin,5,Valentine Jimin,empathy,1,2376,1362,14,20
 card_5star_jimin_023,Jimin,5,Capture the Moment Jimin,wisdom,1,1152,54,117,2851
 card_5star_jimin_024,Jimin,5,Spring is Blooming Jimin,wisdom,1,502,576,349,2732
-card_5star_jimin_025,Jimin,5,Spring Day Jimin,passion,1,30,2348,24,2128
+card_5star_jimin_025,Jimin,5,Spring Day Jimin,passion,2,30,2348,24,2128
 card_5star_jimin_026,Jimin,5,Interview Jimin,empathy,1,2344,713,733,36
-card_5star_jimin_027,Jimin,5,Just Dance Jimin,wisdom,1,559,468,536,2970
+card_5star_jimin_027,Jimin,5,Just Dance Jimin,wisdom,2,559,468,536,2970
 card_5star_jimin_028,Jimin,5,House Party Jimin,empathy,1,2772,352,342,698
 card_5star_jimin_029,Jimin,5,Heart Boys Jimin,empathy,1,2376,35,1800,301
 card_5star_jimin_030,Jimin,5,On Stage Jimin,passion,1,756,2970,502,314
@@ -541,9 +541,9 @@ card_5star_v_021,V,5,Best Cut V,passion,1,25,2871,31,1202
 card_5star_v_022,V,5,Valentine V,wisdom,1,17,1397,23,2376
 card_5star_v_023,V,5,Capture the Moment V,empathy,1,2851,1055,126,105
 card_5star_v_024,V,5,Spring is Blooming V,empathy,1,2732,384,504,536
-card_5star_v_025,V,5,Spring Day V,passion,1,28,2356,1975,25
+card_5star_v_025,V,5,Spring Day V,passion,2,28,2356,1975,25
 card_5star_v_026,V,5,Interview V,passion,1,35,2772,603,756
-card_5star_v_027,V,5,Just Dance V,empathy,1,2970,536,540,489
+card_5star_v_027,V,5,Just Dance V,empathy,2,2970,536,540,489
 card_5star_v_028,V,5,House Party V,stamina,1,720,314,2772,368
 card_5star_v_029,V,5,Heart Boys V,stamina,1,1710,32,2484,324
 card_5star_v_030,V,5,On Stage V,passion,1,559,2970,318,702
@@ -634,9 +634,9 @@ card_5star_jungkook_021,Jungkook,5,Best Cut Jung Kook,empathy,1,2871,1189,36,35
 card_5star_jungkook_022,Jungkook,5,Valentine Jung Kook,passion,1,13,2376,1362,22
 card_5star_jungkook_023,Jungkook,5,Capture the Moment Jung Kook,stamina,1,36,134,2851,1152
 card_5star_jungkook_024,Jungkook,5,Spring is Blooming Jung Kook,empathy,1,2732,502,576,349
-card_5star_jungkook_025,Jungkook,5,Spring Day Jung Kook,empathy,1,2348,1979,32,24
+card_5star_jungkook_025,Jungkook,5,Spring Day Jung Kook,empathy,2,2348,1979,32,24
 card_5star_jungkook_026,Jungkook,5,Interview Jung Kook,stamina,1,792,653,2520,17
-card_5star_jungkook_027,Jungkook,5,Just Dance Jung Kook,passion,1,576,2970,489,502
+card_5star_jungkook_027,Jungkook,5,Just Dance Jung Kook,passion,2,576,2970,489,502
 card_5star_jungkook_028,Jungkook,5,House Party Jung Kook,wisdom,1,670,378,332,2772
 card_5star_jungkook_029,Jungkook,5,Heart Boys Jung Kook,wisdom,1,332,36,1657,2376
 card_5star_jungkook_030,Jungkook,5,On Stage Jung Kook,wisdom,1,559,324,670,2970

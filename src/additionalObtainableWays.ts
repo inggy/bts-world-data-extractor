@@ -1,12 +1,19 @@
 export const additionalObtainableWays = {
     "event": [
-      "card_5star_rm_039",
-      "card_5star_jin_039",
-      "card_5star_suga_039",
-      "card_5star_jhope_039",
-      "card_5star_jimin_039",
-      "card_5star_v_039",
-      "card_5star_jungkook_039",
+      "card_5star_rm_025",
+      "card_5star_jin_025",
+      "card_5star_suga_025",
+      "card_5star_jhope_025",
+      "card_5star_jimin_025",
+      "card_5star_v_025",
+      "card_5star_jungkook_025",
+      "card_5star_rm_027",
+      "card_5star_jin_027",
+      "card_5star_suga_027",
+      "card_5star_jhope_027",
+      "card_5star_jimin_027",
+      "card_5star_v_027",
+      "card_5star_jungkook_027",
     ],
     "25day": [
       "card_5star_rm_007",
@@ -218,6 +225,15 @@ export const additionalObtainableWays = {
         "card_5star_jimin_032",
         "card_5star_v_032",
         "card_5star_jungkook_032",
+
+        /* Charming or not */
+        "card_5star_rm_037",
+        "card_5star_jin_037",
+        "card_5star_suga_037",
+        "card_5star_jhope_037",
+        "card_5star_jimin_037",
+        "card_5star_v_037",
+        "card_5star_jungkook_037",
 
     ],
     "c0": [

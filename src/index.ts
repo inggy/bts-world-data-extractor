@@ -320,7 +320,7 @@ buildGameDatabase().then((gameDatabase) => {
                     hashtagCards.map(hashtagCard => hashtagCard.cardId)
                                 .sort()
                                 .map(cardId => cardDatabase[cardId])
-                                .filter(card => card.name.indexOf("_max") === -1)
+                                .filter(card => card && card.name.indexOf("_max") === -1)
                                 .map(card => card.name)
                 ];
     }), ["hashtagId", "hashtagName", "cards"]);
