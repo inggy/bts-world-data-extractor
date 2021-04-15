@@ -232,7 +232,9 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                         record['membercard_name'].toLowerCase().indexOf("017") > -1 || // Autumn Snap
                         record['membercard_name'].toLowerCase().indexOf("019") > -1 || // Winter Wonderland
                         record['membercard_name'].toLowerCase().indexOf("025") > -1 || // Spring Day
-                        record['membercard_name'].toLowerCase().indexOf("027") > -1 // Just Dance
+                        record['membercard_name'].toLowerCase().indexOf("027") > -1 || // Just Dance
+                        record['membercard_name'].toLowerCase().indexOf("016") > -1 || // Signature
+                        record['membercard_name'].toLowerCase().indexOf("018") > -1 // BS&T
                     )) {
                         return 2;
                     } else if (star <= 2) {
