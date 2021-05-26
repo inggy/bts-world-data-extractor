@@ -94,6 +94,7 @@ card_5star_jin_039,Jin,5,Happy Day Jin,passion,1,168,2970,502,547
 card_5star_jin_040,Jin,5,It's Me Jin,passion,1,710,3109,370,349
 card_5star_jin_041,Jin,5,Gift for You Jin,stamina,1,191,850,3117,370
 card_5star_jin_042,Jin,5,Springtime Walk Jin,passion,1,349,3168,633,760
+card_5star_jin_043,Jin,5,Slam Dunk Jin,empathy,1,3168,803,558,385
 card_1star_suga_003,Suga,1,Hello,wisdom,0,400,372,582,660
 card_1star_suga_004,Suga,1,I'm Tired,stamina,0,500,485,550,465
 card_1star_suga_005,Suga,1,Leave It to Me,passion,0,600,660,372,388
@@ -189,6 +190,7 @@ card_5star_suga_039,Suga,5,Happy Day SUGA,stamina,1,547,506,2970,164
 card_5star_suga_040,Suga,5,It's Me SUGA,empathy,1,3109,416,356,660
 card_5star_suga_041,Suga,5,Gift for You SUGA,passion,1,873,3117,174,400
 card_5star_suga_042,Suga,5,Springtime Walk SUGA,empathy,1,3168,332,774,636
+card_5star_suga_043,Suga,5,Slam Dunk SUGA,stamina,1,558,770,3168,402
 card_1star_jhope_003,J-Hope,1,This and That,passion,0,465,550,485,500
 card_1star_jhope_004,J-Hope,1,Aha,stamina,0,600,372,660,388
 card_1star_jhope_005,J-Hope,1,So at Ease,stamina,0,400,582,660,372
@@ -284,6 +286,7 @@ card_5star_jhope_039,J-Hope,5,Happy Day j-hope,empathy,1,2970,519,522,175
 card_5star_jhope_040,J-Hope,5,It's Me j-hope,stamina,1,346,398,3109,686
 card_5star_jhope_041,J-Hope,5,Gift for You j-hope,wisdom,1,345,194,894,3117
 card_5star_jhope_042,J-Hope,5,Springtime Walk j-hope,empathy,1,3168,663,356,706
+card_5star_jhope_043,J-Hope,5,Slam Dunk j-hope,stamina,1,828,402,3168,524
 card_1star_rm_003,RM,1,I'm Angry,stamina,0,500,485,550,465
 card_1star_rm_004,RM,1,Love It,passion,0,372,660,581,400
 card_1star_rm_005,RM,1,You're the Best,wisdom,0,558,400,388,660
@@ -379,6 +382,7 @@ card_5star_rm_039,RM,5,Happy Day RM,wisdom,1,171,540,520,2970
 card_5star_rm_040,RM,5,It's Me RM,wisdom,1,695,356,392,3109
 card_5star_rm_041,RM,5,Gift for You RM,stamina,1,414,151,3117,883
 card_5star_rm_042,RM,5,Springtime Walk RM,wisdom,1,643,353,733,3168
+card_5star_rm_043,RM,5,Slam Dunk RM,wisdom,1,541,414,770,3168
 card_1star_jimin_003,Jimin,1,Thumbs Up,wisdom,0,465,500,485,550
 card_1star_jimin_004,Jimin,1,Nervous,empathy,0,660,582,400,372
 card_1star_jimin_005,Jimin,1,Impossible to Replace,passion,0,400,660,372,582
@@ -474,6 +478,7 @@ card_5star_jimin_039,Jimin,5,Happy Day Jimin,stamina,1,508,538,2970,184
 card_5star_jimin_040,Jimin,5,It's Me Jimin,wisdom,1,388,346,709,3109
 card_5star_jimin_041,Jimin,5,Gift for You Jimin,passion,1,191,3117,353,918
 card_5star_jimin_042,Jimin,5,Springtime Walk Jimin,stamina,1,338,705,3168,683
+card_5star_jimin_043,Jimin,5,Slam Dunk Jimin,wisdom,1,419,828,506,3168
 card_1star_v_003,V,1,Confused,stamina,0,400,558,660,388
 card_1star_v_004,V,1,Racing Heart,stamina,0,500,485,550,465
 card_1star_v_005,V,1,V for Victory,passion,0,582,660,372,400
@@ -569,6 +574,7 @@ card_5star_v_039,V,5,Happy Day V,stamina,1,544,154,2970,534
 card_5star_v_040,V,5,It's Me V,stamina,1,331,703,3109,395
 card_5star_v_041,V,5,Gift for You V,empathy,1,3117,175,911,368
 card_5star_v_042,V,5,Springtime Walk V,passion,1,738,3168,686,314
+card_5star_v_043,V,5,Slam Dunk V,passion,1,524,3168,402,828
 card_1star_jungkook_003,Jungkook,1,Jeon Mayfly,wisdom,0,485,500,465,550
 card_1star_jungkook_004,Jungkook,1,All Eyes on Me,stamina,0,600,388,660,372
 card_1star_jungkook_005,Jungkook,1,Pit-A-Pat,empathy,0,660,582,400,372
@@ -664,3 +670,4 @@ card_5star_jungkook_039,Jungkook,5,Happy Day Jung Kook,empathy,1,2970,164,533,51
 card_5star_jungkook_040,Jungkook,5,It's Me Jung Kook,empathy,1,3109,698,418,331
 card_5star_jungkook_041,Jungkook,5,Gift for You Jung Kook,wisdom,1,880,187,365,3117
 card_5star_jungkook_042,Jungkook,5,Springtime Walk Jung Kook,stamina,1,734,321,3168,698
+card_5star_jungkook_043,Jungkook,5,Slam Dunk Jung Kook,empathy,1,3168,485,450,803
