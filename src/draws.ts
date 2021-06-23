@@ -16,8 +16,8 @@ const goldDrawUrl = "http://forum.netmarble.com/api/game/btsw/official/forum/bts
 // https://forum.netmarble.com/btsworld/view/36/1093967
 const memberDrawTicketUrl = "https://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/1093967?menuSeq=60&viewFlag=false&_=1603331531429";
 
-// http://forum.netmarble.com/btsworld/view/51/1405665
-const seasonChallengeUrl = "http://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/1405665?menuSeq=51&viewFlag=false&_=1588054799725";
+// https://forum.netmarble.com/btsworld/view/36/1650458
+const seasonChallengeUrl = "https://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/1650458?menuSeq=36&viewFlag=false&_=1624416504993";
 
 const records = parse(fs.readFileSync(`./output/consumable_cards.csv`, 'utf-8'), {
     columns: false,
@@ -115,19 +115,19 @@ const memberDrawTicketPromise = fetchBlogContent(memberDrawTicketUrl).then(htmlC
     ];
 })
 
-/*
+
 const seasonChallengePromise = fetchBlogContent(seasonChallengeUrl).then(htmlContent => {
     return [
         ...extractCardTitles(htmlContent, 0, 5)
     ]
-})*/
+})
 
 function _addObtainableWay(cardMapping: Dictionary<string[]>, cardId: string, key: string) {
     if (!cardMapping[cardId]) cardMapping[cardId] = [];
     cardMapping[cardId].push(key);
 }
 
-Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPromise]).then(results => {
+Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPromise, seasonChallengePromise]).then(results => {
     const combinedResults: Dictionary<string[]> = {};
 
     additionalObtainableWays.event.forEach(cardId => _addObtainableWay(combinedResults, cardId, "e"));
@@ -137,13 +137,14 @@ Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPro
     results[1].forEach(cardId => _addObtainableWay(combinedResults, cardId, "gem"));
     results[2].forEach(cardId => _addObtainableWay(combinedResults, cardId, "$"));
     //results[3].forEach(cardId => _addObtainableWay(combinedResults2, cardId, "MEMBER"));
+    results[4].forEach(cardId => _addObtainableWay(combinedResults, cardId, "2nd"));
 
     additionalObtainableWays.c0.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c0"));
     additionalObtainableWays.c10.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c10"));
     additionalObtainableWays.c15.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c15"));
     additionalObtainableWays.c25.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c25"));
     
-    additionalObtainableWays["25day"].forEach(cardId => _addObtainableWay(combinedResults, cardId, "s5"));
+    //additionalObtainableWays["25day"].forEach(cardId => _addObtainableWay(combinedResults, cardId, "s5"));
 
     fs.writeFile(`./output/draws_pretty.json`, JSON.stringify(combinedResults, null, 4), function(err:any) {})
     fs.writeFile(`./output/draws.txt`, JSON.stringify(combinedResults), function(err:any) {})
