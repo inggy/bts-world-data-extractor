@@ -237,7 +237,8 @@ export function buildGameDatabase(): Promise<GameDatabase> {
                         record['membercard_name'].toLowerCase().indexOf("018") > -1 || // BS&T
                         record['membercard_name'].toLowerCase().indexOf("022") > -1 || // Valentine
                         record['membercard_name'].toLowerCase().indexOf("020") > -1 || // Hope-full
-                        record['membercard_name'].toLowerCase().indexOf("029") > -1 // Heart Boys
+                        record['membercard_name'].toLowerCase().indexOf("029") > -1 || // Heart Boys
+                        record['membercard_name'].toLowerCase().indexOf("031") > -1 // Basketball Team
                     )) {
                         return 2;
                     } else if (star <= 2) {

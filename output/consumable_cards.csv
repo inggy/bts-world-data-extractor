@@ -82,7 +82,7 @@ card_5star_jin_027,Jin,5,Just Dance Jin,wisdom,2,559,576,435,2970
 card_5star_jin_028,Jin,5,House Party Jin,passion,1,324,2772,698,368
 card_5star_jin_029,Jin,5,Heart Boys Jin,empathy,2,2376,52,1782,301
 card_5star_jin_030,Jin,5,On Stage Jin,stamina,1,504,335,2970,733
-card_5star_jin_031,Jin,5,Basketball Team Jin,wisdom,1,363,364,820,2970
+card_5star_jin_031,Jin,5,Basketball Team Jin,wisdom,2,363,364,820,2970
 card_5star_jin_032,Jin,5,Camping Boys Jin,stamina,1,205,954,2772,203
 card_5star_jin_033,Jin,5,Dignified Gentleman Jin,stamina,1,1051,17,3010,499
 card_5star_jin_034,Jin,5,Heart Skip Jin,empathy,1,3049,52,338,1075
@@ -179,7 +179,7 @@ card_5star_suga_027,Suga,5,Just Dance SUGA,stamina,2,468,559,2970,536
 card_5star_suga_028,Suga,5,House Party SUGA,wisdom,1,384,720,301,2772
 card_5star_suga_029,Suga,5,Heart Boys SUGA,wisdom,2,35,1800,301,2376
 card_5star_suga_030,Suga,5,On Stage SUGA,wisdom,1,733,576,268,2970
-card_5star_suga_031,Suga,5,Basketball Team SUGA,wisdom,1,830,367,349,2970
+card_5star_suga_031,Suga,5,Basketball Team SUGA,wisdom,2,830,367,349,2970
 card_5star_suga_032,Suga,5,Camping Boys SUGA,stamina,1,1044,192,2772,184
 card_5star_suga_033,Suga,5,Dignified Gentleman SUGA,passion,1,50,3010,1013,486
 card_5star_suga_034,Suga,5,Heart Skip SUGA,passion,1,30,3049,1090,392
@@ -276,7 +276,7 @@ card_5star_jhope_027,J-Hope,5,Just Dance j-hope,empathy,2,2970,469,540,559
 card_5star_jhope_028,J-Hope,5,House Party j-hope,stamina,1,378,318,2772,698
 card_5star_jhope_029,J-Hope,5,Heart Boys j-hope,passion,2,301,2376,1746,36
 card_5star_jhope_030,J-Hope,5,On Stage j-hope,empathy,1,2970,733,504,335
-card_5star_jhope_031,J-Hope,5,Basketball Team j-hope,passion,1,820,2970,363,364
+card_5star_jhope_031,J-Hope,5,Basketball Team j-hope,passion,2,820,2970,363,364
 card_5star_jhope_032,J-Hope,5,Camping Boys j-hope,empathy,1,2772,1013,216,167
 card_5star_jhope_033,J-Hope,5,Dignified Gentleman j-hope,empathy,1,3010,1013,486,50
 card_5star_jhope_034,J-Hope,5,Heart Skip j-hope,stamina,1,378,1121,3049,13
@@ -373,7 +373,7 @@ card_5star_rm_027,RM,5,Just Dance RM,passion,2,454,2970,536,576
 card_5star_rm_028,RM,5,House Party RM,empathy,1,2772,314,720,368
 card_5star_rm_029,RM,5,Heart Boys RM,empathy,2,2376,1729,324,50
 card_5star_rm_030,RM,5,On Stage RM,passion,1,360,2970,733,469
-card_5star_rm_031,RM,5,Basketball Team RM,empathy,1,2970,820,364,363
+card_5star_rm_031,RM,5,Basketball Team RM,empathy,2,2970,820,364,363
 card_5star_rm_032,RM,5,Camping Boys RM,passion,1,216,2772,971,175
 card_5star_rm_033,RM,5,Dignified Gentleman RM,passion,1,1033,3010,27,506
 card_5star_rm_034,RM,5,Heart Skip RM,wisdom,1,1131,356,23,3049
@@ -470,7 +470,7 @@ card_5star_jimin_027,Jimin,5,Just Dance Jimin,wisdom,2,559,468,536,2970
 card_5star_jimin_028,Jimin,5,House Party Jimin,empathy,1,2772,352,342,698
 card_5star_jimin_029,Jimin,5,Heart Boys Jimin,empathy,2,2376,35,1800,301
 card_5star_jimin_030,Jimin,5,On Stage Jimin,passion,1,756,2970,502,314
-card_5star_jimin_031,Jimin,5,Basketball Team Jimin,empathy,1,2970,349,367,830
+card_5star_jimin_031,Jimin,5,Basketball Team Jimin,empathy,2,2970,349,367,830
 card_5star_jimin_032,Jimin,5,Camping Boys Jimin,passion,1,954,2772,203,205
 card_5star_jimin_033,Jimin,5,Dignified Gentleman Jimin,stamina,1,29,506,3010,961
 card_5star_jimin_034,Jimin,5,Heart Skip Jimin,empathy,1,3049,1117,360,33
@@ -567,7 +567,7 @@ card_5star_v_027,V,5,Just Dance V,empathy,2,2970,536,540,489
 card_5star_v_028,V,5,House Party V,stamina,1,720,314,2772,368
 card_5star_v_029,V,5,Heart Boys V,stamina,2,1710,32,2484,324
 card_5star_v_030,V,5,On Stage V,passion,1,559,2970,318,702
-card_5star_v_031,V,5,Basketball Team V,stamina,1,365,358,2970,824
+card_5star_v_031,V,5,Basketball Team V,stamina,2,365,358,2970,824
 card_5star_v_032,V,5,Camping Boys V,empathy,1,2772,203,205,954
 card_5star_v_033,V,5,Dignified Gentleman V,passion,1,515,3010,17,978
 card_5star_v_034,V,5,Heart Skip V,wisdom,1,13,356,1142,3049
@@ -664,7 +664,7 @@ card_5star_jungkook_027,Jungkook,5,Just Dance Jung Kook,passion,2,576,2970,489,5
 card_5star_jungkook_028,Jungkook,5,House Party Jung Kook,wisdom,1,670,378,332,2772
 card_5star_jungkook_029,Jungkook,5,Heart Boys Jung Kook,wisdom,2,332,36,1657,2376
 card_5star_jungkook_030,Jungkook,5,On Stage Jung Kook,wisdom,1,559,324,670,2970
-card_5star_jungkook_031,Jungkook,5,Basketball Team Jung Kook,passion,1,356,2970,830,360
+card_5star_jungkook_031,Jungkook,5,Basketball Team Jung Kook,passion,2,356,2970,830,360
 card_5star_jungkook_032,Jungkook,5,Camping Boys Jung Kook,wisdom,1,184,194,1016,2772
 card_5star_jungkook_033,Jungkook,5,Dignified Gentleman Jung Kook,wisdom,1,964,29,503,3010
 card_5star_jungkook_034,Jungkook,5,Heart Skip Jung Kook,passion,1,42,3049,328,1152
