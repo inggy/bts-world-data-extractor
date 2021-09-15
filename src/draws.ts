@@ -16,8 +16,8 @@ const goldDrawUrl = "http://forum.netmarble.com/api/game/btsw/official/forum/bts
 // https://forum.netmarble.com/btsworld/view/36/1093967
 const memberDrawTicketUrl = "https://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/1093967?menuSeq=60&viewFlag=false&_=1603331531429";
 
-// https://forum.netmarble.com/btsworld/view/36/1650458
-const seasonChallengeUrl = "https://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/1650458?menuSeq=60&viewFlag=false&_=1626833652997";
+// https://forum.netmarble.com/btsworld/view/36/1673726
+const seasonChallengeUrl = "https://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/1673726?menuSeq=36&viewFlag=false&_=1631677131613";
 
 const records = parse(fs.readFileSync(`./output/consumable_cards.csv`, 'utf-8'), {
     columns: false,
@@ -51,7 +51,9 @@ function extractCardTitles(content: string, tableIndex: number, cardLevel: numbe
     $("tbody tr", $("table").eq(tableIndex)).each((i, elem) => {
         const $cells = $("td", elem);
         if (i != 0) {
-            results.push(getCardId($("td", elem).eq(0).text(), $("td", elem).eq(1).text(), cardLevel));
+            const member = $cells.eq(0).text();
+            const cardTitle = $cells.eq(1).text().replace("▲", "").trim();
+            results.push(getCardId(member, cardTitle, cardLevel));
         }
     });
 
@@ -137,7 +139,7 @@ Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPro
     results[1].forEach(cardId => _addObtainableWay(combinedResults, cardId, "gem"));
     results[2].forEach(cardId => _addObtainableWay(combinedResults, cardId, "$"));
     //results[3].forEach(cardId => _addObtainableWay(combinedResults2, cardId, "MEMBER"));
-    results[4].forEach(cardId => _addObtainableWay(combinedResults, cardId, "2nd"));
+    results[4].forEach(cardId => _addObtainableWay(combinedResults, cardId, "chuseok"));
 
     additionalObtainableWays.c0.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c0"));
     additionalObtainableWays.c10.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c10"));
