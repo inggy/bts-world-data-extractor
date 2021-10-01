@@ -8,6 +8,41 @@ export const additionalObtainableWays = {
       "card_5star_v_047",
       "card_5star_jungkook_047"
     ],
+    "dna": [
+      // Sleepyhead
+      "card_5star_rm_035",
+      "card_5star_jin_035",
+      "card_5star_suga_035",
+      "card_5star_jhope_035",
+      "card_5star_jimin_035",
+      "card_5star_v_035",
+      "card_5star_jungkook_035",
+      // Let's do this
+      "card_5star_rm_006",
+      "card_5star_jin_006",
+      "card_5star_suga_006",
+      "card_5star_jhope_006",
+      "card_5star_jimin_006",
+      "card_5star_v_006",
+      "card_5star_jungkook_006",
+      // Dreamland
+      "card_5star_rm_007",
+      "card_5star_jin_007",
+      "card_5star_suga_007",
+      "card_5star_jhope_007",
+      "card_5star_jimin_007",
+      "card_5star_v_007",
+      "card_5star_jungkook_007",
+      // Dorm?
+      "card_5star_rm_013",
+      "card_5star_jin_013",
+      "card_5star_suga_013",
+      "card_5star_jhope_013",
+      "card_5star_jimin_013",
+      "card_5star_v_013",
+      "card_5star_jungkook_013"
+    ],
+
     "25day": [
       "card_5star_rm_007",
       "card_5star_jin_007",

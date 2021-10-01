@@ -141,10 +141,12 @@ Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPro
     //results[3].forEach(cardId => _addObtainableWay(combinedResults2, cardId, "MEMBER"));
     results[4].forEach(cardId => _addObtainableWay(combinedResults, cardId, "chuseok"));
 
+    additionalObtainableWays.dna.forEach(cardId => _addObtainableWay(combinedResults, cardId, "dna"));
     additionalObtainableWays.c0.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c0"));
     additionalObtainableWays.c10.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c10"));
     additionalObtainableWays.c15.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c15"));
     additionalObtainableWays.c25.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c25"));
+    
     
     //additionalObtainableWays["25day"].forEach(cardId => _addObtainableWay(combinedResults, cardId, "s5"));
 
