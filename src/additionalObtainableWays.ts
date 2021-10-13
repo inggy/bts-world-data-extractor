@@ -1,12 +1,29 @@
 export const additionalObtainableWays = {
     "event": [
-      "card_5star_rm_047",
-      "card_5star_jin_047",
-      "card_5star_suga_047",
-      "card_5star_jhope_047",
-      "card_5star_jimin_047",
-      "card_5star_v_047",
-      "card_5star_jungkook_047"
+      // (ShupD) Gift f or you, autumn snap, camping boys
+      "card_5star_rm_041",
+      "card_5star_jin_041",
+      "card_5star_suga_041",
+      "card_5star_jhope_041",
+      "card_5star_jimin_041",
+      "card_5star_v_041",
+      "card_5star_jungkook_041",
+
+      "card_5star_rm_017",
+      "card_5star_jin_017",
+      "card_5star_suga_017",
+      "card_5star_jhope_017",
+      "card_5star_jimin_017",
+      "card_5star_v_017",
+      "card_5star_jungkook_017",
+
+      "card_5star_rm_032",
+      "card_5star_jin_032",
+      "card_5star_suga_032",
+      "card_5star_jhope_032",
+      "card_5star_jimin_032",
+      "card_5star_v_032",
+      "card_5star_jungkook_032"
     ],
     "dna": [
       // Sleepyhead
