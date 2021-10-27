@@ -100,6 +100,7 @@ card_5star_jin_045,Jin,5,Want It Lots Jin,wisdom,1,820,396,541,2880
 card_5star_jin_046,Jin,5,BTS Style Jin,stamina,1,878,187,3168,698
 card_5star_jin_047,Jin,5,Lazy Day Off Jin,passion,1,900,2970,519,157
 card_5star_jin_048,Jin,5,Lifeguard BTS Jin,passion,1,161,3168,1055,540
+card_5star_jin_049,Jin,5,Homecoming Jin,passion,1,1170,3168,335,262
 card_1star_suga_003,Suga,1,Hello,wisdom,0,400,372,582,660
 card_1star_suga_004,Suga,1,I'm Tired,stamina,0,500,485,550,465
 card_1star_suga_005,Suga,1,Leave It to Me,passion,0,600,660,372,388
@@ -201,6 +202,7 @@ card_5star_suga_045,Suga,5,Want It Lots SUGA,wisdom,1,376,541,900,2678
 card_5star_suga_046,Suga,5,BTS Style SUGA,passion,1,719,3168,167,878
 card_5star_suga_047,Suga,5,Lazy Day Off SUGA,stamina,1,180,559,2970,804
 card_5star_suga_048,Suga,5,Lifeguard BTS SUGA,empathy,1,3168,1062,540,154
+card_5star_suga_049,Suga,5,Homecoming SUGA,stamina,1,270,1088,3168,349
 card_1star_jhope_003,J-Hope,1,This and That,passion,0,465,550,485,500
 card_1star_jhope_004,J-Hope,1,Aha,stamina,0,600,372,660,388
 card_1star_jhope_005,J-Hope,1,So at Ease,stamina,0,400,582,660,372
@@ -302,6 +304,7 @@ card_5star_jhope_045,J-Hope,5,Want It Lots j-hope,passion,1,524,2880,837,396
 card_5star_jhope_046,J-Hope,5,BTS Style j-hope,wisdom,1,852,727,181,3168
 card_5star_jhope_047,J-Hope,5,Lazy Day Off j-hope,empathy,1,2970,908,504,167
 card_5star_jhope_048,J-Hope,5,Lifeguard BTS j-hope,stamina,1,544,1051,3168,161
+card_5star_jhope_049,J-Hope,5,Homecoming j-hope,empathy,1,3168,254,1170,346
 card_1star_rm_003,RM,1,I'm Angry,stamina,0,500,485,550,465
 card_1star_rm_004,RM,1,Love It,passion,0,372,660,581,400
 card_1star_rm_005,RM,1,You're the Best,wisdom,0,558,400,388,660
@@ -403,6 +406,7 @@ card_5star_rm_045,RM,5,Want It Lots RM,empathy,1,2678,614,332,900
 card_5star_rm_046,RM,5,BTS Style RM,passion,1,182,3168,830,720
 card_5star_rm_047,RM,5,Lazy Day Off RM,wisdom,1,524,216,804,2970
 card_5star_rm_048,RM,5,Lifeguard BTS RM,wisdom,1,502,180,1048,3168
+card_5star_rm_049,RM,5,Homecoming RM,wisdom,1,263,359,1088,3168
 card_1star_jimin_003,Jimin,1,Thumbs Up,wisdom,0,465,500,485,550
 card_1star_jimin_004,Jimin,1,Nervous,empathy,0,660,582,400,372
 card_1star_jimin_005,Jimin,1,Impossible to Replace,passion,0,400,660,372,582
@@ -504,6 +508,7 @@ card_5star_jimin_045,Jimin,5,Want It Lots Jimin,stamina,1,614,856,2880,335
 card_5star_jimin_046,Jimin,5,BTS Style Jimin,empathy,1,3168,237,878,629
 card_5star_jimin_047,Jimin,5,Lazy Day Off Jimin,wisdom,1,489,972,134,2970
 card_5star_jimin_048,Jimin,5,Lifeguard BTS Jimin,passion,1,1048,3168,519,162
+card_5star_jimin_049,Jimin,5,Homecoming Jimin,wisdom,1,353,1170,248,3168
 card_1star_v_003,V,1,Confused,stamina,0,400,558,660,388
 card_1star_v_004,V,1,Racing Heart,stamina,0,500,485,550,465
 card_1star_v_005,V,1,V for Victory,passion,0,582,660,372,400
@@ -605,6 +610,7 @@ card_5star_v_045,V,5,Want It Lots V,stamina,1,349,540,2678,990
 card_5star_v_046,V,5,BTS Style V,wisdom,1,182,893,670,3168
 card_5star_v_047,V,5,Lazy Day Off V,stamina,1,882,134,2970,576
 card_5star_v_048,V,5,Lifeguard BTS V,empathy,1,3168,167,1066,538
+card_5star_v_049,V,5,Homecoming V,stamina,1,1170,356,3168,244
 card_1star_jungkook_003,Jungkook,1,Jeon Mayfly,wisdom,0,485,500,465,550
 card_1star_jungkook_004,Jungkook,1,All Eyes on Me,stamina,0,600,388,660,372
 card_1star_jungkook_005,Jungkook,1,Pit-A-Pat,empathy,0,660,582,400,372
@@ -706,3 +712,4 @@ card_5star_jungkook_045,Jungkook,5,Want It Lots Jung Kook,passion,1,918,2794,594
 card_5star_jungkook_046,Jungkook,5,BTS Style Jung Kook,stamina,1,720,866,3168,174
 card_5star_jungkook_047,Jungkook,5,Lazy Day Off Jung Kook,empathy,1,2970,524,108,904
 card_5star_jungkook_048,Jungkook,5,Lifeguard BTS Jung Kook,wisdom,1,143,1084,529,3168
+card_5star_jungkook_049,Jungkook,5,Homecoming Jung Kook,empathy,1,3168,258,364,1088
