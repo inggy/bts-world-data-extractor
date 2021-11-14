@@ -17,7 +17,7 @@ const goldDrawUrl = "http://forum.netmarble.com/api/game/btsw/official/forum/bts
 const memberDrawTicketUrl = "https://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/1093967?menuSeq=60&viewFlag=false&_=1603331531429";
 
 // https://forum.netmarble.com/btsworld/view/36/1673726
-const seasonChallengeUrl = "https://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/1673726?menuSeq=36&viewFlag=false&_=1631677131613";
+const seasonChallengeUrl = "https://forum.netmarble.com/api/game/btsw/official/forum/btsworld/article/1673726?menuSeq=60&viewFlag=false&_=1636855173597";
 
 const records = parse(fs.readFileSync(`./output/consumable_cards.csv`, 'utf-8'), {
     columns: false,
