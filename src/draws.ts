@@ -64,6 +64,8 @@ function extractCardTitles(content: string, tableIndex: number, cardLevel: numbe
 
 function getCardId(member: string, title: string, stars: number) {
     const id = normalizeTitleString(member, title, stars);
+    // HACK: for KOR title appearing in gem draw page
+    if (title.startsWith("홈")) return "card_5star_suga_049";
     if (titleToIdMap.hasOwnProperty(id)) {
         return titleToIdMap[id];
     } else {
