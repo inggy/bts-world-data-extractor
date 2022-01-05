@@ -1,129 +1,136 @@
 {
-    "card_5star_rm_034": [
-        "e",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_jin_034": [
-        "e",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_suga_034": [
-        "e",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_jhope_034": [
-        "e",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_jimin_034": [
-        "e",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_v_034": [
-        "e",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_jungkook_034": [
-        "e",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_rm_023": [
-        "e",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_jin_023": [
-        "e",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_suga_023": [
-        "e",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_jhope_023": [
-        "e",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_jimin_023": [
-        "e",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_v_023": [
-        "e",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_jungkook_023": [
-        "e",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_rm_015": [
+    "card_5star_rm_019": [
         "e",
         "p"
     ],
-    "card_5star_jin_015": [
+    "card_5star_jin_019": [
         "e",
         "p"
     ],
-    "card_5star_suga_015": [
+    "card_5star_suga_019": [
         "e",
         "p"
     ],
-    "card_5star_jhope_015": [
+    "card_5star_jhope_019": [
         "e",
         "p"
     ],
-    "card_5star_jimin_015": [
+    "card_5star_jimin_019": [
         "e",
         "p"
     ],
-    "card_5star_v_015": [
+    "card_5star_v_019": [
         "e",
         "p"
     ],
-    "card_5star_jungkook_015": [
+    "card_5star_jungkook_019": [
         "e",
         "p"
+    ],
+    "card_5star_rm_010": [
+        "e",
+        "p",
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
+    "card_5star_jin_010": [
+        "e",
+        "p",
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
+    "card_5star_suga_010": [
+        "e",
+        "p",
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
+    "card_5star_jhope_010": [
+        "e",
+        "p",
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
+    "card_5star_jimin_010": [
+        "e",
+        "p",
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
+    "card_5star_v_010": [
+        "e",
+        "p",
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
+    "card_5star_jungkook_010": [
+        "e",
+        "p",
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
+    "card_5star_rm_033": [
+        "e",
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
+    "card_5star_jin_033": [
+        "e",
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
+    "card_5star_suga_033": [
+        "e",
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
+    "card_5star_jhope_033": [
+        "e",
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
+    "card_5star_jimin_033": [
+        "e",
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
+    "card_5star_v_033": [
+        "e",
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
+    "card_5star_jungkook_033": [
+        "e",
+        "b",
+        "y",
+        "gem",
+        "chuseok"
     ],
     "card_5star_rm_003": [
         "p"
@@ -258,6 +265,27 @@
     "card_5star_jungkook_013": [
         "p"
     ],
+    "card_5star_rm_015": [
+        "p"
+    ],
+    "card_5star_jin_015": [
+        "p"
+    ],
+    "card_5star_suga_015": [
+        "p"
+    ],
+    "card_5star_jhope_015": [
+        "p"
+    ],
+    "card_5star_jimin_015": [
+        "p"
+    ],
+    "card_5star_v_015": [
+        "p"
+    ],
+    "card_5star_jungkook_015": [
+        "p"
+    ],
     "card_5star_rm_017": [
         "p"
     ],
@@ -277,76 +305,6 @@
         "p"
     ],
     "card_5star_jungkook_017": [
-        "p"
-    ],
-    "card_5star_rm_010": [
-        "p",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_jin_010": [
-        "p",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_suga_010": [
-        "p",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_jhope_010": [
-        "p",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_jimin_010": [
-        "p",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_v_010": [
-        "p",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_jungkook_010": [
-        "p",
-        "b",
-        "y",
-        "gem",
-        "chuseok"
-    ],
-    "card_5star_rm_019": [
-        "p"
-    ],
-    "card_5star_jin_019": [
-        "p"
-    ],
-    "card_5star_suga_019": [
-        "p"
-    ],
-    "card_5star_jhope_019": [
-        "p"
-    ],
-    "card_5star_jimin_019": [
-        "p"
-    ],
-    "card_5star_v_019": [
-        "p"
-    ],
-    "card_5star_jungkook_019": [
         "p"
     ],
     "card_5star_rm_020": [
@@ -573,6 +531,12 @@
         "gem",
         "chuseok"
     ],
+    "card_5star_jhope_023": [
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
     "card_5star_jhope_025": [
         "b",
         "y",
@@ -604,7 +568,7 @@
         "gem",
         "chuseok"
     ],
-    "card_5star_jhope_033": [
+    "card_5star_jhope_034": [
         "b",
         "y",
         "gem",
@@ -742,6 +706,12 @@
         "gem",
         "chuseok"
     ],
+    "card_5star_jimin_023": [
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
     "card_5star_jimin_025": [
         "b",
         "y",
@@ -773,7 +743,7 @@
         "gem",
         "chuseok"
     ],
-    "card_5star_jimin_033": [
+    "card_5star_jimin_034": [
         "b",
         "y",
         "gem",
@@ -911,6 +881,12 @@
         "gem",
         "chuseok"
     ],
+    "card_5star_jin_023": [
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
     "card_5star_jin_025": [
         "b",
         "y",
@@ -942,7 +918,7 @@
         "gem",
         "chuseok"
     ],
-    "card_5star_jin_033": [
+    "card_5star_jin_034": [
         "b",
         "y",
         "gem",
@@ -1080,6 +1056,12 @@
         "gem",
         "chuseok"
     ],
+    "card_5star_jungkook_023": [
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
     "card_5star_jungkook_025": [
         "b",
         "y",
@@ -1111,7 +1093,7 @@
         "gem",
         "chuseok"
     ],
-    "card_5star_jungkook_033": [
+    "card_5star_jungkook_034": [
         "b",
         "y",
         "gem",
@@ -1249,6 +1231,12 @@
         "gem",
         "chuseok"
     ],
+    "card_5star_rm_023": [
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
     "card_5star_rm_025": [
         "b",
         "y",
@@ -1280,7 +1268,7 @@
         "gem",
         "chuseok"
     ],
-    "card_5star_rm_033": [
+    "card_5star_rm_034": [
         "b",
         "y",
         "gem",
@@ -1418,6 +1406,12 @@
         "gem",
         "chuseok"
     ],
+    "card_5star_suga_023": [
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
     "card_5star_suga_025": [
         "b",
         "y",
@@ -1449,7 +1443,7 @@
         "gem",
         "chuseok"
     ],
-    "card_5star_suga_033": [
+    "card_5star_suga_034": [
         "b",
         "y",
         "gem",
@@ -1594,6 +1588,12 @@
         "gem",
         "chuseok"
     ],
+    "card_5star_v_023": [
+        "b",
+        "y",
+        "gem",
+        "chuseok"
+    ],
     "card_5star_v_025": [
         "b",
         "y",
@@ -1625,7 +1625,7 @@
         "gem",
         "chuseok"
     ],
-    "card_5star_v_033": [
+    "card_5star_v_034": [
         "b",
         "y",
         "gem",
