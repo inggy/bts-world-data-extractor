@@ -27,30 +27,30 @@ export const additionalObtainableWays = {
       "card_5star_jungkook_033"
     ],
     "dna": [
-      // dope
-      "card_5star_rm_014",
-      "card_5star_jin_014",
-      "card_5star_suga_014",
-      "card_5star_jhope_014",
-      "card_5star_jimin_014",
-      "card_5star_v_014",
-      "card_5star_jungkook_014",
-      // bs&t
-      "card_5star_rm_018",
-      "card_5star_jin_018",
-      "card_5star_suga_018",
-      "card_5star_jhope_018",
-      "card_5star_jimin_018",
-      "card_5star_v_018",
-      "card_5star_jungkook_018",
-      // spring day
-      "card_5star_rm_025",
-      "card_5star_jin_025",
-      "card_5star_suga_025",
-      "card_5star_jhope_025",
-      "card_5star_jimin_025",
-      "card_5star_v_025",
-      "card_5star_jungkook_025"
+      // on-stage
+      "card_5star_rm_030",
+      "card_5star_jin_030",
+      "card_5star_suga_030",
+      "card_5star_jhope_030",
+      "card_5star_jimin_030",
+      "card_5star_v_030",
+      "card_5star_jungkook_030",
+      // just dance
+      "card_5star_rm_027",
+      "card_5star_jin_027",
+      "card_5star_suga_027",
+      "card_5star_jhope_027",
+      "card_5star_jimin_027",
+      "card_5star_v_027",
+      "card_5star_jungkook_027",
+      // charming or not
+      "card_5star_rm_037",
+      "card_5star_jin_037",
+      "card_5star_suga_037",
+      "card_5star_jhope_037",
+      "card_5star_jimin_037",
+      "card_5star_v_037",
+      "card_5star_jungkook_037"
     ],
 
     "25day": [
