@@ -1,30 +1,30 @@
 export const additionalObtainableWays = {
     "event": [
-      // Winter Collection - Winter Wonderland, Red Carpet RM, Dignified Gentleman
-      // https://forum.netmarble.com/btsworld/view/44/1685549
-      "card_5star_rm_019",
-      "card_5star_jin_019",
-      "card_5star_suga_019",
-      "card_5star_jhope_019",
-      "card_5star_jimin_019",
-      "card_5star_v_019",
-      "card_5star_jungkook_019",
+      // Romantic Collection
+      // https://forum.netmarble.com/btsworld/view/44/1690940
+      "card_5star_rm_022",
+      "card_5star_jin_022",
+      "card_5star_suga_022",
+      "card_5star_jhope_022",
+      "card_5star_jimin_022",
+      "card_5star_v_022",
+      "card_5star_jungkook_022",
 
-      "card_5star_rm_010",
-      "card_5star_jin_010",
-      "card_5star_suga_010",
-      "card_5star_jhope_010",
-      "card_5star_jimin_010",
-      "card_5star_v_010",
-      "card_5star_jungkook_010",
+      "card_5star_rm_036",
+      "card_5star_jin_036",
+      "card_5star_suga_036",
+      "card_5star_jhope_036",
+      "card_5star_jimin_036",
+      "card_5star_v_036",
+      "card_5star_jungkook_036",
 
-      "card_5star_rm_033",
-      "card_5star_jin_033",
-      "card_5star_suga_033",
-      "card_5star_jhope_033",
-      "card_5star_jimin_033",
-      "card_5star_v_033",
-      "card_5star_jungkook_033"
+      "card_5star_rm_029",
+      "card_5star_jin_029",
+      "card_5star_suga_029",
+      "card_5star_jhope_029",
+      "card_5star_jimin_029",
+      "card_5star_v_029",
+      "card_5star_jungkook_029"
     ],
     "dna": [
       // on-stage
