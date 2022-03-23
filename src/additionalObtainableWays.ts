@@ -1,56 +1,56 @@
 export const additionalObtainableWays = {
     "event": [
-      // Romantic Collection
-      // https://forum.netmarble.com/btsworld/view/44/1690940
-      "card_5star_rm_022",
-      "card_5star_jin_022",
-      "card_5star_suga_022",
-      "card_5star_jhope_022",
-      "card_5star_jimin_022",
-      "card_5star_v_022",
-      "card_5star_jungkook_022",
+      // Spring Collection
+      // https://forum.netmarble.com/btsworld/view/44/1697054
+      "card_5star_rm_044",
+      "card_5star_jin_044",
+      "card_5star_suga_044",
+      "card_5star_jhope_044",
+      "card_5star_jimin_044",
+      "card_5star_v_044",
+      "card_5star_jungkook_044",
 
-      "card_5star_rm_036",
-      "card_5star_jin_036",
-      "card_5star_suga_036",
-      "card_5star_jhope_036",
-      "card_5star_jimin_036",
-      "card_5star_v_036",
-      "card_5star_jungkook_036",
+      "card_5star_rm_040",
+      "card_5star_jin_040",
+      "card_5star_suga_040",
+      "card_5star_jhope_040",
+      "card_5star_jimin_040",
+      "card_5star_v_040",
+      "card_5star_jungkook_040",
 
-      "card_5star_rm_029",
-      "card_5star_jin_029",
-      "card_5star_suga_029",
-      "card_5star_jhope_029",
-      "card_5star_jimin_029",
-      "card_5star_v_029",
-      "card_5star_jungkook_029"
+      "card_5star_rm_039",
+      "card_5star_jin_039",
+      "card_5star_suga_039",
+      "card_5star_jhope_039",
+      "card_5star_jimin_039",
+      "card_5star_v_039",
+      "card_5star_jungkook_039"
     ],
     "dna": [
-      // Spring is blooming
-      "card_5star_rm_024",
-      "card_5star_jin_024",
-      "card_5star_suga_024",
-      "card_5star_jhope_024",
-      "card_5star_jimin_024",
-      "card_5star_v_024",
-      "card_5star_jungkook_024",
-      // Springtime walk
-      "card_5star_rm_042",
-      "card_5star_jin_042",
-      "card_5star_suga_042",
-      "card_5star_jhope_042",
-      "card_5star_jimin_042",
-      "card_5star_v_042",
-      "card_5star_jungkook_042",
-      // romantic
-      "card_5star_rm_008",
-      "card_5star_jin_008",
-      "card_5star_suga_008",
-      "card_5star_jhope_008",
-      "card_5star_jimin_008",
-      "card_5star_v_008",
-      "card_5star_jungkook_008"
+      // Slam dunk
+      "card_5star_rm_043",
+      "card_5star_jin_043",
+      "card_5star_suga_043",
+      "card_5star_jhope_043",
+      "card_5star_jimin_043",
+      "card_5star_v_043",
+      "card_5star_jungkook_043",
+      // Over Here
+      "card_5star_rm_038",
+      "card_5star_jin_038",
+      "card_5star_suga_038",
+      "card_5star_jhope_038",
+      "card_5star_jimin_038",
+      "card_5star_v_038",
+      "card_5star_jungkook_038",
+      // Fake Love
+      "card_5star_rm_009",
+      "card_5star_jin_009",
+      "card_5star_suga_009",
+      "card_5star_jhope_009",
+      "card_5star_jimin_009",
+      "card_5star_v_009",
+      "card_5star_jungkook_009"
     ],
 
     "25day": [
