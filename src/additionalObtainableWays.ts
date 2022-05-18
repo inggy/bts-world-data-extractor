@@ -1,57 +1,32 @@
 export const additionalObtainableWays = {
     "event": [
-      // Performance Collection
-      // https://forum.netmarble.com/btsworld/view/44/1700440
-      "card_5star_rm_045",
-      "card_5star_jin_045",
-      "card_5star_suga_045",
-      "card_5star_jhope_045",
-      "card_5star_jimin_045",
-      "card_5star_v_045",
-      "card_5star_jungkook_045",
+      // Summer Collection
+      // https://forum.netmarble.com/btsworld/view/44/1703672
+      "card_5star_rm_011",
+      "card_5star_jin_011",
+      "card_5star_suga_011",
+      "card_5star_jhope_011",
+      "card_5star_jimin_011",
+      "card_5star_v_011",
+      "card_5star_jungkook_011",
 
-      "card_5star_rm_046",
-      "card_5star_jin_046",
-      "card_5star_suga_046",
-      "card_5star_jhope_046",
-      "card_5star_jimin_046",
-      "card_5star_v_046",
-      "card_5star_jungkook_046",
+      "card_5star_rm_048",
+      "card_5star_jin_048",
+      "card_5star_suga_048",
+      "card_5star_jhope_048",
+      "card_5star_jimin_048",
+      "card_5star_v_048",
+      "card_5star_jungkook_048",
 
-      "card_5star_rm_050",
-      "card_5star_jin_050",
-      "card_5star_suga_050",
-      "card_5star_jhope_050",
-      "card_5star_jimin_050",
-      "card_5star_v_050",
-      "card_5star_jungkook_050"
+      "card_5star_rm_051",
+      "card_5star_jin_051",
+      "card_5star_suga_051",
+      "card_5star_jhope_051",
+      "card_5star_jimin_051",
+      "card_5star_v_051",
+      "card_5star_jungkook_051"
     ],
-    "dna": [
-      // Homecoming
-      "card_5star_rm_049",
-      "card_5star_jin_049",
-      "card_5star_suga_049",
-      "card_5star_jhope_049",
-      "card_5star_jimin_049",
-      "card_5star_v_049",
-      "card_5star_jungkook_049",
-      // Lazy Day Off
-      "card_5star_rm_047",
-      "card_5star_jin_047",
-      "card_5star_suga_047",
-      "card_5star_jhope_047",
-      "card_5star_jimin_047",
-      "card_5star_v_047",
-      "card_5star_jungkook_038",
-      // Home party
-      "card_5star_rm_028",
-      "card_5star_jin_028",
-      "card_5star_suga_028",
-      "card_5star_jhope_028",
-      "card_5star_jimin_028",
-      "card_5star_v_028",
-      "card_5star_jungkook_028"
-    ],
+    "dna": [],
 
     "25day": [
       "card_5star_rm_007",
