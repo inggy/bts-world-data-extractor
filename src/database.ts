@@ -79,6 +79,12 @@ const fileConfigs: GameFileConversionConfig[] = [
         outputFileName: "magic_shop.csv",
         columnCount: 64,
         firstColumnName: "index",
+    },
+    {
+        inputFileName: "agency_schedule",
+        outputFileName: "agency_schedule.csv",
+        columnCount: 19,
+        firstColumnName: "id",
     }
 ];
 

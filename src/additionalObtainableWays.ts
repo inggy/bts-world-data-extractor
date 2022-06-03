@@ -1,33 +1,4 @@
 export const additionalObtainableWays = {
-    "event": [
-      // Summer Collection
-      // https://forum.netmarble.com/btsworld/view/44/1703672
-      "card_5star_rm_011",
-      "card_5star_jin_011",
-      "card_5star_suga_011",
-      "card_5star_jhope_011",
-      "card_5star_jimin_011",
-      "card_5star_v_011",
-      "card_5star_jungkook_011",
-
-      "card_5star_rm_048",
-      "card_5star_jin_048",
-      "card_5star_suga_048",
-      "card_5star_jhope_048",
-      "card_5star_jimin_048",
-      "card_5star_v_048",
-      "card_5star_jungkook_048",
-
-      "card_5star_rm_051",
-      "card_5star_jin_051",
-      "card_5star_suga_051",
-      "card_5star_jhope_051",
-      "card_5star_jimin_051",
-      "card_5star_v_051",
-      "card_5star_jungkook_051"
-    ],
-    "dna": [],
-
     "25day": [
       "card_5star_rm_007",
       "card_5star_jin_007",

@@ -134,7 +134,7 @@ function _addObtainableWay(cardMapping: Dictionary<string[]>, cardId: string, ke
 Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPromise, seasonChallengePromise]).then(results => {
     const combinedResults: Dictionary<string[]> = {};
 
-    additionalObtainableWays.event.forEach(cardId => _addObtainableWay(combinedResults, cardId, "e"));
+    //additionalObtainableWays.event.forEach(cardId => _addObtainableWay(combinedResults, cardId, "e"));
     additionalObtainableWays.purple.forEach(cardId => _addObtainableWay(combinedResults, cardId, "p"));
     results[0].blue.forEach(cardId => _addObtainableWay(combinedResults, cardId, "b"))
     results[0].yellow.forEach(cardId => _addObtainableWay(combinedResults, cardId, "y"));
@@ -143,7 +143,7 @@ Promise.all([loyaltyBoxPromise, gemPromise, goldDrawPromise, memberDrawTicketPro
     //results[3].forEach(cardId => _addObtainableWay(combinedResults2, cardId, "MEMBER"));
     results[4].forEach(cardId => _addObtainableWay(combinedResults, cardId, "chuseok"));
 
-    additionalObtainableWays.dna.forEach(cardId => _addObtainableWay(combinedResults, cardId, "dna"));
+    //additionalObtainableWays.dna.forEach(cardId => _addObtainableWay(combinedResults, cardId, "dna"));
     additionalObtainableWays.c0.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c0"));
     additionalObtainableWays.c10.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c10"));
     additionalObtainableWays.c15.forEach(cardId => _addObtainableWay(combinedResults, cardId, "c15"));
